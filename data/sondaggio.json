@@ -1,0 +1,966 @@
+{
+  "_nota": "GENERATO AUTOMATICAMENTE da scripts/prepara_sondaggio.py — non modificare a mano: le modifiche vengono sovrascritte. I testi dei blocchi ('testo') sono gli unici campi da riscrivere a mano, e vanno prima passati per testi/2-sondaggio-e-ricerca.md.",
+  "placeholder": true,
+  "meta": {
+    "occhiello": "Sondaggio e ricerca",
+    "titolo": "Il responso di chi c'è dentro",
+    "sommario": "Abbiamo chiesto a chi fa giornalismo e attivismo che cosa significa, oggi, fare informazione e opposizione in Italia. Che cosa temono per il presente e per il futuro, di che cosa avrebbero bisogno, quali strategie hanno in mente di adoperare per non soccombere alla crescente repressione e alla censura.",
+    "rispondenti": 87,
+    "periodo": "questionario ancora aperto · obiettivo 100 risposte"
+  },
+  "sezioni": [
+    {
+      "id": "anagrafica",
+      "numero": "1",
+      "titolo": "Anagrafica",
+      "testo": "Chi sono le persone che hanno risposto: dove stanno, che cosa fanno, di che cosa si occupano.",
+      "blocchi": [
+        {
+          "id": "attivita",
+          "carta": 8,
+          "titolo": "Chi ha risposto",
+          "testo": "TESTO DA SCRIVERE — vedi testi/2-sondaggio-e-ricerca.md",
+          "grafico": {
+            "tipo": "barre",
+            "unita": "persone su 87",
+            "serie": [
+              {
+                "etichetta": "Attivista",
+                "valore": 46
+              },
+              {
+                "etichetta": "Giornalista",
+                "valore": 39
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 2,
+                "tono": "neutro"
+              }
+            ]
+          },
+          "evidenza": true
+        },
+        {
+          "id": "eta",
+          "carta": 16,
+          "titolo": "Quanti anni hanno",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre",
+            "unita": "persone su 87",
+            "serie": [
+              {
+                "etichetta": "31 - 45",
+                "valore": 43
+              },
+              {
+                "etichetta": "18 - 30",
+                "valore": 21
+              },
+              {
+                "etichetta": "46 - 60",
+                "valore": 19
+              },
+              {
+                "etichetta": "> 61",
+                "valore": 4
+              }
+            ]
+          }
+        },
+        {
+          "id": "genere",
+          "carta": 6,
+          "titolo": "Genere",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre",
+            "unita": "persone su 87",
+            "serie": [
+              {
+                "etichetta": "Maschio",
+                "valore": 40
+              },
+              {
+                "etichetta": "Femmina",
+                "valore": 40
+              },
+              {
+                "etichetta": "Preferisco non rispondere",
+                "valore": 5,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Non binario",
+                "valore": 2
+              }
+            ]
+          }
+        },
+        {
+          "id": "minoranza",
+          "carta": 14,
+          "titolo": "Appartenenza a una minoranza",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre",
+            "unita": "persone su 87",
+            "serie": [
+              {
+                "etichetta": "No",
+                "valore": 71
+              },
+              {
+                "etichetta": "Sì",
+                "valore": 12
+              },
+              {
+                "etichetta": "Preferisco non rispondere",
+                "valore": 4,
+                "tono": "neutro"
+              }
+            ]
+          }
+        },
+        {
+          "id": "province",
+          "carta": 21,
+          "titolo": "Da dove rispondono",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "le 10 province più rappresentate su 40 in tutto",
+            "serie": [
+              {
+                "etichetta": "Roma",
+                "valore": 15
+              },
+              {
+                "etichetta": "Milano",
+                "valore": 8
+              },
+              {
+                "etichetta": "Torino",
+                "valore": 6
+              },
+              {
+                "etichetta": "Bergamo",
+                "valore": 5
+              },
+              {
+                "etichetta": "Bologna",
+                "valore": 5
+              },
+              {
+                "etichetta": "Firenze",
+                "valore": 3
+              },
+              {
+                "etichetta": "Udine",
+                "valore": 3
+              },
+              {
+                "etichetta": "Bari",
+                "valore": 2
+              },
+              {
+                "etichetta": "Trento",
+                "valore": 2
+              },
+              {
+                "etichetta": "Napoli",
+                "valore": 2
+              }
+            ]
+          }
+        },
+        {
+          "id": "giornalismo",
+          "carta": 8,
+          "titolo": "Che giornalismo fanno",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte di chi si definisce giornalista",
+            "serie": [
+              {
+                "etichetta": "Reportage",
+                "valore": 23
+              },
+              {
+                "etichetta": "Inchiesta",
+                "valore": 21
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 12,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Cronaca",
+                "valore": 8
+              },
+              {
+                "etichetta": "Data journalism",
+                "valore": 6
+              },
+              {
+                "etichetta": "Giornalismo scientifico",
+                "valore": 6
+              }
+            ]
+          }
+        },
+        {
+          "id": "attivismo",
+          "carta": 6,
+          "titolo": "Che attivismo fanno",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte di chi si definisce attivista",
+            "serie": [
+              {
+                "etichetta": "Mobilitazione / azione diretta",
+                "valore": 32
+              },
+              {
+                "etichetta": "Comunicazione",
+                "valore": 16
+              },
+              {
+                "etichetta": "Ricerca",
+                "valore": 15
+              },
+              {
+                "etichetta": "Advocacy",
+                "valore": 8
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 6,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Raccolta fondi",
+                "valore": 6
+              },
+              {
+                "etichetta": "Coordinamento o amministrazione",
+                "valore": 2
+              }
+            ]
+          }
+        },
+        {
+          "id": "ambiti",
+          "carta": 19,
+          "titolo": "Di cosa si occupano",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte · si poteva indicarne più di uno",
+            "serie": [
+              {
+                "etichetta": "Ambiente",
+                "valore": 35
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 29,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Antimilitarsimo",
+                "valore": 19
+              },
+              {
+                "etichetta": "Spazi pubblici",
+                "valore": 17
+              },
+              {
+                "etichetta": "Diritti dei migranti",
+                "valore": 16
+              },
+              {
+                "etichetta": "Diritti di genere",
+                "valore": 15
+              },
+              {
+                "etichetta": "Diritti delle minoranze",
+                "valore": 14
+              },
+              {
+                "etichetta": "Diritti digitali",
+                "valore": 9
+              },
+              {
+                "etichetta": "Diritto alla casa",
+                "valore": 9
+              },
+              {
+                "etichetta": "Diritto al lavoro",
+                "valore": 6
+              },
+              {
+                "etichetta": "Diritti delle persone detenute",
+                "valore": 6
+              },
+              {
+                "etichetta": "Salute mentale",
+                "valore": 3
+              },
+              {
+                "etichetta": "Tutela legale",
+                "valore": 2
+              },
+              {
+                "etichetta": "Disabilità",
+                "valore": 2
+              },
+              {
+                "etichetta": "Diritti carcerari",
+                "valore": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pericoli",
+      "numero": "2",
+      "titolo": "Pericoli e rischi",
+      "testo": "Che cosa temono oggi, quanto conoscono le norme che li riguardano, quali si aspettano che pesino di più — e quale scenario futuro li spaventa.",
+      "blocchi": [
+        {
+          "id": "rischi",
+          "carta": 2,
+          "titolo": "Dove vedono il rischio",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "serie": [
+              {
+                "etichetta": "Precarietà economica / perdita del posto di lavoro",
+                "valore": 55
+              },
+              {
+                "etichetta": "Sorveglianza e altre minacce digitali",
+                "valore": 53
+              },
+              {
+                "etichetta": "Slapp (querele temerarie)",
+                "valore": 38
+              },
+              {
+                "etichetta": "Arresto / detenzione / misure restrittive",
+                "valore": 29
+              },
+              {
+                "etichetta": "Incolumità fisica",
+                "valore": 11
+              },
+              {
+                "etichetta": "Nessuna risposta",
+                "valore": 5,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 3,
+                "tono": "neutro"
+              }
+            ]
+          },
+          "evidenza": true
+        },
+        {
+          "id": "familiarita",
+          "carta": 18,
+          "titolo": "Quanto conoscono i DDL sicurezza",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "persone su 87",
+            "serie": [
+              {
+                "etichetta": "Poca (li conosco solo superficialmente)",
+                "valore": 51
+              },
+              {
+                "etichetta": "Molta (ne ho una conoscenza approfondita)",
+                "valore": 28
+              },
+              {
+                "etichetta": "Completa (ne ho una conoscenza tecnica vasta e trasmissibile)",
+                "valore": 5
+              },
+              {
+                "etichetta": "Nessuna (non so di cosa parlano)",
+                "valore": 1
+              }
+            ]
+          }
+        },
+        {
+          "id": "piazza",
+          "carta": 21,
+          "titolo": "La misura che pesa su quasi tutti",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "quota",
+            "unita": "rispondenti su 87",
+            "valore": 69,
+            "suffisso": "/87",
+            "etichetta": "indicano le misure sulla libertà di manifestazione in piazza"
+          }
+        },
+        {
+          "id": "provvedimenti",
+          "carta": 4,
+          "titolo": "Quali norme peseranno di più",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte su 87 · si poteva indicarne più di una",
+            "serie": [
+              {
+                "etichetta": "Misure relative alla libertà di manifestazione di piazza (azioni, picchetti, sit-in)",
+                "valore": 69
+              },
+              {
+                "etichetta": "Rafforzamento delle tutele per le forze dell’ordine",
+                "valore": 44
+              },
+              {
+                "etichetta": "Misure relative all’occupazione di luoghi e immobili",
+                "valore": 22
+              },
+              {
+                "etichetta": "Rafforzamento del cd. \"Daspo urbano\"",
+                "valore": 17
+              },
+              {
+                "etichetta": "Norme sulle proteste, anche non violente, negli istituti penitenziari",
+                "valore": 12
+              },
+              {
+                "etichetta": "Norme sulle proteste, anche non violente, nei centri per migranti",
+                "valore": 12
+              },
+              {
+                "etichetta": "Reati riguardanti la produzione di saperi circa la produzione di armi e tecniche di sabotaggio",
+                "valore": 10
+              },
+              {
+                "etichetta": "Estensione delle norme sull’avviso orale",
+                "valore": 9
+              },
+              {
+                "etichetta": "Norme sul porto d’armi per gli agenti fuori servizio",
+                "valore": 5
+              },
+              {
+                "etichetta": "Altro (specificare)",
+                "valore": 4,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Rafforzamento delle collaborazioni tra penitenziari e aziende private",
+                "valore": 4
+              },
+              {
+                "etichetta": "Norme sull'intestazione delle sim card",
+                "valore": 4
+              },
+              {
+                "etichetta": "Norme sulla filiera della canapa",
+                "valore": 4
+              },
+              {
+                "etichetta": "Revoca della cittadinanza",
+                "valore": 2
+              },
+              {
+                "etichetta": "Tutele rafforzate delle forze dell’ordine",
+                "valore": 1
+              }
+            ]
+          }
+        },
+        {
+          "id": "scenari",
+          "carta": 13,
+          "titolo": "Gli scenari che spaventano di più",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "serie": [
+              {
+                "etichetta": "Maggior libertà di utilizzo da parte delle forze dell’ordine di spyware o altri dispositivi di sorveglianza e controlli mirati",
+                "valore": 43
+              },
+              {
+                "etichetta": "Ulteriori restrizioni alle libertà di manifestazione ed espressione del dissenso",
+                "valore": 42
+              },
+              {
+                "etichetta": "Ulteriore concentrazione editoriale nelle mani di pochi gruppi economici o gruppi di potere",
+                "valore": 35
+              },
+              {
+                "etichetta": "Limitazione o blocco dei finanziamenti da fondazioni o enti stranieri per le organizzazioni attivistiche e giornalistiche",
+                "valore": 34
+              },
+              {
+                "etichetta": "Rafforzamento dei dispositivi di sorveglianza nei luoghi pubblici",
+                "valore": 21
+              },
+              {
+                "etichetta": "Inasprimento della censura sulle piattaforme social su cui veicoli i tuoi contenuti",
+                "valore": 18
+              },
+              {
+                "etichetta": "Inasprimento delle pene per attivisti che compiono azioni di dissenso (blocchi stradali, imbrattamento di muri o monumenti, picchetti)",
+                "valore": 13
+              },
+              {
+                "etichetta": "Ulteriore riduzione dell’accesso a dati rilevanti in tema di tutela dei diritti e delle libertà",
+                "valore": 12
+              },
+              {
+                "etichetta": "Inasprimento delle politiche di sgombero di centri sociali e altri spazi di autogestione",
+                "valore": 10
+              },
+              {
+                "etichetta": "Ulteriori misure di presidio e militarizzazione dei luoghi pubblici (strade, piazze, stazioni)",
+                "valore": 9
+              },
+              {
+                "etichetta": "Limitazione della libertà di sciopero",
+                "valore": 8
+              },
+              {
+                "etichetta": "Llimitazione all’accesso in carcere o negli altri luoghi privativi della libertà",
+                "valore": 3
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 3,
+                "tono": "neutro"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "strategie",
+      "numero": "3",
+      "titolo": "Strategie di resistenza",
+      "testo": "Di che cosa avrebbero bisogno, che cosa pensano si debba fare — nelle loro parole, senza opzioni precompilate — e che cosa sanno già fare.",
+      "blocchi": [
+        {
+          "id": "bisogni",
+          "carta": 16,
+          "titolo": "Di cosa avrebbero bisogno",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "serie": [
+              {
+                "etichetta": "Accesso a risorse finanziarie",
+                "valore": 56
+              },
+              {
+                "etichetta": "Difesa legale",
+                "valore": 35
+              },
+              {
+                "etichetta": "Formazione tecnica",
+                "valore": 33
+              },
+              {
+                "etichetta": "Attività di ricerca",
+                "valore": 21
+              },
+              {
+                "etichetta": "Difesa digitale",
+                "valore": 19
+              },
+              {
+                "etichetta": "Servizi sindacali",
+                "valore": 16
+              },
+              {
+                "etichetta": "Servizi di comunicazione",
+                "valore": 15
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 5,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Nessuna risposta",
+                "valore": 1,
+                "tono": "neutro"
+              }
+            ]
+          }
+        },
+        {
+          "id": "temi-strategie",
+          "carta": 14,
+          "titolo": "Che cosa serve, secondo chi c'è dentro",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "temi",
+            "unita": "risposte su 87 che toccano il tema · una risposta può toccarne più di uno",
+            "serieNomi": [
+              "La società civile e il giornalismo",
+              "La mia organizzazione"
+            ],
+            "serie": [
+              {
+                "etichetta": "Fare rete e coordinarsi",
+                "valori": [
+                  38,
+                  23
+                ],
+                "citazioni": {
+                  "W": [
+                    "Mass media e in genere maggiore impatto nella comunicazione - strutture di coordinamento tra le realtà sociali attive - Formazione e difesa legale trasversale nelle strade e nelle piazze",
+                    "credo serva un coordinamento più capillare e un accordo su obiettivi comuni",
+                    "alleanze con chi vive e vivrà questo tipo di limitazione democratica ma anche momenti di opposizione forte a chi non ci tutela, sindacati giornalistici e redazioni comprese. Con quali strumenti?",
+                    "Unione di attivisti provenienti da ambiti diversi",
+                    "Azioni comuni pensate in modo di agevolare la convergenza mantenendo il carattere dei diversi movimenti evitando sovrapposizioni e troppe chiamate alla mobilitazione. Aggiornare il metodo no global",
+                    "Indipendenza e autonomia dall'oligopolio dell'informazione, militanza, presa di coscienza collettiva, abbandono dell'illusione elettorale"
+                  ],
+                  "X": [
+                    "Estensione delle reti locali in alcune regioni - Comunicazione - Connessione delle tematiche carcerarie con le questioni sociali esterne al mondo penitenziario",
+                    "allargare le alleanze e le reti; costruire un coordinamento di realtà indipendenti del mondo giornalistico e attivismo; trovare una forma di sostenibilità dal basso;",
+                    "non ho un'organizzazione, sono una giornalista precaria in una redazione. Cerchiamole insieme",
+                    "Autofinanziamento o finanziamento dal basso, ancora una volta: le piccole testate con 1-3 collaboratori stanno morendo, raccontare una provincia con budget zero è proibitivo",
+                    "Una fonte di finanziamento, una sede fisica, una rete di contatti per autoformazioni tecniche e non",
+                    "Strategie di comunicazione destabilizzante (non etichettabile) . Metodi decisionali plurali ma efficaci e rapidi (anche piattaformizzate fuori dai big tech). Metodo Leadership al servizio della rete"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Formazione e competenze",
+                "valori": [
+                  33,
+                  26
+                ],
+                "citazioni": {
+                  "W": [
+                    "Mass media e in genere maggiore impatto nella comunicazione - strutture di coordinamento tra le realtà sociali attive - Formazione e difesa legale trasversale nelle strade e nelle piazze",
+                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
+                    "Possibilità di accesso a risorse finanziare così da rendere sostenibile il lavoro giornalistico e poter organizzare forme di diffusione dell'informazione alternative alle attuali piattaforme tech",
+                    "Insegnare a discutere senza urlare, a informarsi con spirito critico e a disimparare i vizi digitali: bolle e linguaggi che illudono che chi concorda debba parlare uguale e chi no sia un nemico",
+                    "presa di coscienza dei nuovi sistemi di repressione e sorveglianza a livello digitale sistemi di manipolazione dell'informazione definire un sistema di sostenibilità economica indipendente dallo stato",
+                    "Indipendenza e autonomia dall'oligopolio dell'informazione, militanza, presa di coscienza collettiva, abbandono dell'illusione elettorale"
+                  ],
+                  "X": [
+                    "Una fonte di finanziamento, una sede fisica, una rete di contatti per autoformazioni tecniche e non",
+                    "Maggiori strumenti di alfabetizzazione tecnologica per prevenire controllo e profilasione",
+                    "Investire su partnership strategiche, anche in funzione di una sostenibilità finanziaria. Formazione interna continua su innovazione e integrazione AI nei flussi di lavoro",
+                    "Corsi e formazione legale per progeggerci meglio, formazioni per debunking dell'AI",
+                    "Maggiori conoscenze e competenze in ambito politico e legale, strategie sempre nuove per raggirare la repressione",
+                    "Investire in competenze digitali e IA, rafforzare reti collaborative, sviluppare modelli sostenibili di finanziamento e migliorare capacità di analisi e contrasto alla disinformazione"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Sostenibilità economica",
+                "valori": [
+                  24,
+                  27
+                ],
+                "citazioni": {
+                  "W": [
+                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
+                    "Continua attività mediatica, pressione politica per garantire fondi per il pluralismo della stampa e la libertà di espressione delle persone più vulnerabili",
+                    "Possibilità di accesso a risorse finanziare così da rendere sostenibile il lavoro giornalistico e poter organizzare forme di diffusione dell'informazione alternative alle attuali piattaforme tech",
+                    "Autofinanziamento o finanziamento dal basso: evitare finanziamenti che corrodono la libertà di espressione",
+                    "presa di coscienza dei nuovi sistemi di repressione e sorveglianza a livello digitale sistemi di manipolazione dell'informazione definire un sistema di sostenibilità economica indipendente dallo stato",
+                    "Costruire collaborazioni più strutturate che rafforzino la posizione del settore di fronte ad altri attori della società, tra cui istituzioni e attori economici"
+                  ],
+                  "X": [
+                    "allargare le alleanze e le reti; costruire un coordinamento di realtà indipendenti del mondo giornalistico e attivismo; trovare una forma di sostenibilità dal basso;",
+                    "Più risorse finanziarie e stabilità contrattuale",
+                    "Autofinanziamento o finanziamento dal basso, ancora una volta: le piccole testate con 1-3 collaboratori stanno morendo, raccontare una provincia con budget zero è proibitivo",
+                    "Autonomia energetica e finanziaria",
+                    "Exit strategy internazionaliste per latitanza, fondi economici, creazione di aree sicure in cui il proletariato è vicino alle militanti",
+                    "Investire su partnership strategiche, anche in funzione di una sostenibilità finanziaria. Formazione interna continua su innovazione e integrazione AI nei flussi di lavoro"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Difesa legale",
+                "valori": [
+                  19,
+                  19
+                ],
+                "citazioni": {
+                  "W": [
+                    "Mass media e in genere maggiore impatto nella comunicazione - strutture di coordinamento tra le realtà sociali attive - Formazione e difesa legale trasversale nelle strade e nelle piazze",
+                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
+                    "alleanze con chi vive e vivrà questo tipo di limitazione democratica ma anche momenti di opposizione forte a chi non ci tutela, sindacati giornalistici e redazioni comprese. Con quali strumenti?",
+                    "Fact checking nei contenuti social media e filtro ai contenuti finti e/o fuorvianti. Aprire canali comunicativi certificati e affidabili. Maggiore tutela verso i minorenni esposti ai social media",
+                    "Fare comunita' e avere nuovi strumenti legali per tutelarsi",
+                    "Coalizione in testate indipendenti, importante tutela legale"
+                  ],
+                  "X": [
+                    "una strategia di comunicazione a breve e lungo termine e una miglior tutela legale;",
+                    "Offerta di servizi ai colleghi: supporto finanziario, tutela legale, strumenti per freelance",
+                    "Corsi e formazione legale per progeggerci meglio, formazioni per debunking dell'AI",
+                    "Sempre più indipendenza economica per non dipendere da padroni vari ed eventuali e cosi' pagare anche tutela legale",
+                    "Maggiori conoscenze e competenze in ambito politico e legale, strategie sempre nuove per raggirare la repressione",
+                    "Formazioni di autodifesa legale e digitale, consolidare la rete extraterritoriale, capire come autodifendersi dall'identificazione"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Indipendenza dai poteri",
+                "valori": [
+                  22,
+                  8
+                ],
+                "citazioni": {
+                  "W": [
+                    "Una piattaforma pubblica di gestione segnalazioni, tipo un wikileaks pubblico",
+                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
+                    "Continua attività mediatica, pressione politica per garantire fondi per il pluralismo della stampa e la libertà di espressione delle persone più vulnerabili",
+                    "Possibilità di accesso a risorse finanziare così da rendere sostenibile il lavoro giornalistico e poter organizzare forme di diffusione dell'informazione alternative alle attuali piattaforme tech",
+                    "presa di coscienza dei nuovi sistemi di repressione e sorveglianza a livello digitale sistemi di manipolazione dell'informazione definire un sistema di sostenibilità economica indipendente dallo stato",
+                    "Indipendenza e autonomia dall'oligopolio dell'informazione, militanza, presa di coscienza collettiva, abbandono dell'illusione elettorale"
+                  ],
+                  "X": [
+                    "allargare le alleanze e le reti; costruire un coordinamento di realtà indipendenti del mondo giornalistico e attivismo; trovare una forma di sostenibilità dal basso;",
+                    "Autonomia energetica e finanziaria",
+                    "Strategie di comunicazione destabilizzante (non etichettabile) . Metodi decisionali plurali ma efficaci e rapidi (anche piattaformizzate fuori dai big tech). Metodo Leadership al servizio della rete",
+                    "Sempre più indipendenza economica per non dipendere da padroni vari ed eventuali e cosi' pagare anche tutela legale",
+                    "I giornali dovrebbero dotarsi di strategie migliori per costruire una base più allargata di sostenitori così da avere maggiore indipendenza economica",
+                    "Fare rete, dotarsi di un paracadute economico e legale, stabilire dei compensi coordinati e validi per i collaboratori nel rapporto con gli editori"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Sicurezza digitale",
+                "valori": [
+                  15,
+                  10
+                ],
+                "citazioni": {
+                  "W": [
+                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
+                    "Canali di comunicazione interni, non tracciabili e protetti",
+                    "Insegnare a discutere senza urlare, a informarsi con spirito critico e a disimparare i vizi digitali: bolle e linguaggi che illudono che chi concorda debba parlare uguale e chi no sia un nemico",
+                    "presa di coscienza dei nuovi sistemi di repressione e sorveglianza a livello digitale sistemi di manipolazione dell'informazione definire un sistema di sostenibilità economica indipendente dallo stato",
+                    "Più educazione ai media, sostegno economico al giornalismo indipendente, fact-checking collaborativo e regolazione delle piattaforme per contrastare disinformazione e manipolazione digitale",
+                    "Riattivare il pensiero critico davanti agli strumenti digitali e ai diapositivi di sorveglianza. Smettere di delegittimare le diverse modalità di azione diretta. Fare rete per autoformazioni legali ec"
+                  ],
+                  "X": [
+                    "Trasparenza sui limiti, ricerca su sicurezza e allineamento, governance multi-stakeholder, standard condivisi con competitor, dialogo costante con società civile e regolatori",
+                    "Investire in competenze digitali e IA, rafforzare reti collaborative, sviluppare modelli sostenibili di finanziamento e migliorare capacità di analisi e contrasto alla disinformazione",
+                    "Formazioni di autodifesa legale e digitale, consolidare la rete extraterritoriale, capire come autodifendersi dall'identificazione",
+                    "Formazione legale, igiene digitale",
+                    "La stampa specialistica è meno esposta alle conseguenze del dissenso. Ma in generale, visto quello che è successo al direttore di Fanpage, direi strumenti che schermano il controllo spyware",
+                    "server all'estero per poter pubblicare comunque, sicurezza digitale a alto livello (non abbiamo nemmeno i fondi per comprare strumentazione adeguata a tutta la redazione...), spazi offline"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Comunicazione e narrazione",
+                "valori": [
+                  16,
+                  9
+                ],
+                "citazioni": {
+                  "W": [
+                    "Mass media e in genere maggiore impatto nella comunicazione - strutture di coordinamento tra le realtà sociali attive - Formazione e difesa legale trasversale nelle strade e nelle piazze",
+                    "Continua attività mediatica, pressione politica per garantire fondi per il pluralismo della stampa e la libertà di espressione delle persone più vulnerabili",
+                    "Fact checking nei contenuti social media e filtro ai contenuti finti e/o fuorvianti. Aprire canali comunicativi certificati e affidabili. Maggiore tutela verso i minorenni esposti ai social media",
+                    "Canali di comunicazione interni, non tracciabili e protetti",
+                    "Insegnare a discutere senza urlare, a informarsi con spirito critico e a disimparare i vizi digitali: bolle e linguaggi che illudono che chi concorda debba parlare uguale e chi no sia un nemico",
+                    "Alfabetizzazione mediatica diffusa, fact-checking strutturato, sostenibilità economica indipendente, collaborazione tra testate e uso etico dell'IA"
+                  ],
+                  "X": [
+                    "Estensione delle reti locali in alcune regioni - Comunicazione - Connessione delle tematiche carcerarie con le questioni sociali esterne al mondo penitenziario",
+                    "una strategia di comunicazione a breve e lungo termine e una miglior tutela legale;",
+                    "Autofinanziamento o finanziamento dal basso, ancora una volta: le piccole testate con 1-3 collaboratori stanno morendo, raccontare una provincia con budget zero è proibitivo",
+                    "Strategie di comunicazione destabilizzante (non etichettabile) . Metodi decisionali plurali ma efficaci e rapidi (anche piattaformizzate fuori dai big tech). Metodo Leadership al servizio della rete",
+                    "Strategie di autofinanziamento, collegamenti con il mondo dell'informazione per uscire dalle \"bolle\" social",
+                    "Dovremmo migliorare la comunicazione tra le diverse anime del movimento e rivolgerci di più all'esterno dei nostri spazi"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Spazi fisici e presenza",
+                "valori": [
+                  8,
+                  9
+                ],
+                "citazioni": {
+                  "W": [
+                    "Mass media e in genere maggiore impatto nella comunicazione - strutture di coordinamento tra le realtà sociali attive - Formazione e difesa legale trasversale nelle strade e nelle piazze",
+                    "Fare comunità offline è un punto di partenza, soprattutto per scambiarsi informazioni e avvisare i propri colleghi su pericoli e opportunità",
+                    "Cervello, pratiche di partecipazione costante, luoghi di organizzazione, empatia, ideali, umanità",
+                    "Penso che la strategia comune sia creare spazi di confronto di persona e auto-organizzativi, in modo da non essere facilmente controllabili in quanto singoli",
+                    "Un collegamento tra chi produce informazione (fotografx/giornalisti) e i movimenti di protesta o le realtà di piazza. Mezzi di comunicazione sicuri e indipendenti",
+                    "Autonomia digitale, tornare a presidiare spazi fisici in cui creare comunità , l assenza di relazioni reali isola radicalizza e deprime le persone"
+                  ],
+                  "X": [
+                    "Una fonte di finanziamento, una sede fisica, una rete di contatti per autoformazioni tecniche e non",
+                    "Formazioni di autodifesa legale e digitale, consolidare la rete extraterritoriale, capire come autodifendersi dall'identificazione",
+                    "tempo degli attivisti , difesa legale, supporto economici, spazi a disposizione",
+                    "server all'estero per poter pubblicare comunque, sicurezza digitale a alto livello (non abbiamo nemmeno i fondi per comprare strumentazione adeguata a tutta la redazione...), spazi offline",
+                    "Far maggiormente rete con gli spazi occupati, maggior formazione legale",
+                    "Informazioni sulla sicurezza digitale e conoscenza sui propri diritti in materia di sorveglianza nei luoghi pubblici"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Intelligenza artificiale",
+                "valori": [
+                  7,
+                  8
+                ],
+                "citazioni": {
+                  "W": [
+                    "Fact checking nei contenuti social media e filtro ai contenuti finti e/o fuorvianti. Aprire canali comunicativi certificati e affidabili. Maggiore tutela verso i minorenni esposti ai social media",
+                    "Alfabetizzazione mediatica diffusa, fact-checking strutturato, sostenibilità economica indipendente, collaborazione tra testate e uso etico dell'IA",
+                    "Più educazione ai media, sostegno economico al giornalismo indipendente, fact-checking collaborativo e regolazione delle piattaforme per contrastare disinformazione e manipolazione digitale",
+                    "Riattivare il pensiero critico davanti agli strumenti digitali e ai diapositivi di sorveglianza. Smettere di delegittimare le diverse modalità di azione diretta. Fare rete per autoformazioni legali ec",
+                    "Ricerca e accesso ai dati. Formazione sul linguaggio nel rispetto delle diversità. Rete giornalistica indipendente dai poteri economici e politici, specchio della verità e della quotidianità sociale",
+                    "Formazione all'igiene digitale, alla tutela legale, e a riconoscere meglio fake news e immagini/video creati con AI"
+                  ],
+                  "X": [
+                    "Investire su partnership strategiche, anche in funzione di una sostenibilità finanziaria. Formazione interna continua su innovazione e integrazione AI nei flussi di lavoro",
+                    "Offerta di servizi ai colleghi: supporto finanziario, tutela legale, strumenti per freelance",
+                    "Corsi e formazione legale per progeggerci meglio, formazioni per debunking dell'AI",
+                    "Rete di saperi e di accesso ai dati per un’informazione approfondita e veritiera accessibile a tutti",
+                    "Un piano strategico che affronti con decisione l'uso dell'intelligenza artificiale",
+                    "Rafforzare le competenze su sistemi di intelligenza artificiale in modo trasversale e aumentare sempre di più l'eterogeneità delle competenze interne"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Sindacato e tutele del lavoro",
+                "valori": [
+                  6,
+                  8
+                ],
+                "citazioni": {
+                  "W": [
+                    "alleanze con chi vive e vivrà questo tipo di limitazione democratica ma anche momenti di opposizione forte a chi non ci tutela, sindacati giornalistici e redazioni comprese. Con quali strumenti?",
+                    "Maggior sinergia e strutturazione (anche per i freelance). Uscire dalle nicchie",
+                    "una massiccia campagna di regolarizzazione del giornalismo freelance, creando posti di lavoro e/o forme di collaborazione meno improntante sull'estrattivismo e sullo sfruttamento economico",
+                    "Sindacalizzarsi attraverso l'entrata massiccia dei freelance nell'ordine o abolizione dello stesso. Rendersi indipendenti",
+                    "Strutture economiche e organizzative indipendenti in grado di sostenere le ricadute economiche della repressione (sia in termini di precarietà che di sanzioni amministrative)",
+                    "Lotta per il recepimento della direttiva europea sulle Slapp + mobilitazioni e lavoro di rete contro la precarietà economica e non solo, così da poter denunciare davvero situazione di ingiustizia etc"
+                  ],
+                  "X": [
+                    "Più risorse finanziarie e stabilità contrattuale",
+                    "non ho un'organizzazione, sono una giornalista precaria in una redazione. Cerchiamole insieme",
+                    "Autofinanziamento o finanziamento dal basso, ancora una volta: le piccole testate con 1-3 collaboratori stanno morendo, raccontare una provincia con budget zero è proibitivo",
+                    "Offerta di servizi ai colleghi: supporto finanziario, tutela legale, strumenti per freelance",
+                    "contrattualizzare e dotarsi di sistemi di tutela legale per i collaboratori esterni",
+                    "Penso che sia necessario dotarsi di reali strumenti sindacali di categoria che possano costituire massa critica di fronte alle istituzioni e all'ordine dei giornalisti"
+                  ]
+                }
+              },
+              {
+                "etichetta": "Ricerca e accesso ai dati",
+                "valori": [
+                  8,
+                  6
+                ],
+                "citazioni": {
+                  "W": [
+                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
+                    "Fact checking nei contenuti social media e filtro ai contenuti finti e/o fuorvianti. Aprire canali comunicativi certificati e affidabili. Maggiore tutela verso i minorenni esposti ai social media",
+                    "Alfabetizzazione mediatica diffusa, fact-checking strutturato, sostenibilità economica indipendente, collaborazione tra testate e uso etico dell'IA",
+                    "Più educazione ai media, sostegno economico al giornalismo indipendente, fact-checking collaborativo e regolazione delle piattaforme per contrastare disinformazione e manipolazione digitale",
+                    "Ricerca e accesso ai dati. Formazione sul linguaggio nel rispetto delle diversità. Rete giornalistica indipendente dai poteri economici e politici, specchio della verità e della quotidianità sociale",
+                    "Maggiore preparazione tecnica nella selezione delle fonti"
+                  ],
+                  "X": [
+                    "Trasparenza sui limiti, ricerca su sicurezza e allineamento, governance multi-stakeholder, standard condivisi con competitor, dialogo costante con società civile e regolatori",
+                    "Investire in competenze digitali e IA, rafforzare reti collaborative, sviluppare modelli sostenibili di finanziamento e migliorare capacità di analisi e contrasto alla disinformazione",
+                    "Rete di saperi e di accesso ai dati per un’informazione approfondita e veritiera accessibile a tutti",
+                    "maggiore capacità di ricerca e analisi, maggiore ricorso a contenziosi strategici e vie legali in senso lato",
+                    "In generale investire in educazione e ricerca",
+                    "Casse di resistenza, pratiche di mutualismo, formazione tecnica legale e di inchiesta"
+                  ]
+                }
+              }
+            ],
+            "senzaTema": {
+              "W": 13,
+              "X": 22
+            }
+          },
+          "evidenza": true
+        },
+        {
+          "id": "offrono",
+          "carta": 6,
+          "titolo": "Cosa sanno già fare",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-orizzontali",
+            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "serie": [
+              {
+                "etichetta": "Attività di ricerca",
+                "valore": 43
+              },
+              {
+                "etichetta": "Servizi di comunicazione",
+                "valore": 38
+              },
+              {
+                "etichetta": "Formazione tecnica",
+                "valore": 22
+              },
+              {
+                "etichetta": "Altro",
+                "valore": 14,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Nessuna risposta",
+                "valore": 9,
+                "tono": "neutro"
+              },
+              {
+                "etichetta": "Difesa legale",
+                "valore": 8
+              },
+              {
+                "etichetta": "Difesa digitale",
+                "valore": 7
+              },
+              {
+                "etichetta": "Accesso a risorse finanziarie",
+                "valore": 5
+              },
+              {
+                "etichetta": "Servizi legali",
+                "valore": 4
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

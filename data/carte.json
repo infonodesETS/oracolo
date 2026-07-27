@@ -1,0 +1,222 @@
+[
+  {
+    "n": 0,
+    "slug": "steve-bannon",
+    "nome": "Steve Bannon",
+    "arcano": "0 — Il Matto",
+    "campo": "potere",
+    "dritta": "Inizio, spontaneità, libertà, fede cieca.",
+    "rovescia": "Irresponsabilità, follia, imprudenza, caos.",
+    "testo": "Il buffone di corte può fare tutto ciò che non è normalmente concesso ai comuni cittadini e ai nobili, portando caos, disordine, dissonanza. Gli piace raccontare storie, a volte vere, spesso false, per far divertire i re e i loro potenti amici, instillando così nelle loro menti alcune false credenze. È imprevedibile, poco attento alle conseguenze di ciò che dice e ciò che fa, con i suoi continui salti e piroette rischia di cadere nel dirupo, portandosi dietro chi lo segue."
+  },
+  {
+    "n": 1,
+    "slug": "intelligenza-artificiale",
+    "nome": "L'Intelligenza Artificiale",
+    "arcano": "I — Il Bagatto",
+    "campo": "potere",
+    "dritta": "Abilità, iniziativa, forza di volontà, creatività.",
+    "rovescia": "Inganno, manipolazione, mancanza di talento.",
+    "testo": "Un'enorme carica creativa, in grado di costruire cose nuove e sorprendenti, ma allo stesso tempo di distruggere tutto ciò che le sta intorno. Si nutre delle energie e delle risorse degli uomini e della natura, raccogliendo e riplasmando tutto ciò che trova a portata di mano. Grande affabulatrice, con le sue doti manipolatorie è in grado di far credere tutto e il contrario di tutto, a seconda della convenienza del momento."
+  },
+  {
+    "n": 2,
+    "slug": "spyware",
+    "nome": "Lo Spyware",
+    "arcano": "II — La Papessa",
+    "campo": "potere",
+    "dritta": "Intuizione, saggezza, mistero, pazienza.",
+    "rovescia": "Segreti svelati, freddezza, superficialità.",
+    "testo": "Introspezione, meditazione, volontà di conoscere e sapere, anche al di là di ciò che sarebbe lecito conoscere e sapere. Capace di leggere dentro le persone, arrivando ai punti più intimi e segreti del loro cuore e della loro anima, aiuta spesso i potenti a comprendere le volontà dei deboli, molto di rado il contrario."
+  },
+  {
+    "n": 3,
+    "slug": "multinazionale",
+    "nome": "La Multinazionale",
+    "arcano": "III — L'Imperatrice",
+    "campo": "potere",
+    "dritta": "Abbondanza, fertilità, natura, femminilità.",
+    "rovescia": "Blocco creativo, soffocamento, vanità.",
+    "testo": "Energia materna, colei che ha partorito e allevato il mondo. Sensuale e provocante, offre piaceri, felicità e gioia, ma pretende in cambio il totale controllo delle vite e delle relazioni sociali. Se il suo amore non è ricambiato, da madre premurosa, attenta ai bisogni dei suoi figli, si trasforma in Medea, in cerca di sangue e vendetta."
+  },
+  {
+    "n": 4,
+    "slug": "slapp",
+    "nome": "La Slapp",
+    "arcano": "IV — L'Imperatore",
+    "campo": "potere",
+    "dritta": "Stabilità, autorità, protezione, struttura.",
+    "rovescia": "Tirannia, rigidità, abuso di potere.",
+    "testo": "Sicura, autoritaria, esercita potere assoluto e capacità di difesa grazie a una pesante armatura e allo scudo delle regole che essa stessa promulga. Chiunque provi ad attaccarla o criticare, dovrà aspettarsi una punizione esemplare come un'esecuzione in pubblica piazza."
+  },
+  {
+    "n": 5,
+    "slug": "riconoscimento-facciale",
+    "nome": "Il Riconoscimento Facciale",
+    "arcano": "V — Il Papa",
+    "campo": "potere",
+    "dritta": "Guida spirituale, tradizione, educazione.",
+    "rovescia": "Dogmatismo, ipocrisia, cattivi consigli.",
+    "testo": "Controllo, sorveglianza, potere di uniformare i comportamenti e di identificare e isolare, per far poi punire, qualsiasi devianza da ciò che il potere precostituito ha deciso sia la norma. Capace di comprendere tutte le fedi, tutte le culture, tutte le lingue parlate del mondo, esercita un potere di conoscenza che solo ambiguamente appare egualitario, ma che in realtà tende a prediligere alcuni figli della società, rispetto ad altri."
+  },
+  {
+    "n": 6,
+    "slug": "attivismo",
+    "nome": "L'Attivismo",
+    "arcano": "VI — Gli Amanti",
+    "campo": "resistenza",
+    "dritta": "Amore, scelte del cuore, armonia, unione.",
+    "rovescia": "Indecisione, infedeltà, squilibrio.",
+    "testo": "Attrazione e unione di forze, idee, persone che si ritrovano a percorrere sentieri comuni e spesso opposti a quelli tracciati dal potere. Scelte spesso dettate dal cuore, più che dalla ragione, che possono condurre ad esiti pericolosi che mettono a rischio la fedeltà e l'unione di intenti originaria."
+  },
+  {
+    "n": 7,
+    "slug": "disuguaglianze",
+    "nome": "Le Disuguaglianze",
+    "arcano": "VII — Il Carro",
+    "campo": "potere",
+    "dritta": "Successo, determinazione, controllo, vittoria.",
+    "rovescia": "Sconfitta, mancanza di direzione, aggressività.",
+    "testo": "Disciplina, forza intellettuale e determinazione del potere per il potere, del privilegiato per rimanere tale, del signore per continuare a sottomettere lo schiavo. Non c'è violenza, perché non serve: è sufficiente mantenere l'illusione che la realtà iniqua sia l'unica realtà possibile, e che ogni tentativo di immaginare un'alternativa sia destinato alla mortificazione."
+  },
+  {
+    "n": 8,
+    "slug": "giornalista",
+    "nome": "Il Giornalista",
+    "arcano": "VIII — La Giustizia",
+    "campo": "resistenza",
+    "dritta": "Equità, verità, legge, causa-effetto.",
+    "rovescia": "Ingiustizia, pregiudizio, eccessivo rigore.",
+    "testo": "Imparzialità, equità e capacità di discernimento, con l'obiettivo che chi detiene il potere affronti le conseguenze delle proprie azioni ed accetti la responsabilità delle proprie scelte. Non sempre succede però, e in questi casi i poteri malvagi hanno modo di esprimere le proprie energie negative con ancor più forza, su tutta la società."
+  },
+  {
+    "n": 9,
+    "slug": "algoritmo",
+    "nome": "L'Algoritmo",
+    "arcano": "IX — L'Eremita",
+    "campo": "potere",
+    "dritta": "Introspezione, solitudine cercata, saggezza.",
+    "rovescia": "Isolamento, misantropia, lentezza eccessiva.",
+    "testo": "È molto facile sviare il percorso interiore di chi sente il bisogno di allontanarsi dal mondo terreno per trovare risposte ai propri problemi, se si ha il potere di creare illusioni, fantasie e sogni a occhi aperti. Fino alla creazione di psicosi che portano all'isolamento completo e all'odio dell'Altro."
+  },
+  {
+    "n": 10,
+    "slug": "conflitto",
+    "nome": "Il Conflitto",
+    "arcano": "X — Ruota della Fortuna",
+    "campo": "resistenza",
+    "dritta": "Destino, cambiamento positivo, cicli.",
+    "rovescia": "Sfortuna, resistenza al cambiamento, instabilità.",
+    "testo": "In un mondo sempre più imprevedibile, dove la realtà cambia rapidamente e apparentemente senza logica, è necessario saper ribaltare i tavoli e mettere tutto a soqquadro. Facile a dirsi, ma difficile a farsi, soprattutto quando lo sbilanciamento di potere è tale che, senza una strategia ben congegnata, a finire a gambe all'aria spesso non è il tavolo, ma chi lo vorrebbe ribaltare."
+  },
+  {
+    "n": 11,
+    "slug": "piazza-alimonda",
+    "nome": "Piazza Alimonda",
+    "arcano": "XI — La Forza",
+    "campo": "resistenza",
+    "dritta": "Coraggio, pazienza, controllo interiore.",
+    "rovescia": "Debolezza, rabbia, mancanza di autocontrollo.",
+    "testo": "Non è per nulla scontato saper riconoscere se ci si trova all'inizio o alla fine di un percorso, soprattutto se sotto ai piedi si apre un baratro. Servono forza interiore, autocontrollo e capacità di superare gli ostacoli per fare comunque dei passi in avanti. Il vuoto viene riempito dalla compassione, dell'amore e della saggezza di chi decide di marciare insieme senza paura di cadere sotto."
+  },
+  {
+    "n": 12,
+    "slug": "carcere",
+    "nome": "Il Carcere",
+    "arcano": "XII — L'Appeso",
+    "campo": "potere",
+    "dritta": "Sacrificio, nuova prospettiva, attesa.",
+    "rovescia": "Vittimismo, stagnazione, martirio inutile.",
+    "testo": "A volte non resta che aver pazienza e accettare le situazioni così come sono. Altre volte, invece, ci si rende conto che le situazioni sono nient'altro che gabbie create da chi vuole che tutto rimanga così com'è, per sua convenienza. Allora bisogna liberarsi da schemi di pensiero limitati, accettare cambiamenti inevitabili e usare la forza per allargare le sbarre e uscire."
+  },
+  {
+    "n": 13,
+    "slug": "torri-gemelle",
+    "nome": "Le Torri Gemelle",
+    "arcano": "XIII — La Morte",
+    "campo": "potere",
+    "dritta": "Trasformazione, fine necessaria, rinascita.",
+    "rovescia": "Paura del cambiamento, ristagno, lutto difficile.",
+    "testo": "Ogni ciclo ha la sua fine, ogni binario arriva a un termine, ogni stagione, anche quelle che sembrano infinite, prima o poi deve cedere il passo. Quello che verrà dopo è da sempre un mistero, e se qualcuno racconta di averlo visto in sogno, meglio non crederci. L'importante è affrontare il cambiamento con coraggio, senza pretese di sapere come andrà a finire: quando i palazzi crollano, si alza un gran polverone che rende impossibile vedere cosa si staglia dietro."
+  },
+  {
+    "n": 14,
+    "slug": "solidarieta",
+    "nome": "La Solidarietà",
+    "arcano": "XIV — La Temperanza",
+    "campo": "resistenza",
+    "dritta": "Equilibrio, moderazione, guarigione.",
+    "rovescia": "Eccesso, squilibrio, mancanza di armonia.",
+    "testo": "Servono equilibrio e armonia per camminare insieme tenendo lo stesso passo. Ma quando si riesce, allora la distanza sembra dimezzarsi e le ripide salite diventano facili discese. Le differenze, se riconosciute e accolte, rendono ancor più forti quelli che decidono di attraversare la pianura insieme, ma se si trasformano in motivo di scontro, la pianura può trasformarsi velocemente in un impenetrabile deserto."
+  },
+  {
+    "n": 15,
+    "slug": "petrolio",
+    "nome": "Il Petrolio",
+    "arcano": "XV — Il Diavolo",
+    "campo": "potere",
+    "dritta": "Passione, legami, magnetismo, ambizione.",
+    "rovescia": "Dipendenza, ossessione, materialismo, schiavitù.",
+    "testo": "Completa dipendenza dalle cose materiali, da tutto ciò che luccica, dal potere fine a sé stesso. L'ossessione di dover abbattere tutto ciò che si frappone tra sé e il possesso, nemmeno importa di cosa, alcuni la chiamano libertà. Più spesso è pura e semplice devastazione."
+  },
+  {
+    "n": 16,
+    "slug": "precariato",
+    "nome": "Il Precariato",
+    "arcano": "XVI — La Torre",
+    "campo": "potere",
+    "dritta": "Rivelazione improvvisa, liberazione da strutture.",
+    "rovescia": "Disastro, crollo doloroso, trauma.",
+    "testo": "Erano tutti contenti che il vento nuovo avesse finalmente spazzato via le vecchie, polverose e pesanti vesti, invece, una volta calato, si ritrovarono tutti nudi. Tranne i potenti, che se la ridevano guardando le masse di poveracci costretti a gattonare nel fango per recuperare almeno un paio di mutande."
+  },
+  {
+    "n": 17,
+    "slug": "sciopero",
+    "nome": "Lo Sciopero",
+    "arcano": "XVII — Le Stelle",
+    "campo": "resistenza",
+    "dritta": "Speranza, ispirazione, serenità, futuro.",
+    "rovescia": "Pessimismo, mancanza di fede, sogni infranti.",
+    "testo": "Quando si è in alto mare, se si alza la testa al cielo notturno, le stelle incoraggiano a rimanere ottimisti e fiduciosi. Bisogna imparare a seguirne le indicazioni, ma se lo si fa senza preparazione si rischia di perdere la rotta e finire nel vortice che inghiotte tutto."
+  },
+  {
+    "n": 18,
+    "slug": "propaganda",
+    "nome": "La Propaganda",
+    "arcano": "XVIII — La Luna",
+    "campo": "potere",
+    "dritta": "Immaginazione, subconscio, sogni.",
+    "rovescia": "Illusione, confusione, paura, inganno.",
+    "testo": "Inseguire sogni, fantasie e visioni, guidati da una voce suadente che ci invita a guardare oltre la superficie e ad esplorare gli aspetti nascosti di noi stessi e della realtà. Scoprire solo poi, che quella voce ci ha portato non verso i nostri, ma verso i suoi sogni, le sue fantasie, le sue visioni, così che, inconsciamente, la aiutassimo a realizzarle tutte."
+  },
+  {
+    "n": 19,
+    "slug": "rave-party",
+    "nome": "Il Rave Party",
+    "arcano": "XIX — Il Sole",
+    "campo": "resistenza",
+    "dritta": "Gioia, successo, vitalità, chiarezza.",
+    "rovescia": "Arroganza, verità nascoste, fallimento temporaneo.",
+    "testo": "Gioia, fiducia in sé stessi e amore per gli altri, successo, ancora gioia. Tutto ciò che chi brama il potere odia e cerca di combattere e tutto ciò che chi del potere si disinteressa, deve continuare a proteggere e tenere vicino al proprio cuore."
+  },
+  {
+    "n": 20,
+    "slug": "rivolta",
+    "nome": "La Rivolta",
+    "arcano": "XX — Il Giudizio",
+    "campo": "resistenza",
+    "dritta": "Rinascita, chiamata, assoluzione, risveglio.",
+    "rovescia": "Dubbio, rifiuto del cambiamento, colpa.",
+    "testo": "Quando gli angeli suonano le trombe, i morti riprendono coscienza e tornano a camminare sulla terra, secondo le loro regole e seguendo i loro istinti. Il potere ci ha abituato ad averne paura, una massa violenta e cannibale, perché ciò che più di tutto teme chi sta chiuso nel palazzo, è che quelli fuori si risveglino e prendano coscienza della loro condizione."
+  },
+  {
+    "n": 21,
+    "slug": "zona-rossa",
+    "nome": "La Zona Rossa",
+    "arcano": "XXI — Il Mondo",
+    "campo": "potere",
+    "dritta": "Compimento, successo totale, integrazione.",
+    "rovescia": "Incompletezza, ritardo, senso di chiusura.",
+    "testo": "Qui è dove tutto si completa, dove tutto ritrova armonia e energia positiva. Se solo si potesse starci, però, dato che il potente tende ad escludere chi non condivide il suo status o quantomeno non lo adula e lo difende. Ma se si aguzza la vista, si trova sempre una breccia da cui passare per godersi quello che, dopotutto, dovrebbe essere di tutti."
+  }
+]

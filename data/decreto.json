@@ -1,0 +1,131 @@
+{
+  "_nota": "Struttura presa dal documento di lavoro di Davide (Doc Google 1CSUmFSaan5...). Titoli di capi e articoli SONO quelli veri. I testi degli articoli sono ancora da scrivere: finché 'testo' è null, in pagina compare il riquadro tratteggiato 'testo in stesura'. Il campo 'risponde' serve a indicare quale norma securitaria vera l'articolo ribalta: quando è null non compare nulla. Le 'chiose' sono proposte, da riscrivere liberamente.",
+  "placeholder": true,
+  "meta": {
+    "occhiello": "La sicurezza che vogliamo",
+    "gazzetta": "Gazzetta Ufficiale dell'Oracolo · Serie Generale · Anno che verrà",
+    "titolo": "Disposizioni urgenti in materia di sicurezza dell'informazione e della partecipazione democratica",
+    "sottotitolo": "Un decreto che non esiste, scritto nella lingua di quelli che esistono",
+    "sommario": "Da due anni «sicurezza» è la parola con cui si scrivono le leggi che restringono lo spazio del dissenso. Abbiamo preso quella stessa parola, quella stessa lingua, quella stessa forma — capi, articoli, commi — e abbiamo scritto il contrario: undici articoli che proteggono chi informa e chi protesta, invece di punirlo. Non è satira. È un elenco di cose che si potrebbero fare domani mattina, se solo si volesse.",
+    "avvertenza": "Questo decreto non esiste e non è mai stato depositato in Parlamento. È un documento di immaginazione politica prodotto da info.nodes. Nulla vieta però di portarcelo in Parlamento, per riscrivere il futuro di questo Paese."
+  },
+  "preambolo": {
+    "titolo": "Preambolo",
+    "da": "preambolo.json",
+    "pagina": "preambolo.html"
+  },
+  "considerato": {
+    "titolo": "Visto e considerato",
+    "testo": null,
+    "promemoria": "I risultati del sondaggio, letti come motivazione del decreto: problematiche, criticità, pericoli futuri. È pur sempre un decreto legge: serve la necessità e l'urgenza.",
+    "rimando": "I numeri sono qui sopra, nel capitolo del sondaggio."
+  },
+  "capi": [
+    {
+      "numero": "Capo I",
+      "titolo": "Misure a tutela della libertà di espressione e di manifestazione",
+      "articoli": [
+        {
+          "n": 1,
+          "rubrica": "Istituzione di un «Presidio permanente per il monitoraggio degli atti intimidatori contro giornalisti e attivisti»",
+          "testo": null,
+          "risponde": null,
+          "carta": 8,
+          "chiosa": "Il Giornalista — La Giustizia. Chi tiene il conto delle intimidazioni non è un favore fatto ai giornalisti: è il modo in cui il potere accetta di rispondere delle proprie azioni."
+        },
+        {
+          "n": 2,
+          "rubrica": "Modifiche al codice di condotta delle forze di polizia durante cortei e proteste organizzate",
+          "testo": null,
+          "risponde": null,
+          "carta": 11,
+          "chiosa": "Piazza Alimonda — La Forza. Non è la forza di chi carica. È quella di chi sa fermarsi."
+        },
+        {
+          "n": 3,
+          "rubrica": "Disposizioni in materia di trasparenza e identificabilità del personale delle Forze di Polizia in servizio di ordine pubblico (codici identificativi)",
+          "testo": null,
+          "risponde": null,
+          "carta": 5,
+          "chiosa": "Il Riconoscimento Facciale — Il Papa. La carta si rovescia: per una volta l'identificazione punta nell'altra direzione."
+        },
+        {
+          "n": 4,
+          "rubrica": "Disposizioni per il contrasto all'uso strumentale delle querele temerarie (SLAPP) a fini inibitori",
+          "testo": null,
+          "risponde": null,
+          "carta": 4,
+          "chiosa": "La Slapp — L'Imperatore. Si difende con lo scudo delle regole che è lui stesso a scrivere. Questo articolo gli toglie lo scudo di mano."
+        }
+      ]
+    },
+    {
+      "numero": "Capo II",
+      "titolo": "Protezione dei cittadini da strumenti di sorveglianza e controllo",
+      "articoli": [
+        {
+          "n": 5,
+          "rubrica": "Misure per la prevenzione delle forme di sorveglianza illecita e tutela della riservatezza delle comunicazioni degli attivisti",
+          "testo": null,
+          "risponde": null,
+          "carta": 2,
+          "chiosa": "Lo Spyware — La Papessa. Sa leggere dentro le persone, e finora ha aiutato quasi sempre i potenti a capire i deboli. Quasi mai il contrario."
+        },
+        {
+          "n": 6,
+          "rubrica": "Divieto di installazione e impiego di sistemi di riconoscimento biometrico e di identificazione facciale in tempo reale in aree pubbliche o aperte al pubblico",
+          "testo": null,
+          "risponde": null,
+          "carta": 21,
+          "chiosa": "La Zona Rossa — Il Mondo. Lo spazio pubblico dovrebbe essere di tutti. Serve sempre una breccia da cui passare."
+        },
+        {
+          "n": 7,
+          "rubrica": "Protocolli di cybersicurezza per le redazioni giornalistiche e le organizzazioni non governative",
+          "testo": null,
+          "risponde": null,
+          "carta": 9,
+          "chiosa": "L'Algoritmo — L'Eremita. La solitudine può essere cercata o subita. Una redazione lasciata sola davanti a un attacco la subisce."
+        },
+        {
+          "n": 8,
+          "rubrica": "Contrasto alle campagne di odio online (hate speech) e ai tentativi di delegittimazione digitale",
+          "testo": null,
+          "risponde": null,
+          "carta": 18,
+          "chiosa": "La Propaganda — La Luna. Una voce suadente che ti porta verso i suoi sogni, facendoti credere che siano i tuoi."
+        }
+      ]
+    },
+    {
+      "numero": "Capo III",
+      "titolo": "Sostenibilità economica e riconoscimento del ruolo nell'ordinamento democratico",
+      "articoli": [
+        {
+          "n": 9,
+          "rubrica": "Istituzione di un fondo di solidarietà per il patrocinio legale degli attivisti vittime di minacce o violenze",
+          "testo": null,
+          "risponde": null,
+          "carta": 6,
+          "chiosa": "L'Attivismo — Gli Amanti. Unione di forze e di idee. Che però, da sola, in tribunale non paga l'avvocato."
+        },
+        {
+          "n": 10,
+          "rubrica": "Istituzione di un fondo di solidarietà per il patrocinio legale dei giornalisti vittime di minacce o violenze",
+          "testo": null,
+          "risponde": null,
+          "carta": 14,
+          "chiosa": "La Solidarietà — La Temperanza. Quando si cammina insieme tenendo lo stesso passo, la salita diventa discesa."
+        },
+        {
+          "n": 11,
+          "rubrica": "Revisione dei criteri di accesso e ripartizione del Fondo straordinario per gli interventi di sostegno all'editoria e all'emittenza locale",
+          "testo": null,
+          "risponde": null,
+          "carta": 16,
+          "chiosa": "Il Precariato — La Torre. Il vento nuovo spazza via le vesti vecchie, e poi ci si ritrova nudi. Tranne i potenti."
+        }
+      ]
+    }
+  ]
+}

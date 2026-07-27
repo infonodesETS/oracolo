@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Oracolo del Dissenso — info.nodes</title>
+<meta name="description" content="22 carte per leggere il presente. Un'inchiesta di info.nodes su censura, sorveglianza e repressione del dissenso in Italia.">
+<meta property="og:title" content="Oracolo del Dissenso">
+<meta property="og:description" content="22 carte per leggere il presente. Un'inchiesta di info.nodes su censura e dissenso.">
+<meta property="og:image" content="assets/carte/cover.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="avanzamento"><span id="barra"></span></div>
+
+<nav class="nav" id="nav" aria-label="Sezioni">
+  <a class="nav__logo" href="#soglia">ORACOLO<span>DEL DISSENSO</span></a>
+  <ul class="nav__voci">
+    <li><a href="#dati">Dati</a></li>
+    <li><a href="#voci">Voci</a></li>
+    <li><a href="#decreto">Vera Sicurezza</a></li>
+    <li><a href="#mazzo">Oracolo</a></li>
+    <li><a href="#lettura" class="nav__cta"><span class="nav__cta-lungo">Fatti leggere le carte</span><span class="nav__cta-corto">Le carte</span></a></li>
+  </ul>
+</nav>
+
+<!-- ═══ 0. SOGLIA ═══ -->
+<header class="soglia" id="soglia">
+  <div class="soglia__ventaglio" aria-hidden="true">
+    <img src="assets/carte/04-slapp.webp" alt="" data-v="1">
+    <img src="assets/carte/18-propaganda.webp" alt="" data-v="2">
+    <img src="assets/carte/13-torri-gemelle.webp" alt="" data-v="3">
+    <img src="assets/carte/20-rivolta.webp" alt="" data-v="4">
+    <img src="assets/carte/17-sciopero.webp" alt="" data-v="5">
+  </div>
+  <div class="soglia__testo">
+    <p class="occhiello">info.nodes</p>
+    <h1>Oracolo<br>del Dissenso</h1>
+    <p class="soglia__claim">Censura, sorveglianza e repressione in Italia.<br>
+      Leggere il presente per riscrivere il futuro.</p>
+  </div>
+  <div class="soglia__scroll"><span>scorri per iniziare la lettura</span><i></i></div>
+</header>
+
+<!-- ═══ 1. LA DOMANDA ═══ -->
+<section class="domanda" id="domanda">
+  <div class="colonna">
+    <p class="occhiello">La nostra visione</p>
+    <p class="lead">Di fronte ad un crescente autoritarismo che si dota di vecchi
+      e nuovi strumenti di controllo e repressione, la società deve rispondere
+      attraverso l'organizzazione trasversale e l'unione delle lotte.</p>
+    <p>La repressione non solo ribalta il senso delle strutture sociali, mettendo
+      l'umanità al servizio di esse invece che viceversa, ma soprattutto agisce con
+      violenza contro quei bisogni basilari che dovrebbero invece essere intoccabili
+      e inalienabili: libertà, giustizia, solidarietà, felicità.</p>
+    <p>Il dissenso serve a ripristinare il giusto rapporto tra le persone e il
+      sistema, rimettendo quest'ultimo al servizio delle prime.</p>
+    <p>Mappare il dissenso, raccontarne le storie, serve a riconnettere le
+      esperienze materiali fondanti e costruire consapevolezza generalizzata
+      muovendo oltre le lotte particolari.</p>
+    <p>Di seguito troverete un'analisi di ciò che ci spaventa e ci fa mobilitare,
+      delle storie reali di censura e repressione, le nostre richieste per tornare a
+      una società più giusta, equa e sicura davvero per tutte e tutti, e infine un
+      Oracolo costituito da 22 carte, illustrate dall'artista Illustre Feccia, per
+      conoscere sia i maggiori pericoli che gli strumenti che ci permettono di
+      evitarli o risolverli.</p>
+  </div>
+</section>
+
+<!-- ═══ 2. DATI — sondaggio e ricerca ═══ -->
+<section class="capitolo capitolo--scuro" id="dati" data-capitolo="I"></section>
+
+<!-- ═══ 3. VOCI DI RESISTENZA ═══ -->
+<section class="capitolo capitolo--scuro" id="voci" data-capitolo="II"></section>
+
+<!-- ═══ 4. LA SICUREZZA CHE VOGLIAMO — il decreto ═══ -->
+<section class="capitolo capitolo--carta" id="decreto" data-capitolo="III"></section>
+
+<!-- ═══ 5. ORACOLO DEL DISSENSO — le 22 carte ═══ -->
+<section class="capitolo capitolo--scuro" id="mazzo" data-capitolo="IV"></section>
+
+<!-- ═══ 6. LA LETTURA ═══ -->
+<section class="lettura" id="lettura">
+  <div class="colonna colonna--stretta">
+    <p class="occhiello">La lettura</p>
+    <h2 class="titolo-grosso">Fatti leggere<br>le carte</h2>
+    <p class="lead">Formula una domanda aperta e personale. «Cosa ostacola la mia
+      libertà di giornalista?» «Voglio organizzare un picchetto fuori dalla mia
+      fabbrica, cosa devo temere di più?» Poi estrai tre carte.</p>
+  </div>
+
+  <form class="lettura__form" id="form-lettura" autocomplete="off">
+    <label for="domanda-utente" class="sr-only">La tua domanda</label>
+    <input type="text" id="domanda-utente" maxlength="140"
+           placeholder="Scrivi qui la tua domanda all'Oracolo…">
+    <button type="submit" id="btn-estrai">Estrai tre carte</button>
+  </form>
+
+  <div class="lettura__tavolo" id="tavolo" hidden>
+    <p class="lettura__eco" id="eco-domanda"></p>
+    <div class="tavolo__carte" id="tavolo-carte"></div>
+    <p class="lettura__nota">La descrizione non è una sentenza, è uno spunto.
+      L'Oracolo dà il meglio in gruppo. Non c'è un'interpretazione giusta o sbagliata.</p>
+    <button type="button" class="btn-ghost" id="btn-rifai">Estrai di nuovo</button>
+  </div>
+</section>
+
+<!-- ═══ 7. CHIUSURA ═══ -->
+<footer class="chiusura">
+  <div class="colonna">
+    <h2 class="titolo-grosso">Il mazzo esiste<br>anche di carta</h2>
+    <p class="lead">L'Oracolo del Dissenso è nato per essere usato in gruppo, durante
+      eventi e laboratori. Scrivici se vuoi portarlo nella tua redazione, nel tuo
+      collettivo, nella tua scuola.</p>
+    <p class="chiusura__azioni">
+      <a class="btn" href="#">Scarica il mazzo (PDF)</a>
+      <a class="btn btn--ghost" href="#">Richiedi una lettura dal vivo</a>
+    </p>
+    <div class="crediti">
+      <p><strong>Oracolo del Dissenso</strong> è un progetto di
+        <a href="https://www.infonodes.org">info.nodes ETS</a>, realizzato da
+        Davide Del Monte, Dimitri Bettoni, Federica Bonalumi e Stefano Vergine,
+        con il sostegno di <strong>Civitates</strong>.</p>
+      <p>Carte pensate e descritte da <strong>Davide Del Monte</strong>,
+        illustrate da <strong>Illustre Feccia</strong>.</p>
+      <p class="crediti__licenza">Testi e dati CC BY-SA · Le illustrazioni restano
+        dell'autore · <a href="https://www.infonodes.org">infonodes.org</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- scheda carta -->
+<dialog class="scheda" id="scheda">
+  <button class="scheda__chiudi" id="scheda-chiudi" aria-label="Chiudi">×</button>
+  <div class="scheda__corpo" id="scheda-corpo"></div>
+</dialog>
+
+<script src="js/grafici.js"></script>
+<script src="js/oracolo.js"></script>
+</body>
+</html>

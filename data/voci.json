@@ -1,0 +1,23 @@
+{
+  "_nota": "SEGNAPOSTO. Quando i video esistono, mettere l'ID YouTube/Vimeo in 'video' e la durata reale. Con 'video': null la scheda resta grigia con la scritta 'in lavorazione'.",
+  "placeholder": true,
+  "meta": {
+    "occhiello": "Voci di resistenza",
+    "titolo": "Chi ha già pagato il prezzo",
+    "sommario": "Undici storie, raccolte in giro per l'Italia. Un documentario e una serie di pillole: quello che succede a chi fa una domanda scomoda, a chi apre uno striscione, a chi si rifiuta di consegnare un telefono."
+  },
+  "documentario": {
+    "titolo": "L'Oracolo del Dissenso — il documentario",
+    "durata": "42'",
+    "video": null,
+    "descrizione": "Il racconto lungo: un anno dentro le redazioni indipendenti, i collettivi, le aule di tribunale."
+  },
+  "pillole": [
+    { "titolo": "La querela che è arrivata di venerdì", "persona": "Nome Cognome", "ruolo": "Giornalista d'inchiesta", "durata": "3'40\"", "video": null, "carta": 4 },
+    { "titolo": "Mi hanno chiesto il telefono", "persona": "Nome Cognome", "ruolo": "Attivista climatica", "durata": "2'55\"", "video": null, "carta": 2 },
+    { "titolo": "Il foglio di via", "persona": "Nome Cognome", "ruolo": "Sindacalista", "durata": "4'10\"", "video": null, "carta": 21 },
+    { "titolo": "Quella foto non l'ho pubblicata", "persona": "Nome Cognome", "ruolo": "Fotoreporter", "durata": "3'05\"", "video": null, "carta": 18 },
+    { "titolo": "Eravamo in cinquanta", "persona": "Nome Cognome", "ruolo": "Collettivo studentesco", "durata": "3'30\"", "video": null, "carta": 19 },
+    { "titolo": "Dopo la carica", "persona": "Nome Cognome", "ruolo": "Videomaker", "durata": "5'00\"", "video": null, "carta": 11 }
+  ]
+}

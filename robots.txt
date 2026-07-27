@@ -1,0 +1,4 @@
+# Bozza di lavoro. Chi ha il link entra, i motori di ricerca no.
+# Da togliere alla pubblicazione vera, prevista per fine settembre 2026.
+User-agent: *
+Disallow: /
