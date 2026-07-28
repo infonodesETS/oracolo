@@ -11,7 +11,10 @@ const IMG = (slug, n, min = false) =>
 const stato = { carte: [], perNumero: new Map() };
 
 async function carica(nome) {
-  const r = await fetch(`data/${nome}.json`);
+  // `no-cache` non vuol dire «non usare la cache»: vuol dire «chiedi sempre al
+  // server se è cambiato». Senza, chi ha già visitato il sito continuerebbe a
+  // vedere i numeri del sondaggio vecchi anche dopo un aggiornamento.
+  const r = await fetch(`data/${nome}.json`, { cache: 'no-cache' });
   if (!r.ok) throw new Error(`data/${nome}.json non trovato`);
   return r.json();
 }

@@ -56,7 +56,9 @@ function preparaStampa() {
   const contenuto = document.getElementById('contenuto');
 
   try {
-    const r = await fetch('data/sondaggio.json');
+    // vedi la nota in oracolo.js: senza questo i dati aggiornati non arrivano
+    // a chi ha già aperto il sito una volta
+    const r = await fetch('data/sondaggio.json', { cache: 'no-cache' });
     if (!r.ok) throw new Error('data/sondaggio.json non trovato');
     const d = await r.json();
 

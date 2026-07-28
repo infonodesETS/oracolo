@@ -29,7 +29,7 @@ function avanzamento() {
   const c = document.getElementById('contenuto');
 
   try {
-    const r = await fetch('data/preambolo.json');
+    const r = await fetch('data/preambolo.json', { cache: 'no-cache' });
     if (!r.ok) throw new Error('data/preambolo.json non trovato');
     const p = await r.json();
 
