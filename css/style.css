@@ -276,14 +276,31 @@ a { color: inherit; }
    0. SOGLIA
    ============================================================ */
 
+/* Due fasce: il titolo al centro, il claim e l'invito a scorrere in basso.
+   Il claim stava sotto al titolo, cioè proprio sopra alle carte del
+   ventaglio: grigio su bianco, illeggibile. */
 .soglia {
   position: relative;
   min-height: 100svh;
   display: grid;
-  place-items: center;
-  padding: 6rem 1.5rem 8rem;
+  grid-template-rows: 1fr auto;
+  justify-items: center;
+  padding: 6rem 1.5rem 2.5rem;
   overflow: hidden;
   isolation: isolate;
+}
+.soglia__testo { align-self: center; }
+.soglia__piede {
+  display: grid; justify-items: center; gap: 2.5rem;
+  position: relative;
+  text-align: center;
+}
+/* velo scuro sotto al claim: le carte restano visibili, il testo si legge
+   comunque anche se il ventaglio si muove */
+.soglia__piede::before {
+  content: ''; position: absolute; z-index: -1;
+  inset: -3rem -50vw -3rem -50vw;
+  background: linear-gradient(to top, var(--nero) 45%, transparent);
 }
 .soglia::after {  /* alone verde molto tenue */
   content: ''; position: absolute; inset: 0; z-index: -1;
@@ -311,6 +328,10 @@ a { color: inherit; }
 .soglia__ventaglio img[data-v="5"] { transform: rotate(26deg) translateY(2rem); }
 
 .soglia__testo { text-align: center; max-width: 52rem; }
+.soglia__logo {
+  display: block; width: clamp(9rem, 22vw, 14rem); margin: 0 auto 2rem;
+}
+.soglia__logo img { width: 100%; height: auto; }
 .soglia__testo h1 {
   font-family: var(--display);
   font-size: clamp(3rem, .5rem + 11vw, 9rem);
@@ -321,12 +342,17 @@ a { color: inherit; }
 }
 .soglia__claim {
   font-size: 1.2rem; line-height: 1.5; color: var(--bianco-2);
-  margin: 0; text-wrap: balance;
+  margin: 0; text-wrap: balance; max-width: 32rem;
   text-shadow: 0 0 24px var(--nero), 0 0 10px var(--nero);
+}
+/* sullo stretto le due righe si spezzerebbero comunque: meglio lasciar
+   decidere al browser dove andare a capo */
+@media (max-width: 560px) {
+  .soglia__claim br { display: none; }
+  .soglia__claim { font-size: 1.05rem; }
 }
 
 .soglia__scroll {
-  position: absolute; bottom: 2.5rem; left: 50%; translate: -50% 0;
   display: grid; justify-items: center; gap: .7rem;
   font-family: var(--mono); font-size: .68rem;
   letter-spacing: .2em; text-transform: uppercase; color: var(--bianco-3);
