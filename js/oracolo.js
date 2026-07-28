@@ -284,23 +284,13 @@ function sezioneMazzo(carte) {
      e la sua ombra.</p>`;
   s.append(intro);
 
-  const filtri = el('div', 'mazzo__filtri');
-  [['tutte', 'Tutte e 22'], ['potere', 'I volti del Potere'], ['resistenza', 'Le forze che resistono']]
-    .forEach(([v, testo], i) => {
-      const b = el('button', 'filtro', testo);
-      b.type = 'button';
-      b.dataset.filtro = v;
-      b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
-      filtri.append(b);
-    });
-  s.append(filtri);
-
+  // Niente filtri fra «volti del potere» e «forze che resistono»: le carte
+  // hanno troppe sfumature perché una divisione in due regga davvero.
   const griglia = el('div', 'mazzo__griglia');
   carte.forEach((c) => {
     const b = el('button', 'carta');
     b.type = 'button';
     b.dataset.carta = String(c.n);
-    b.dataset.campo = c.campo;
     b.innerHTML =
       `<img src="${IMG(c.slug, c.n, true)}" alt="Carta ${esc(c.nome)}" loading="lazy">` +
       `<span class="carta__nome">${esc(c.nome)}</span>` +
@@ -308,16 +298,6 @@ function sezioneMazzo(carte) {
     griglia.append(b);
   });
   s.append(griglia);
-
-  filtri.addEventListener('click', (e) => {
-    const b = e.target.closest('.filtro');
-    if (!b) return;
-    [...filtri.children].forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-    const f = b.dataset.filtro;
-    griglia.querySelectorAll('.carta').forEach((c) => {
-      c.classList.toggle('nascosta', f !== 'tutte' && c.dataset.campo !== f);
-    });
-  });
 }
 
 /* ============================================================

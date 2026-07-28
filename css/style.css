@@ -1016,21 +1016,8 @@ a.appello:focus-visible .appello__azione { color: var(--carta); }
    5. MAZZO
    ============================================================ */
 
-.mazzo__filtri {
-  max-width: var(--largo); margin: 2.5rem auto 0;
-  padding-inline: clamp(1.5rem, 4vw, 3rem);
-  display: flex; gap: .6rem; flex-wrap: wrap;
-}
-.filtro {
-  font-family: var(--mono); font-size: .74rem; letter-spacing: .12em;
-  text-transform: uppercase; cursor: pointer;
-  background: none; color: var(--bianco-2);
-  border: 1px solid var(--l25); padding: .5em 1em;
-}
-.filtro[aria-pressed="true"] { background: var(--verde); color: var(--nero); border-color: var(--verde); }
-
 .mazzo__griglia {
-  max-width: var(--largo); margin: 2rem auto 0;
+  max-width: var(--largo); margin: 3rem auto 0;
   padding-inline: clamp(1.5rem, 4vw, 3rem);
   display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: clamp(.8rem, 2vw, 1.6rem);
@@ -1053,7 +1040,6 @@ a.appello:focus-visible .appello__azione { color: var(--carta); }
   letter-spacing: .04em; color: var(--bianco);
 }
 .carta__arcano { font-family: var(--mono); font-size: .66rem; color: var(--bianco-3); }
-.carta.nascosta { display: none; }
 
 /* ============================================================
    6. LETTURA
