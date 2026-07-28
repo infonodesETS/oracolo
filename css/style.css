@@ -831,11 +831,16 @@ a { color: inherit; }
 .chiusura--carta .btn { border-color: var(--verde-carta); background: var(--verde-carta); color: var(--carta); }
 .chiusura--carta .btn:hover { background: transparent; color: var(--verde-carta); }
 
-/* ---- i due appelli, sotto l'avvertenza ---- */
+/* ---- i due appelli, in coda agli articoli ---- */
 .appelli {
-  display: grid; gap: 1rem; margin-top: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  display: grid; gap: 1.2rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: var(--largo);
+  margin: 3rem auto 0;
+  padding: 2.5rem clamp(1.5rem, 4vw, 3rem) 0;
+  border-top: 3px double var(--scuro);
 }
+@media (max-width: 780px) { .appelli { grid-template-columns: 1fr; } }
 .appello {
   display: grid; align-content: space-between; gap: 1.2rem;
   padding: 1.4rem 1.5rem;

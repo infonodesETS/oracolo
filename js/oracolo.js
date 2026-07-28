@@ -155,22 +155,6 @@ function sezioneDecreto(d) {
     `<p class="lead">${esc(d.meta.sommario)}</p>` +
     `<p class="avvertenza">${esc(d.meta.avvertenza)}</p>`;
 
-  // Subito sotto l'avvertenza: i due appelli. Ognuno è un riquadro cliccabile
-  // per intero — la domanda fa da contesto, la riga verde da azione.
-  if (d.appelli && d.appelli.length) {
-    const box = el('div', 'appelli');
-    d.appelli.forEach((a) => {
-      const tag = a.dove ? 'a' : 'div';
-      const n = el(tag, 'appello' + (a.dove ? '' : ' appello--scollegato'));
-      if (a.dove) n.href = a.dove;
-      n.innerHTML =
-        `<p class="appello__domanda">${esc(a.domanda)}</p>` +
-        `<p class="appello__azione">${esc(a.azione)}</p>` +
-        (a.dove ? '' : `<p class="appello__manca">collegamento ancora da definire</p>`);
-      box.append(n);
-    });
-    somm.append(box);
-  }
   s.append(somm);
 
   // il preambolo ha un testo lungo: qui l'apertura, il resto in una pagina sua
@@ -227,6 +211,24 @@ function sezioneDecreto(d) {
     lista.append(c);
   });
   s.append(lista);
+
+  // In coda agli articoli, non prima: si chiede di sottoscrivere un decreto
+  // dopo averlo fatto leggere, non prima. Ogni appello è un riquadro
+  // cliccabile per intero — la domanda fa da contesto, la riga verde da azione.
+  if (d.appelli && d.appelli.length) {
+    const coda = el('div', 'appelli');
+    d.appelli.forEach((a) => {
+      const n = el(a.dove ? 'a' : 'div',
+        'appello' + (a.dove ? '' : ' appello--scollegato'));
+      if (a.dove) n.href = a.dove;
+      n.innerHTML =
+        `<p class="appello__domanda">${esc(a.domanda)}</p>` +
+        `<p class="appello__azione">${esc(a.azione)}</p>` +
+        (a.dove ? '' : `<p class="appello__manca">collegamento ancora da definire</p>`);
+      coda.append(n);
+    });
+    s.append(coda);
+  }
 }
 
 /* ============================================================
