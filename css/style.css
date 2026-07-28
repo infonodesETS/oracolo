@@ -228,8 +228,21 @@ a { color: inherit; }
   font-family: var(--mono); font-size: .78rem; letter-spacing: .1em;
   text-transform: uppercase;
 }
-.nav__voci a { text-decoration: none; color: var(--bianco-2); }
-.nav__voci a:hover, .nav__voci a.attivo { color: var(--bianco); }
+.nav__voci a { text-decoration: none; color: var(--bianco-2); transition: color .2s; }
+.nav__voci a:hover { color: var(--bianco); }
+
+/* la sezione in cui si sta leggendo: verde, con la riga sotto */
+.nav__voci a.attivo { color: var(--verde); }
+.nav__voci a:not(.nav__cta) { position: relative; }
+.nav__voci a:not(.nav__cta)::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -.5em;
+  height: 2px; background: var(--verde);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform .25s ease;
+}
+.nav__voci a:not(.nav__cta).attivo::after { transform: scaleX(1); }
+/* l'ultima voce è già un riquadro verde: quando tocca a lei, si riempie */
+.nav__cta.attivo { background: var(--verde); color: var(--nero) !important; }
 .nav__cta {
   border: 1px solid var(--verde); color: var(--verde) !important;
   padding: .5em 1em;

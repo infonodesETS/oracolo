@@ -1,7 +1,9 @@
 /* ============================================================
-   ORACOLO DEL DISSENSO — i grafici
-   Condiviso fra la pagina principale e la pagina "tutti i dati", così le
-   due non possono divergere: si disegnano con lo stesso codice.
+   ORACOLO DEL DISSENSO — codice condiviso
+   Lo usano la pagina principale e la pagina "tutti i dati": i grafici si
+   disegnano con lo stesso codice, così le due non possono divergere.
+   In fondo c'è anche la voce di menù che si accende scorrendo, che serve
+   a tutte e due.
    ============================================================ */
 
 const el = (tag, cls, html) => {
@@ -193,6 +195,32 @@ function animaGrafico(fig) {
       if (v >= meta) clearInterval(t);
     }, 28);
   }
+}
+
+/* ---------- la voce di menù della sezione in cui si sta leggendo ----------
+   Si accende quella corrispondente alla sezione che occupa il terzo alto
+   dello schermo: è il punto dove l'occhio sta leggendo davvero, non il bordo
+   superiore della finestra. */
+
+function evidenziaMenu() {
+  const voci = [...document.querySelectorAll('.nav__voci a[href*="#"]')]
+    .map((a) => ({ a, sez: document.getElementById(a.getAttribute('href').split('#')[1]) }))
+    .filter((v) => v.sez)
+    .sort((x, y) => x.sez.getBoundingClientRect().top - y.sez.getBoundingClientRect().top);
+  if (!voci.length) return;
+
+  const aggiorna = () => {
+    const linea = scrollY + innerHeight * 0.35;
+    let attiva = null;
+    voci.forEach((v) => {
+      if (v.sez.getBoundingClientRect().top + scrollY <= linea) attiva = v;
+    });
+    voci.forEach((v) => v.a.classList.toggle('attivo', v === attiva));
+  };
+
+  addEventListener('scroll', aggiorna, { passive: true });
+  addEventListener('resize', aggiorna);
+  aggiorna();
 }
 
 /* quando i grafici entrano nello schermo si disegnano; se per qualche motivo

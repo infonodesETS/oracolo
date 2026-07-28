@@ -96,6 +96,7 @@ function preparaStampa() {
     // nel PDF con le barre vuote.
     contenuto.querySelectorAll('.scheda-dato').forEach(animaGrafico);
     preparaStampa();
+    evidenziaMenu();
 
     // se si arriva con un'ancora, la pagina è appena stata costruita:
     // il salto va rifatto adesso

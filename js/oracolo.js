@@ -406,6 +406,9 @@ function collegaLettura() {
     sezioneVoci(voci);
     sezioneMazzo(carte);
     collegaLettura();
+    // dopo che le sezioni sono state riempite: prima le altezze non sono
+    // ancora quelle definitive
+    evidenziaMenu();
   } catch (err) {
     console.error(err);
     document.getElementById('dati').innerHTML =
