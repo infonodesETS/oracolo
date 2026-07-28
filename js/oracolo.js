@@ -66,32 +66,28 @@ function sezioneSondaggio(d) {
 
   const scrolly = el('div', 'scrolly');
 
-  // Un grafico grande per parte — quello che racconta la storia — e gli altri
-  // piccoli in griglia. Senza gerarchia sedici grafici si leggono come un
-  // elenco: è la dimensione a dire al lettore che cosa conta.
+  // Un solo grafico per parte, quello che racconta la storia. Tutti gli altri
+  // stanno nella pagina dei dati, che è anche quella da cui si stampa il PDF
+  // dei risultati completi.
   d.sezioni.forEach((sez) => {
     scrolly.append(el('div', 'sottosezione',
       `<p class="sottosezione__numero">Parte ${esc(sez.numero)}</p>` +
       `<h3 class="sottosezione__titolo">${esc(sez.titolo)}</h3>` +
       `<p class="sottosezione__testo">${esc(sez.testo)}</p>`));
 
-    const inEvidenza = sez.blocchi.find((b) => b.evidenza) || sez.blocchi[0];
-    scrolly.append(bloccoGrande(inEvidenza));
+    scrolly.append(bloccoGrande(sez.blocchi.find((b) => b.evidenza) || sez.blocchi[0]));
 
-    const minori = sez.blocchi.filter((b) => b !== inEvidenza);
-    if (minori.length) {
-      const griglia = el('div', 'mini-griglia');
-      minori.forEach((b) => griglia.append(bloccoPiccolo(b, sez.id)));
-      scrolly.append(griglia);
-    }
-
+    const altri = sez.blocchi.length - 1;
     scrolly.append(el('p', 'sottosezione__vaia',
       `<a class="btn btn--ghost" href="dati.html#${esc(sez.id)}">` +
-      `Vedi tutte le risposte di questa parte</a>`));
+      `Vedi tutte le risposte</a>` +
+      (altri > 0
+        ? `<span>altre ${altri} domande su questa parte, con i numeri in tabella</span>`
+        : '')));
   });
   s.append(scrolly);
 
-  osservaGrafici([...scrolly.querySelectorAll('.blocco, .mini')]);
+  osservaGrafici([...scrolly.querySelectorAll('.blocco')]);
 }
 
 function bloccoGrande(b) {
@@ -109,13 +105,6 @@ function bloccoGrande(b) {
   return blocco;
 }
 
-function bloccoPiccolo(b, idSezione) {
-  const card = el('a', 'mini');
-  card.href = `dati.html#${idSezione}`;
-  card.append(el('h5', 'mini__titolo', esc(b.titolo)));
-  card.append(costruisciGrafico(b, { mini: true }));
-  return card;
-}
 
 /* ============================================================
    SEZIONE — decreto

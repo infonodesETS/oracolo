@@ -14,8 +14,45 @@ function avanzamento() {
   aggiorna();
 }
 
+/* Tema chiaro: serve a leggere alla luce e a stampare senza sprecare
+   inchiostro. La scelta resta salvata nel browser. */
+function interruttoreTema() {
+  const btn = document.getElementById('tema');
+  if (!btn) return;
+
+  const applica = (chiaro) => {
+    document.body.classList.toggle('chiaro', chiaro);
+    btn.setAttribute('aria-pressed', String(chiaro));
+    btn.textContent = chiaro ? 'Sfondo scuro' : 'Sfondo chiaro';
+    try { localStorage.setItem('oracolo-tema', chiaro ? 'chiaro' : 'scuro'); } catch (e) { /* privato */ }
+  };
+
+  let salvato = null;
+  try { salvato = localStorage.getItem('oracolo-tema'); } catch (e) { /* privato */ }
+  applica(salvato === 'chiaro');
+  btn.addEventListener('click', () => applica(!document.body.classList.contains('chiaro')));
+}
+
+/* In stampa deve esserci tutto: le citazioni chiuse a fisarmonica non si
+   vedrebbero, e sono il materiale migliore del sondaggio. */
+function preparaStampa() {
+  const apri = () => document.querySelectorAll('.tema__citazioni').forEach((p) => {
+    p.dataset.eraChiuso = p.hidden ? '1' : '';
+    p.hidden = false;
+  });
+  const richiudi = () => document.querySelectorAll('.tema__citazioni').forEach((p) => {
+    if (p.dataset.eraChiuso) p.hidden = true;
+  });
+  addEventListener('beforeprint', apri);
+  addEventListener('afterprint', richiudi);
+
+  const btn = document.getElementById('stampa');
+  if (btn) btn.addEventListener('click', () => window.print());
+}
+
 (async function avvia() {
   avanzamento();
+  interruttoreTema();
   const contenuto = document.getElementById('contenuto');
 
   try {
@@ -52,7 +89,11 @@ function avanzamento() {
       contenuto.append(s);
     });
 
-    osservaGrafici([...contenuto.querySelectorAll('.scheda-dato')]);
+    // Qui i grafici si disegnano tutti subito, non allo scorrimento: questa è
+    // la pagina da cui si stampa, e un grafico non ancora "attivato" finirebbe
+    // nel PDF con le barre vuote.
+    contenuto.querySelectorAll('.scheda-dato').forEach(animaGrafico);
+    preparaStampa();
 
     // se si arriva con un'ancora, la pagina è appena stata costruita:
     // il salto va rifatto adesso

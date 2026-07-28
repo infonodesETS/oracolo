@@ -5,7 +5,7 @@
     "occhiello": "Sondaggio e ricerca",
     "titolo": "Il responso di chi c'è dentro",
     "sommario": "Abbiamo chiesto a chi fa giornalismo e attivismo che cosa significa, oggi, fare informazione e opposizione in Italia. Che cosa temono per il presente e per il futuro, di che cosa avrebbero bisogno, quali strategie hanno in mente di adoperare per non soccombere alla crescente repressione e alla censura.",
-    "rispondenti": 87,
+    "rispondenti": 89,
     "periodo": "questionario ancora aperto · obiettivo 100 risposte"
   },
   "sezioni": [
@@ -22,11 +22,11 @@
           "testo": "TESTO DA SCRIVERE — vedi testi/2-sondaggio-e-ricerca.md",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 87",
+            "unita": "persone su 89",
             "serie": [
               {
                 "etichetta": "Attivista",
-                "valore": 46
+                "valore": 48
               },
               {
                 "etichetta": "Giornalista",
@@ -48,11 +48,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 87",
+            "unita": "persone su 89",
             "serie": [
               {
                 "etichetta": "31 - 45",
-                "valore": 43
+                "valore": 44
               },
               {
                 "etichetta": "18 - 30",
@@ -60,7 +60,7 @@
               },
               {
                 "etichetta": "46 - 60",
-                "valore": 19
+                "valore": 20
               },
               {
                 "etichetta": "> 61",
@@ -76,14 +76,14 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 87",
+            "unita": "persone su 89",
             "serie": [
               {
-                "etichetta": "Maschio",
-                "valore": 40
+                "etichetta": "Femmina",
+                "valore": 42
               },
               {
-                "etichetta": "Femmina",
+                "etichetta": "Maschio",
                 "valore": 40
               },
               {
@@ -105,11 +105,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 87",
+            "unita": "persone su 89",
             "serie": [
               {
                 "etichetta": "No",
-                "valore": 71
+                "valore": 73
               },
               {
                 "etichetta": "Sì",
@@ -130,11 +130,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "le 10 province più rappresentate su 40 in tutto",
+            "unita": "le 10 province più rappresentate su 41 in tutto",
             "serie": [
               {
                 "etichetta": "Roma",
-                "valore": 15
+                "valore": 16
               },
               {
                 "etichetta": "Milano",
@@ -223,7 +223,7 @@
             "serie": [
               {
                 "etichetta": "Mobilitazione / azione diretta",
-                "valore": 32
+                "valore": 33
               },
               {
                 "etichetta": "Comunicazione",
@@ -235,7 +235,7 @@
               },
               {
                 "etichetta": "Advocacy",
-                "valore": 8
+                "valore": 9
               },
               {
                 "etichetta": "Altro",
@@ -248,7 +248,7 @@
               },
               {
                 "etichetta": "Coordinamento o amministrazione",
-                "valore": 2
+                "valore": 3
               }
             ]
           }
@@ -268,28 +268,28 @@
               },
               {
                 "etichetta": "Altro",
-                "valore": 29,
+                "valore": 30,
                 "tono": "neutro"
+              },
+              {
+                "etichetta": "Spazi pubblici",
+                "valore": 19
               },
               {
                 "etichetta": "Antimilitarsimo",
                 "valore": 19
               },
               {
-                "etichetta": "Spazi pubblici",
-                "valore": 17
+                "etichetta": "Diritti di genere",
+                "valore": 16
               },
               {
                 "etichetta": "Diritti dei migranti",
                 "valore": 16
               },
               {
-                "etichetta": "Diritti di genere",
-                "valore": 15
-              },
-              {
                 "etichetta": "Diritti delle minoranze",
-                "valore": 14
+                "valore": 15
               },
               {
                 "etichetta": "Diritti digitali",
@@ -331,7 +331,7 @@
     {
       "id": "pericoli",
       "numero": "2",
-      "titolo": "Pericoli e rischi",
+      "titolo": "Pericoli percepiti",
       "testo": "Che cosa temono oggi, quanto conoscono le norme che li riguardano, quali si aspettano che pesino di più — e quale scenario futuro li spaventa.",
       "blocchi": [
         {
@@ -341,15 +341,15 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "unita": "risposte su 89 · si poteva indicarne più di uno",
             "serie": [
               {
                 "etichetta": "Precarietà economica / perdita del posto di lavoro",
-                "valore": 55
+                "valore": 56
               },
               {
                 "etichetta": "Sorveglianza e altre minacce digitali",
-                "valore": 53
+                "valore": 54
               },
               {
                 "etichetta": "Slapp (querele temerarie)",
@@ -357,7 +357,7 @@
               },
               {
                 "etichetta": "Arresto / detenzione / misure restrittive",
-                "valore": 29
+                "valore": 30
               },
               {
                 "etichetta": "Incolumità fisica",
@@ -365,7 +365,7 @@
               },
               {
                 "etichetta": "Nessuna risposta",
-                "valore": 5,
+                "valore": 6,
                 "tono": "neutro"
               },
               {
@@ -384,11 +384,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "persone su 87",
+            "unita": "persone su 89",
             "serie": [
               {
                 "etichetta": "Poca (li conosco solo superficialmente)",
-                "valore": 51
+                "valore": 53
               },
               {
                 "etichetta": "Molta (ne ho una conoscenza approfondita)",
@@ -412,9 +412,9 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "quota",
-            "unita": "rispondenti su 87",
-            "valore": 69,
-            "suffisso": "/87",
+            "unita": "rispondenti su 89",
+            "valore": 71,
+            "suffisso": "/89",
             "etichetta": "indicano le misure sulla libertà di manifestazione in piazza"
           }
         },
@@ -425,19 +425,19 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 87 · si poteva indicarne più di una",
+            "unita": "risposte su 89 · si poteva indicarne più di una",
             "serie": [
               {
                 "etichetta": "Misure relative alla libertà di manifestazione di piazza (azioni, picchetti, sit-in)",
-                "valore": 69
+                "valore": 71
               },
               {
                 "etichetta": "Rafforzamento delle tutele per le forze dell’ordine",
-                "valore": 44
+                "valore": 45
               },
               {
                 "etichetta": "Misure relative all’occupazione di luoghi e immobili",
-                "valore": 22
+                "valore": 23
               },
               {
                 "etichetta": "Rafforzamento del cd. \"Daspo urbano\"",
@@ -453,11 +453,11 @@
               },
               {
                 "etichetta": "Reati riguardanti la produzione di saperi circa la produzione di armi e tecniche di sabotaggio",
-                "valore": 10
+                "valore": 11
               },
               {
                 "etichetta": "Estensione delle norme sull’avviso orale",
-                "valore": 9
+                "valore": 10
               },
               {
                 "etichetta": "Norme sul porto d’armi per gli agenti fuori servizio",
@@ -498,23 +498,23 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "unita": "risposte su 89 · si poteva indicarne più di uno",
             "serie": [
               {
                 "etichetta": "Maggior libertà di utilizzo da parte delle forze dell’ordine di spyware o altri dispositivi di sorveglianza e controlli mirati",
-                "valore": 43
+                "valore": 44
               },
               {
                 "etichetta": "Ulteriori restrizioni alle libertà di manifestazione ed espressione del dissenso",
-                "valore": 42
+                "valore": 43
               },
               {
                 "etichetta": "Ulteriore concentrazione editoriale nelle mani di pochi gruppi economici o gruppi di potere",
-                "valore": 35
+                "valore": 36
               },
               {
                 "etichetta": "Limitazione o blocco dei finanziamenti da fondazioni o enti stranieri per le organizzazioni attivistiche e giornalistiche",
-                "valore": 34
+                "valore": 35
               },
               {
                 "etichetta": "Rafforzamento dei dispositivi di sorveglianza nei luoghi pubblici",
@@ -526,11 +526,11 @@
               },
               {
                 "etichetta": "Inasprimento delle pene per attivisti che compiono azioni di dissenso (blocchi stradali, imbrattamento di muri o monumenti, picchetti)",
-                "valore": 13
+                "valore": 14
               },
               {
                 "etichetta": "Ulteriore riduzione dell’accesso a dati rilevanti in tema di tutela dei diritti e delle libertà",
-                "valore": 12
+                "valore": 13
               },
               {
                 "etichetta": "Inasprimento delle politiche di sgombero di centri sociali e altri spazi di autogestione",
@@ -571,19 +571,19 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "unita": "risposte su 89 · si poteva indicarne più di uno",
             "serie": [
               {
                 "etichetta": "Accesso a risorse finanziarie",
-                "valore": 56
+                "valore": 57
               },
               {
                 "etichetta": "Difesa legale",
-                "valore": 35
+                "valore": 36
               },
               {
                 "etichetta": "Formazione tecnica",
-                "valore": 33
+                "valore": 34
               },
               {
                 "etichetta": "Attività di ricerca",
@@ -594,12 +594,12 @@
                 "valore": 19
               },
               {
-                "etichetta": "Servizi sindacali",
+                "etichetta": "Servizi di comunicazione",
                 "valore": 16
               },
               {
-                "etichetta": "Servizi di comunicazione",
-                "valore": 15
+                "etichetta": "Servizi sindacali",
+                "valore": 16
               },
               {
                 "etichetta": "Altro",
@@ -621,7 +621,7 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "temi",
-            "unita": "risposte su 87 che toccano il tema · una risposta può toccarne più di uno",
+            "unita": "risposte su 89 che toccano il tema · una risposta può toccarne più di uno",
             "serieNomi": [
               "La società civile e il giornalismo",
               "La mia organizzazione"
@@ -630,7 +630,7 @@
               {
                 "etichetta": "Fare rete e coordinarsi",
                 "valori": [
-                  38,
+                  39,
                   23
                 ],
                 "citazioni": {
@@ -655,8 +655,8 @@
               {
                 "etichetta": "Formazione e competenze",
                 "valori": [
-                  33,
-                  26
+                  34,
+                  27
                 ],
                 "citazioni": {
                   "W": [
@@ -680,8 +680,8 @@
               {
                 "etichetta": "Sostenibilità economica",
                 "valori": [
-                  24,
-                  27
+                  25,
+                  28
                 ],
                 "citazioni": {
                   "W": [
@@ -705,7 +705,7 @@
               {
                 "etichetta": "Difesa legale",
                 "valori": [
-                  19,
+                  20,
                   19
                 ],
                 "citazioni": {
@@ -731,7 +731,7 @@
                 "etichetta": "Indipendenza dai poteri",
                 "valori": [
                   22,
-                  8
+                  9
                 ],
                 "citazioni": {
                   "W": [
@@ -904,7 +904,7 @@
               }
             ],
             "senzaTema": {
-              "W": 13,
+              "W": 14,
               "X": 22
             }
           },
@@ -917,11 +917,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 87 · si poteva indicarne più di uno",
+            "unita": "risposte su 89 · si poteva indicarne più di uno",
             "serie": [
               {
                 "etichetta": "Attività di ricerca",
-                "valore": 43
+                "valore": 45
               },
               {
                 "etichetta": "Servizi di comunicazione",
@@ -929,11 +929,11 @@
               },
               {
                 "etichetta": "Formazione tecnica",
-                "valore": 22
+                "valore": 23
               },
               {
                 "etichetta": "Altro",
-                "valore": 14,
+                "valore": 15,
                 "tono": "neutro"
               },
               {
