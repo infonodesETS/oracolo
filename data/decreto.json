@@ -9,6 +9,19 @@
     "sommario": "Da troppi anni «sicurezza» è la parola magica con cui si approvano leggi e decreti per restringere lo spazio del dissenso. Abbiamo quindi deciso di prendere quella stessa parola e ridarle senso. Trovate di seguito undici articoli di legge per proteggere chi informa e chi protesta, invece di punirlo. Non è satira. È un elenco di cose che si potrebbero fare domani mattina, se solo si volesse creare davvero maggiore sicurezza.",
     "avvertenza": "Questo decreto non esiste e non è mai stato depositato in Parlamento. È un documento di immaginazione politica prodotto da info.nodes. Nulla vieta però di portarcelo in Parlamento, per riscrivere il futuro di questo Paese."
   },
+  "_nota_appelli": "Finché 'dove' è null il pulsante compare ma non porta da nessuna parte, e sotto si legge «collegamento ancora da definire». Per attivarli servono un indirizzo email (primo) e l'URL del modulo (secondo).",
+  "appelli": [
+    {
+      "domanda": "Sei un eletto o un'eletta e vuoi portare il nostro Decreto Sicurezza in Parlamento?",
+      "azione": "Scrivici",
+      "dove": null
+    },
+    {
+      "domanda": "La tua testata o organizzazione vuole sottoscrivere il nostro Decreto Sicurezza?",
+      "azione": "Compila questo modulo",
+      "dove": null
+    }
+  ],
   "preambolo": {
     "titolo": "Preambolo",
     "da": "preambolo.json",

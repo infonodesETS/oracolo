@@ -831,6 +831,47 @@ a { color: inherit; }
 .chiusura--carta .btn { border-color: var(--verde-carta); background: var(--verde-carta); color: var(--carta); }
 .chiusura--carta .btn:hover { background: transparent; color: var(--verde-carta); }
 
+/* ---- i due appelli, sotto l'avvertenza ---- */
+.appelli {
+  display: grid; gap: 1rem; margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+.appello {
+  display: grid; align-content: space-between; gap: 1.2rem;
+  padding: 1.4rem 1.5rem;
+  border: 2px solid var(--verde-carta);
+  text-decoration: none; color: inherit;
+  transition: background .18s;
+}
+a.appello:hover, a.appello:focus-visible {
+  background: var(--verde-carta); outline: none;
+}
+a.appello:hover .appello__domanda,
+a.appello:focus-visible .appello__domanda { color: var(--carta); }
+a.appello:hover .appello__azione,
+a.appello:focus-visible .appello__azione { color: var(--carta); }
+
+.appello__domanda {
+  margin: 0; font-size: 1.02rem; line-height: 1.4;
+  font-family: var(--serif); font-weight: 600;
+  transition: color .18s;
+}
+.appello__azione {
+  margin: 0;
+  font-family: var(--mono); font-size: .8rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--verde-carta);
+  transition: color .18s;
+}
+.appello__azione::after { content: ' →'; }
+/* finché non sa dove portare non finge di essere cliccabile */
+.appello--scollegato { border-style: dashed; opacity: .75; }
+.appello--scollegato .appello__azione::after { content: ''; }
+.appello__manca {
+  margin: 0;
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--scuro-3);
+}
+
 /* premesse: preambolo e «visto e considerato» */
 .premesse {
   max-width: var(--largo); margin: 3.5rem auto 0;
