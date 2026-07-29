@@ -992,12 +992,46 @@ a.appello:focus-visible .appello__azione { color: var(--carta); }
 .pillola {
   border: 1px solid var(--l16);
   background: var(--nero-2);
-  padding: 1.3rem;
-  display: grid; align-content: start; gap: .55rem;
+  display: grid; align-content: start;
   min-height: 11rem;
   position: relative;
+  overflow: hidden;
 }
-.pillola--grande { grid-column: 1 / -1; min-height: 15rem; align-content: center; }
+.pillola__testo { padding: 1.3rem; display: grid; align-content: start; gap: .55rem; }
+.pillola--grande { grid-column: 1 / -1; min-height: 15rem; }
+.pillola--grande .pillola__testo { align-content: center; }
+/* quando il video c'è, la scheda smette di essere un segnaposto */
+.pillola--pronta { align-content: start; min-height: 0; }
+
+/* ---- il lettore ---- */
+.video {
+  display: block; width: 100%; aspect-ratio: 16 / 9;
+  border: 0; background: #000;
+}
+video.video { object-fit: contain; }
+/* copertina di un video esterno: l'inquadratura arriva solo dopo il clic */
+.video--esterno {
+  position: relative; cursor: pointer; padding: 0;
+  background-size: cover; background-position: center;
+  display: grid; place-items: center; gap: .8rem;
+  align-content: center;
+}
+.video--esterno::before {
+  content: ''; position: absolute; inset: 0; background: rgba(11,11,12,.45);
+}
+.video__play {
+  position: relative;
+  width: 3.4rem; height: 3.4rem; display: grid; place-items: center;
+  border: 2px solid var(--verde); border-radius: 50%;
+  color: var(--verde); font-size: 1.1rem; padding-left: .2em;
+  transition: background .18s, color .18s;
+}
+.video--esterno:hover .video__play { background: var(--verde); color: var(--nero); }
+.video__avviso {
+  position: relative;
+  font-family: var(--mono); font-size: .66rem; letter-spacing: .08em;
+  color: var(--bianco-2); text-align: center; padding-inline: 1rem;
+}
 .pillola__durata {
   font-family: var(--mono); font-size: .7rem; letter-spacing: .14em;
   color: var(--verde);

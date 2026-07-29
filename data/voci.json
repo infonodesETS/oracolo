@@ -1,5 +1,5 @@
 {
-  "_nota": "SEGNAPOSTO. Quando i video esistono, mettere l'ID YouTube/Vimeo in 'video' e la durata reale. Con 'video': null la scheda resta grigia con la scritta 'in lavorazione'.",
+  "_nota": "SEGNAPOSTO. Con 'video': null la scheda resta tratteggiata con la scritta 'in lavorazione'. Per attivarla si mette un oggetto: {\"tipo\":\"file\",\"src\":\"assets/video/....mp4\",\"poster\":\"assets/video/....jpg\"} per i video ospitati da noi, oppure {\"tipo\":\"youtube\",\"id\":\"...\"} / {\"tipo\":\"vimeo\",\"id\":\"...\"} per quelli esterni, che si caricano solo dopo un clic.",
   "placeholder": true,
   "meta": {
     "occhiello": "Voci di resistenza",
@@ -13,7 +13,8 @@
     "descrizione": "Il racconto lungo: un anno dentro le redazioni indipendenti, i collettivi, le aule di tribunale."
   },
   "pillole": [
-    { "titolo": "La querela che è arrivata di venerdì", "persona": "Nome Cognome", "ruolo": "Giornalista d'inchiesta", "durata": "3'40\"", "video": null, "carta": 4 },
+    { "titolo": "PROVA — frammento di intervista", "persona": "Video di prova", "ruolo": "non è un contenuto definitivo", "durata": "45\"", "carta": 4,
+      "video": { "tipo": "file", "src": "assets/video/prova-intervista.mp4", "poster": "assets/video/prova-intervista.jpg" } },
     { "titolo": "Mi hanno chiesto il telefono", "persona": "Nome Cognome", "ruolo": "Attivista climatica", "durata": "2'55\"", "video": null, "carta": 2 },
     { "titolo": "Il foglio di via", "persona": "Nome Cognome", "ruolo": "Sindacalista", "durata": "4'10\"", "video": null, "carta": 21 },
     { "titolo": "Quella foto non l'ho pubblicata", "persona": "Nome Cognome", "ruolo": "Fotoreporter", "durata": "3'05\"", "video": null, "carta": 18 },

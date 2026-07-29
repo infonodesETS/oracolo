@@ -235,6 +235,50 @@ function sezioneDecreto(d) {
    SEZIONE — voci
    ============================================================ */
 
+/* Il lettore di una testimonianza.
+   I video nostri («file») usano il lettore del browser: nessun tracciatore,
+   nessun banner cookie, e l'aspetto resta quello del sito.
+   Quelli su YouTube o Vimeo non vengono caricati subito: prima si vede solo
+   la copertina, e l'inquadratura esterna si inserisce dopo il clic. Su un
+   sito che parla di sorveglianza non si mandano dati a Google prima ancora
+   che qualcuno abbia deciso di guardare. */
+function lettoreVideo(v, titolo) {
+  if (v.tipo === 'file') {
+    const el_ = el('video', 'video');
+    el_.controls = true;
+    el_.preload = 'none';
+    el_.playsInline = true;
+    if (v.poster) el_.poster = v.poster;
+    el_.innerHTML =
+      `<source src="${esc(v.src)}" type="video/mp4">` +
+      `<p>Il tuo browser non riesce a mostrare questo video. ` +
+      `<a href="${esc(v.src)}">Scaricalo</a> per vederlo.</p>`;
+    return el_;
+  }
+
+  const url = v.tipo === 'vimeo'
+    ? `https://player.vimeo.com/video/${encodeURIComponent(v.id)}?autoplay=1`
+    : `https://www.youtube-nocookie.com/embed/${encodeURIComponent(v.id)}?autoplay=1`;
+  const facciata = el('button', 'video video--esterno');
+  facciata.type = 'button';
+  facciata.setAttribute('aria-label', `Guarda: ${titolo}`);
+  if (v.poster) facciata.style.backgroundImage = `url("${v.poster}")`;
+  facciata.innerHTML =
+    `<span class="video__play" aria-hidden="true">▶</span>` +
+    `<span class="video__avviso">Guardandolo, il video viene caricato da ` +
+    `${v.tipo === 'vimeo' ? 'Vimeo' : 'YouTube'}</span>`;
+  facciata.addEventListener('click', () => {
+    const f = el('iframe', 'video');
+    f.src = url;
+    f.title = titolo;
+    f.allow = 'autoplay; fullscreen; picture-in-picture';
+    f.allowFullscreen = true;
+    f.loading = 'lazy';
+    facciata.replaceWith(f);
+  });
+  return facciata;
+}
+
 function sezioneVoci(d) {
   const s = document.getElementById('voci');
   const intro = el('div', 'capitolo__intro');
@@ -247,22 +291,24 @@ function sezioneVoci(d) {
   s.append(intro);
 
   const griglia = el('div', 'voci__griglia');
-  const doc = el('article', 'pillola pillola--grande');
-  doc.innerHTML =
-    `<span class="pillola__durata">documentario · ${esc(d.documentario.durata)}</span>` +
-    `<h4>${esc(d.documentario.titolo)}</h4>` +
-    `<p class="pillola__chi">${esc(d.documentario.descrizione)}</p>` +
-    (d.documentario.video ? '' : `<span class="pillola__stato">in lavorazione</span>`);
-  griglia.append(doc);
 
-  d.pillole.forEach((p) => {
-    const c = el('article', 'pillola');
-    c.innerHTML =
-      `<span class="pillola__durata">pillola · ${esc(p.durata)}</span>` +
+  const scheda = (p, etichetta, classi, descrizione) => {
+    const c = el('article', 'pillola' + classi + (p.video ? ' pillola--pronta' : ''));
+    if (p.video) c.append(lettoreVideo(p.video, p.titolo));
+    c.insertAdjacentHTML('beforeend',
+      `<div class="pillola__testo">` +
+      `<span class="pillola__durata">${esc(etichetta)} · ${esc(p.durata)}</span>` +
       `<h4>${esc(p.titolo)}</h4>` +
-      `<p class="pillola__chi">${esc(p.persona)} — ${esc(p.ruolo)}</p>` +
-      (p.video ? '' : `<span class="pillola__stato">in lavorazione</span>`);
-    griglia.append(c);
+      `<p class="pillola__chi">${esc(descrizione)}</p>` +
+      (p.video ? '' : `<span class="pillola__stato">in lavorazione</span>`) +
+      `</div>`);
+    return c;
+  };
+
+  griglia.append(scheda(d.documentario, 'documentario',
+    ' pillola--grande', d.documentario.descrizione));
+  d.pillole.forEach((p) => {
+    griglia.append(scheda(p, 'pillola', '', `${p.persona} — ${p.ruolo}`));
   });
   s.append(griglia);
 }
