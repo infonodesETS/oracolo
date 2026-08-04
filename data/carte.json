@@ -7,7 +7,11 @@
     "campo": "potere",
     "dritta": "Inizio, spontaneità, libertà, fede cieca.",
     "rovescia": "Irresponsabilità, follia, imprudenza, caos.",
-    "testo": "Il buffone di corte può fare tutto ciò che non è normalmente concesso ai comuni cittadini e ai nobili, portando caos, disordine, dissonanza. Gli piace raccontare storie, a volte vere, spesso false, per far divertire i re e i loro potenti amici, instillando così nelle loro menti alcune false credenze. È imprevedibile, poco attento alle conseguenze di ciò che dice e ciò che fa, con i suoi continui salti e piroette rischia di cadere nel dirupo, portandosi dietro chi lo segue."
+    "testo": "Il buffone di corte può fare tutto ciò che non è normalmente concesso ai comuni cittadini e ai nobili, portando caos, disordine, dissonanza. Gli piace raccontare storie, a volte vere, spesso false, per far divertire i re e i loro potenti amici, instillando così nelle loro menti alcune false credenze. È imprevedibile, poco attento alle conseguenze di ciò che dice e ciò che fa, con i suoi continui salti e piroette rischia di cadere nel dirupo, portandosi dietro chi lo segue.",
+    "spiegazione": [
+      "Steve Bannon è stato uno dei principali architetti dell'ascesa di Donald Trump e del movimento populista e nazionalista Make America Great Again (MAGA).",
+      "Teorico dell'internazionale nera, si definisce un «populista di destra» ed è noto per la sua teoria dello scontro culturale diretto contro le élite globaliste e l'establishment tradizionale. Nella sua biografia non mancano diversi problemi giudiziari, tra cui l'incriminazione per presunta frode legata ai fondi per la costruzione del muro al confine con il Messico e la condanna per oltraggio al Congresso relativa all'inchiesta sull'assalto al Campidoglio del 6 gennaio 2021."
+    ]
   },
   {
     "n": 1,
@@ -17,7 +21,11 @@
     "campo": "potere",
     "dritta": "Abilità, iniziativa, forza di volontà, creatività.",
     "rovescia": "Inganno, manipolazione, mancanza di talento.",
-    "testo": "Un'enorme carica creativa, in grado di costruire cose nuove e sorprendenti, ma allo stesso tempo di distruggere tutto ciò che le sta intorno. Si nutre delle energie e delle risorse degli uomini e della natura, raccogliendo e riplasmando tutto ciò che trova a portata di mano. Grande affabulatrice, con le sue doti manipolatorie è in grado di far credere tutto e il contrario di tutto, a seconda della convenienza del momento."
+    "testo": "Un'enorme carica creativa, in grado di costruire cose nuove e sorprendenti, ma allo stesso tempo di distruggere tutto ciò che le sta intorno. Si nutre delle energie e delle risorse degli uomini e della natura, raccogliendo e riplasmando tutto ciò che trova a portata di mano. Grande affabulatrice, con le sue doti manipolatorie è in grado di far credere tutto e il contrario di tutto, a seconda della convenienza del momento.",
+    "spiegazione": [
+      "L'intelligenza artificiale (IA) è un insieme di infrastrutture e modelli statistici complessi progettati per estrarre, analizzare e ricombinare quantità massive di dati umani.",
+      "Secondo la studiosa Kate Crawford è prima di tutto un'infrastruttura estrattiva e un dispositivo di potere politico ed economico: estrae risorse dal pianeta, valore dal lavoro umano e dati dalle nostre vite sociali per concentrare il controllo nelle mani di poche grandi corporazioni ed entità statali, che ne traggono profitto."
+    ]
   },
   {
     "n": 2,
@@ -27,7 +35,11 @@
     "campo": "potere",
     "dritta": "Intuizione, saggezza, mistero, pazienza.",
     "rovescia": "Segreti svelati, freddezza, superficialità.",
-    "testo": "Introspezione, meditazione, volontà di conoscere e sapere, anche al di là di ciò che sarebbe lecito conoscere e sapere. Capace di leggere dentro le persone, arrivando ai punti più intimi e segreti del loro cuore e della loro anima, aiuta spesso i potenti a comprendere le volontà dei deboli, molto di rado il contrario."
+    "testo": "Introspezione, meditazione, volontà di conoscere e sapere, anche al di là di ciò che sarebbe lecito conoscere e sapere. Capace di leggere dentro le persone, arrivando ai punti più intimi e segreti del loro cuore e della loro anima, aiuta spesso i potenti a comprendere le volontà dei deboli, molto di rado il contrario.",
+    "spiegazione": [
+      "Lo spyware è un software malevolo progettato per raccogliere informazioni sulle attività di un individuo o di un'organizzazione a loro insaputa, per trasmettere tali informazioni a chi ha infettato i dispositivi (cellulare, pc, etc…).",
+      "Recentemente si è avuto notizia di diversi casi di spyware installati sui telefoni di attivisti e giornalisti, anche in Italia."
+    ]
   },
   {
     "n": 3,
@@ -37,7 +49,11 @@
     "campo": "potere",
     "dritta": "Abbondanza, fertilità, natura, femminilità.",
     "rovescia": "Blocco creativo, soffocamento, vanità.",
-    "testo": "Energia materna, colei che ha partorito e allevato il mondo. Sensuale e provocante, offre piaceri, felicità e gioia, ma pretende in cambio il totale controllo delle vite e delle relazioni sociali. Se il suo amore non è ricambiato, da madre premurosa, attenta ai bisogni dei suoi figli, si trasforma in Medea, in cerca di sangue e vendetta."
+    "testo": "Energia materna, colei che ha partorito e allevato il mondo. Sensuale e provocante, offre piaceri, felicità e gioia, ma pretende in cambio il totale controllo delle vite e delle relazioni sociali. Se il suo amore non è ricambiato, da madre premurosa, attenta ai bisogni dei suoi figli, si trasforma in Medea, in cerca di sangue e vendetta.",
+    "spiegazione": [
+      "Per Naomi Klein, autrice di «No Logo», la multinazionale contemporanea non è più solamente un'azienda che fabbrica e vende prodotti, ma un'entità proprietaria di marchi e significati.",
+      "Le multinazionali diventano quindi produttrici dell'immaginario collettivo, anche grazie agli enormi investimenti in marketing e lobbying."
+    ]
   },
   {
     "n": 4,
@@ -47,7 +63,11 @@
     "campo": "potere",
     "dritta": "Stabilità, autorità, protezione, struttura.",
     "rovescia": "Tirannia, rigidità, abuso di potere.",
-    "testo": "Sicura, autoritaria, esercita potere assoluto e capacità di difesa grazie a una pesante armatura e allo scudo delle regole che essa stessa promulga. Chiunque provi ad attaccarla o criticare, dovrà aspettarsi una punizione esemplare come un'esecuzione in pubblica piazza."
+    "testo": "Sicura, autoritaria, esercita potere assoluto e capacità di difesa grazie a una pesante armatura e allo scudo delle regole che essa stessa promulga. Chiunque provi ad attaccarla o criticare, dovrà aspettarsi una punizione esemplare come un'esecuzione in pubblica piazza.",
+    "spiegazione": [
+      "Una SLAPP (dall'inglese Strategic Lawsuit Against Public Participation) è una lite temeraria o una querela pretestuosa intentata non per vincere una causa, ma per intimidire, zittire e prosciugare le risorse finanziarie ed emotive di chi esprime un'opinione critica o conduce un'inchiesta d'interesse pubblico.",
+      "È uno degli strumenti più utilizzati, anche in Italia, dal potere politico e da quello economico per minacciare attivisti e giornalisti ritenuti scomodi."
+    ]
   },
   {
     "n": 5,
@@ -57,7 +77,11 @@
     "campo": "potere",
     "dritta": "Guida spirituale, tradizione, educazione.",
     "rovescia": "Dogmatismo, ipocrisia, cattivi consigli.",
-    "testo": "Controllo, sorveglianza, potere di uniformare i comportamenti e di identificare e isolare, per far poi punire, qualsiasi devianza da ciò che il potere precostituito ha deciso sia la norma. Capace di comprendere tutte le fedi, tutte le culture, tutte le lingue parlate del mondo, esercita un potere di conoscenza che solo ambiguamente appare egualitario, ma che in realtà tende a prediligere alcuni figli della società, rispetto ad altri."
+    "testo": "Controllo, sorveglianza, potere di uniformare i comportamenti e di identificare e isolare, per far poi punire, qualsiasi devianza da ciò che il potere precostituito ha deciso sia la norma. Capace di comprendere tutte le fedi, tutte le culture, tutte le lingue parlate del mondo, esercita un potere di conoscenza che solo ambiguamente appare egualitario, ma che in realtà tende a prediligere alcuni figli della società, rispetto ad altri.",
+    "spiegazione": [
+      "Il riconoscimento facciale è una tecnologia biometrica in grado di identificare o verificare l'identità di un individuo, analizzando e confrontando i tratti della struttura del volto estratti da un'immagine digitale o da un flusso video.",
+      "Tecnologia ampiamente usata per sorvegliare massivamente la popolazione in diversi paesi autoritari come Russia e Cina, la critica sociologica e attivista ne rivela la natura di strumento di espropriazione del diritto all'anonimato e di rafforzamento delle disparità di potere esistenti."
+    ]
   },
   {
     "n": 6,
@@ -67,7 +91,11 @@
     "campo": "resistenza",
     "dritta": "Amore, scelte del cuore, armonia, unione.",
     "rovescia": "Indecisione, infedeltà, squilibrio.",
-    "testo": "Attrazione e unione di forze, idee, persone che si ritrovano a percorrere sentieri comuni e spesso opposti a quelli tracciati dal potere. Scelte spesso dettate dal cuore, più che dalla ragione, che possono condurre ad esiti pericolosi che mettono a rischio la fedeltà e l'unione di intenti originaria."
+    "testo": "Attrazione e unione di forze, idee, persone che si ritrovano a percorrere sentieri comuni e spesso opposti a quelli tracciati dal potere. Scelte spesso dettate dal cuore, più che dalla ragione, che possono condurre ad esiti pericolosi che mettono a rischio la fedeltà e l'unione di intenti originaria.",
+    "spiegazione": [
+      "L'attivismo è la pratica dell'azione diretta, intenzionale e organizzata da parte di individui o gruppi per promuovere, ostacolare o dirigere un cambiamento sociale, politico, economico o ambientale.",
+      "Come fece il 1° dicembre 1955, in Alabama, Rosa Parks, una sarta afroamericana di 42 anni che si rifiutò di cedere il proprio posto nell'autobus a un passeggero bianco, violando le leggi locali sulla segregazione razziale e portando la Corte Suprema degli Stati Uniti a dichiarare incostituzionale la segregazione razziale sugli autobus pubblici."
+    ]
   },
   {
     "n": 7,
@@ -77,7 +105,11 @@
     "campo": "potere",
     "dritta": "Successo, determinazione, controllo, vittoria.",
     "rovescia": "Sconfitta, mancanza di direzione, aggressività.",
-    "testo": "Disciplina, forza intellettuale e determinazione del potere per il potere, del privilegiato per rimanere tale, del signore per continuare a sottomettere lo schiavo. Non c'è violenza, perché non serve: è sufficiente mantenere l'illusione che la realtà iniqua sia l'unica realtà possibile, e che ogni tentativo di immaginare un'alternativa sia destinato alla mortificazione."
+    "testo": "Disciplina, forza intellettuale e determinazione del potere per il potere, del privilegiato per rimanere tale, del signore per continuare a sottomettere lo schiavo. Non c'è violenza, perché non serve: è sufficiente mantenere l'illusione che la realtà iniqua sia l'unica realtà possibile, e che ogni tentativo di immaginare un'alternativa sia destinato alla mortificazione.",
+    "spiegazione": [
+      "Le disuguaglianze, siano economiche, sociali o di opportunità, indicano la disparità nell'accesso, nella distribuzione o nel controllo delle risorse materiali e immateriali all'interno di una società.",
+      "Durante il primo Forum Sociale Mondiale di Porto Alegre nel 2001, fu definito il principio per cui «Un altro mondo è possibile: un mondo che mette i diritti umani, la giustizia sociale e la tutela del pianeta al di sopra del profitto di pochi.»"
+    ]
   },
   {
     "n": 8,
@@ -87,7 +119,11 @@
     "campo": "resistenza",
     "dritta": "Equità, verità, legge, causa-effetto.",
     "rovescia": "Ingiustizia, pregiudizio, eccessivo rigore.",
-    "testo": "Imparzialità, equità e capacità di discernimento, con l'obiettivo che chi detiene il potere affronti le conseguenze delle proprie azioni ed accetti la responsabilità delle proprie scelte. Non sempre succede però, e in questi casi i poteri malvagi hanno modo di esprimere le proprie energie negative con ancor più forza, su tutta la società."
+    "testo": "Imparzialità, equità e capacità di discernimento, con l'obiettivo che chi detiene il potere affronti le conseguenze delle proprie azioni ed accetti la responsabilità delle proprie scelte. Non sempre succede però, e in questi casi i poteri malvagi hanno modo di esprimere le proprie energie negative con ancor più forza, su tutta la società.",
+    "spiegazione": [
+      "Il ruolo sociale del giornalista è di cane da guardia del potere (watchdog) e di garante dell'interesse pubblico, esercitando una funzione informativa essenziale per la tenuta democratica. La sua missione non dovrebbe consistere nel riportare passivamente comunicati o dichiarazioni, ma nell'esaminare in modo indipendente l'operato di governi, società e istituzioni, verificando i fatti e rendendo accessibili ai cittadini informazioni che il potere vorrebbe mantenere riservate.",
+      "Anche per questo, il giornalismo è spesso definito come «quarto potere», contribuendo al bilanciamento degli altri tre poteri legislativo, esecutivo e giudiziario."
+    ]
   },
   {
     "n": 9,
@@ -97,7 +133,11 @@
     "campo": "potere",
     "dritta": "Introspezione, solitudine cercata, saggezza.",
     "rovescia": "Isolamento, misantropia, lentezza eccessiva.",
-    "testo": "È molto facile sviare il percorso interiore di chi sente il bisogno di allontanarsi dal mondo terreno per trovare risposte ai propri problemi, se si ha il potere di creare illusioni, fantasie e sogni a occhi aperti. Fino alla creazione di psicosi che portano all'isolamento completo e all'odio dell'Altro."
+    "testo": "È molto facile sviare il percorso interiore di chi sente il bisogno di allontanarsi dal mondo terreno per trovare risposte ai propri problemi, se si ha il potere di creare illusioni, fantasie e sogni a occhi aperti. Fino alla creazione di psicosi che portano all'isolamento completo e all'odio dell'Altro.",
+    "spiegazione": [
+      "Un algoritmo è una sequenza finita, ordinata e non ambigua di istruzioni o passi logici che, a partire da uno o più dati di ingresso (input), conduce alla risoluzione di un problema o al raggiungimento di un determinato risultato (output).",
+      "Sulle piattaforme social, la metrica primaria degli algoritmi non è la qualità dell'informazione o il benessere dell'utente, ma la massimizzazione del tempo di ingaggio. Inoltre, come spiega lo studioso Zeynep Tufekci, per mantenere un essere umano incollato allo schermo, l'algoritmo impara rapidamente la regola aurea: la radicalità crea dipendenza."
+    ]
   },
   {
     "n": 10,
@@ -107,7 +147,11 @@
     "campo": "resistenza",
     "dritta": "Destino, cambiamento positivo, cicli.",
     "rovescia": "Sfortuna, resistenza al cambiamento, instabilità.",
-    "testo": "In un mondo sempre più imprevedibile, dove la realtà cambia rapidamente e apparentemente senza logica, è necessario saper ribaltare i tavoli e mettere tutto a soqquadro. Facile a dirsi, ma difficile a farsi, soprattutto quando lo sbilanciamento di potere è tale che, senza una strategia ben congegnata, a finire a gambe all'aria spesso non è il tavolo, ma chi lo vorrebbe ribaltare."
+    "testo": "In un mondo sempre più imprevedibile, dove la realtà cambia rapidamente e apparentemente senza logica, è necessario saper ribaltare i tavoli e mettere tutto a soqquadro. Facile a dirsi, ma difficile a farsi, soprattutto quando lo sbilanciamento di potere è tale che, senza una strategia ben congegnata, a finire a gambe all'aria spesso non è il tavolo, ma chi lo vorrebbe ribaltare.",
+    "spiegazione": [
+      "Il conflitto sociale non è un'anomalia o una patologia, ma una componente fisiologica, strutturale e positiva di qualsiasi società funzionante.",
+      "Il conflitto costituisce il principale motore del mutamento e dell'evoluzione delle istituzioni; senza conflitto la bilancia del potere tende a pendere sempre di più dalla parte di chi il potere lo detiene già."
+    ]
   },
   {
     "n": 11,
@@ -117,7 +161,11 @@
     "campo": "resistenza",
     "dritta": "Coraggio, pazienza, controllo interiore.",
     "rovescia": "Debolezza, rabbia, mancanza di autocontrollo.",
-    "testo": "Non è per nulla scontato saper riconoscere se ci si trova all'inizio o alla fine di un percorso, soprattutto se sotto ai piedi si apre un baratro. Servono forza interiore, autocontrollo e capacità di superare gli ostacoli per fare comunque dei passi in avanti. Il vuoto viene riempito dalla compassione, dell'amore e della saggezza di chi decide di marciare insieme senza paura di cadere sotto."
+    "testo": "Non è per nulla scontato saper riconoscere se ci si trova all'inizio o alla fine di un percorso, soprattutto se sotto ai piedi si apre un baratro. Servono forza interiore, autocontrollo e capacità di superare gli ostacoli per fare comunque dei passi in avanti. Il vuoto viene riempito dalla compassione, dell'amore e della saggezza di chi decide di marciare insieme senza paura di cadere sotto.",
+    "spiegazione": [
+      "Piazza Alimonda è diventata il simbolo più tragico, tra i tanti, del G8 di Genova nel 2001: in quel piccolo slargo venne assassinato dalle forze dell'ordine Carlo Giuliani, appena ventitreenne.",
+      "Le inaudite violenze di Stato e gli abusi delle forze dell'ordine che si susseguirono durante quei giorni di lotta, dall'incursione nella scuola Diaz alle torture nella caserma di Bolzaneto, non solo non vennero stigmatizzate dai Grandi Potenti, ma al contrario, chi le commise venne promosso e premiato."
+    ]
   },
   {
     "n": 12,
@@ -127,7 +175,11 @@
     "campo": "potere",
     "dritta": "Sacrificio, nuova prospettiva, attesa.",
     "rovescia": "Vittimismo, stagnazione, martirio inutile.",
-    "testo": "A volte non resta che aver pazienza e accettare le situazioni così come sono. Altre volte, invece, ci si rende conto che le situazioni sono nient'altro che gabbie create da chi vuole che tutto rimanga così com'è, per sua convenienza. Allora bisogna liberarsi da schemi di pensiero limitati, accettare cambiamenti inevitabili e usare la forza per allargare le sbarre e uscire."
+    "testo": "A volte non resta che aver pazienza e accettare le situazioni così come sono. Altre volte, invece, ci si rende conto che le situazioni sono nient'altro che gabbie create da chi vuole che tutto rimanga così com'è, per sua convenienza. Allora bisogna liberarsi da schemi di pensiero limitati, accettare cambiamenti inevitabili e usare la forza per allargare le sbarre e uscire.",
+    "spiegazione": [
+      "Il carcere, invece che rappresentare una neutrale istituzione di rieducazione e difesa sociale, si è trasformato, come spiega Michel Foucault (Sorvegliare e punire) in un dispositivo di neutralizzazione dei sintomi del disagio sociale ed economico, sostituendo la tutela dei diritti e il welfare con la reclusione e il controllo punitivo.",
+      "Non a caso la percentuale di detenuti condannati o imputati per reati di «colletti bianchi» rispetto ai reati comuni e di strada è estremamente irrisoria, attestandosi generalmente sotto l'1-2% della popolazione carceraria totale sia in Italia che a livello internazionale."
+    ]
   },
   {
     "n": 13,
@@ -137,7 +189,11 @@
     "campo": "potere",
     "dritta": "Trasformazione, fine necessaria, rinascita.",
     "rovescia": "Paura del cambiamento, ristagno, lutto difficile.",
-    "testo": "Ogni ciclo ha la sua fine, ogni binario arriva a un termine, ogni stagione, anche quelle che sembrano infinite, prima o poi deve cedere il passo. Quello che verrà dopo è da sempre un mistero, e se qualcuno racconta di averlo visto in sogno, meglio non crederci. L'importante è affrontare il cambiamento con coraggio, senza pretese di sapere come andrà a finire: quando i palazzi crollano, si alza un gran polverone che rende impossibile vedere cosa si staglia dietro."
+    "testo": "Ogni ciclo ha la sua fine, ogni binario arriva a un termine, ogni stagione, anche quelle che sembrano infinite, prima o poi deve cedere il passo. Quello che verrà dopo è da sempre un mistero, e se qualcuno racconta di averlo visto in sogno, meglio non crederci. L'importante è affrontare il cambiamento con coraggio, senza pretese di sapere come andrà a finire: quando i palazzi crollano, si alza un gran polverone che rende impossibile vedere cosa si staglia dietro.",
+    "spiegazione": [
+      "L'attacco dell'11 settembre 2001 alle Torri Gemelle, appena due mesi dopo il G8 di Genova, ha rappresentato uno spartiacque geopolitico e normativo globale: la fine di un'epoca e l'inizio di quella successiva.",
+      "La risposta immediata degli Stati Uniti si concretizzò nell'approvazione del PATRIOT Act, una norma che ha esteso in modo inedito i poteri di sorveglianza e intercettazione delle agenzie di intelligence, riducendo le tutele costituzionali sulla riservatezza dei cittadini e normalizzando uno stato d'eccezione permanente. Sul piano estero, la dottrina della «guerra al terrore» e dell'azione preventiva condusse all'invasione dell'Iraq."
+    ]
   },
   {
     "n": 14,
@@ -147,7 +203,11 @@
     "campo": "resistenza",
     "dritta": "Equilibrio, moderazione, guarigione.",
     "rovescia": "Eccesso, squilibrio, mancanza di armonia.",
-    "testo": "Servono equilibrio e armonia per camminare insieme tenendo lo stesso passo. Ma quando si riesce, allora la distanza sembra dimezzarsi e le ripide salite diventano facili discese. Le differenze, se riconosciute e accolte, rendono ancor più forti quelli che decidono di attraversare la pianura insieme, ma se si trasformano in motivo di scontro, la pianura può trasformarsi velocemente in un impenetrabile deserto."
+    "testo": "Servono equilibrio e armonia per camminare insieme tenendo lo stesso passo. Ma quando si riesce, allora la distanza sembra dimezzarsi e le ripide salite diventano facili discese. Le differenze, se riconosciute e accolte, rendono ancor più forti quelli che decidono di attraversare la pianura insieme, ma se si trasformano in motivo di scontro, la pianura può trasformarsi velocemente in un impenetrabile deserto.",
+    "spiegazione": [
+      "La solidarietà è un principio etico, sociale e politico per cui gli individui di una comunità si riconoscono reciprocamente legati da una responsabilità condivisa, agendo in modo corale per sostenere chi si trova in una condizione di difficoltà, vulnerabilità o ingiustizia.",
+      "In «Omaggio alla Catalogna» George Orwell racconta di quando, appena arrivato in Spagna per combattere a fianco del POUM nella Guerra Civile, un altro volontario italiano lo vede e capisce che è venuto a combattere contro il fascismo, quindi gli si avvicina, gli stringe la mano con una stretta fortissima e gli dice poche parole con calore ed empatia immediata, pur in una lingua per l'autore incomprensibile."
+    ]
   },
   {
     "n": 15,
@@ -157,7 +217,11 @@
     "campo": "potere",
     "dritta": "Passione, legami, magnetismo, ambizione.",
     "rovescia": "Dipendenza, ossessione, materialismo, schiavitù.",
-    "testo": "Completa dipendenza dalle cose materiali, da tutto ciò che luccica, dal potere fine a sé stesso. L'ossessione di dover abbattere tutto ciò che si frappone tra sé e il possesso, nemmeno importa di cosa, alcuni la chiamano libertà. Più spesso è pura e semplice devastazione."
+    "testo": "Completa dipendenza dalle cose materiali, da tutto ciò che luccica, dal potere fine a sé stesso. L'ossessione di dover abbattere tutto ciò che si frappone tra sé e il possesso, nemmeno importa di cosa, alcuni la chiamano libertà. Più spesso è pura e semplice devastazione.",
+    "spiegazione": [
+      "Il petrolio non è una semplice risorsa naturale, ma la principale fonte di energia per il capitalismo industriale contemporaneo, basato sull'estrazione illimitata e sulla crescita indefinita.",
+      "Il petrolio non ha solo plasmato i sistemi di produzione e di trasporto globali, ma ha modellato l'architettura delle città, il consumo di massa, le relazioni geopolitiche e l'immaginario collettivo della modernità."
+    ]
   },
   {
     "n": 16,
@@ -167,7 +231,11 @@
     "campo": "potere",
     "dritta": "Rivelazione improvvisa, liberazione da strutture.",
     "rovescia": "Disastro, crollo doloroso, trauma.",
-    "testo": "Erano tutti contenti che il vento nuovo avesse finalmente spazzato via le vecchie, polverose e pesanti vesti, invece, una volta calato, si ritrovarono tutti nudi. Tranne i potenti, che se la ridevano guardando le masse di poveracci costretti a gattonare nel fango per recuperare almeno un paio di mutande."
+    "testo": "Erano tutti contenti che il vento nuovo avesse finalmente spazzato via le vecchie, polverose e pesanti vesti, invece, una volta calato, si ritrovarono tutti nudi. Tranne i potenti, che se la ridevano guardando le masse di poveracci costretti a gattonare nel fango per recuperare almeno un paio di mutande.",
+    "spiegazione": [
+      "Il precariato costringe gran parte dei lavoratori a condizioni di instabilità, incertezza e vulnerabilità economica e sociale.",
+      "L'Italia è uno dei paesi europei in cui la presenza di lavoratori a rischio povertà è più marcata (circa l'11-12% dei lavoratori): avere un impiego non costituisce più una garanzia di sopravvivenza economica."
+    ]
   },
   {
     "n": 17,
@@ -177,7 +245,12 @@
     "campo": "resistenza",
     "dritta": "Speranza, ispirazione, serenità, futuro.",
     "rovescia": "Pessimismo, mancanza di fede, sogni infranti.",
-    "testo": "Quando si è in alto mare, se si alza la testa al cielo notturno, le stelle incoraggiano a rimanere ottimisti e fiduciosi. Bisogna imparare a seguirne le indicazioni, ma se lo si fa senza preparazione si rischia di perdere la rotta e finire nel vortice che inghiotte tutto."
+    "testo": "Quando si è in alto mare, se si alza la testa al cielo notturno, le stelle incoraggiano a rimanere ottimisti e fiduciosi. Bisogna imparare a seguirne le indicazioni, ma se lo si fa senza preparazione si rischia di perdere la rotta e finire nel vortice che inghiotte tutto.",
+    "spiegazione": [
+      "Lo sciopero non è una semplice inadempienza contrattuale, ma un diritto fondamentale che riequilibra la naturale asimmetria di potere tra il Capitale e il Lavoro.",
+      "Il 4 maggio 1886, durante una mobilitazione di lavoratori cominciata il primo del mese a Chicago, fu lanciata una bomba contro gli agenti della polizia, che aprirono il fuoco sulla folla provocando decine di morti e di feriti.",
+      "Nel 1889, durante il Congresso fondativo della Seconda Internazionale a Parigi, venne deciso di rendere il Primo Maggio una giornata di manifestazione internazionale continua, diventando il simbolo universale delle conquiste e della solidarietà della classe lavoratrice."
+    ]
   },
   {
     "n": 18,
@@ -187,7 +260,11 @@
     "campo": "potere",
     "dritta": "Immaginazione, subconscio, sogni.",
     "rovescia": "Illusione, confusione, paura, inganno.",
-    "testo": "Inseguire sogni, fantasie e visioni, guidati da una voce suadente che ci invita a guardare oltre la superficie e ad esplorare gli aspetti nascosti di noi stessi e della realtà. Scoprire solo poi, che quella voce ci ha portato non verso i nostri, ma verso i suoi sogni, le sue fantasie, le sue visioni, così che, inconsciamente, la aiutassimo a realizzarle tutte."
+    "testo": "Inseguire sogni, fantasie e visioni, guidati da una voce suadente che ci invita a guardare oltre la superficie e ad esplorare gli aspetti nascosti di noi stessi e della realtà. Scoprire solo poi, che quella voce ci ha portato non verso i nostri, ma verso i suoi sogni, le sue fantasie, le sue visioni, così che, inconsciamente, la aiutassimo a realizzarle tutte.",
+    "spiegazione": [
+      "La propaganda è il sistema persuasivo, pervasivo e strategico che utilizza canali d'informazione tradizionali e piattaforme social per plasmare le percezioni, influenzare le opinioni e dirigere i comportamenti di massa a favore di determinati interessi politici o economici.",
+      "Alcuni degli esempi più strutturati di propaganda arrivano dalla ultra-destra moderna (o Alt-Right), poi adottati da movimenti suprematisti e neofascisti in tutto il mondo, con l'uso di meme e post ironici per diffondere messaggi discriminatori o xenofobi."
+    ]
   },
   {
     "n": 19,
@@ -197,7 +274,11 @@
     "campo": "resistenza",
     "dritta": "Gioia, successo, vitalità, chiarezza.",
     "rovescia": "Arroganza, verità nascoste, fallimento temporaneo.",
-    "testo": "Gioia, fiducia in sé stessi e amore per gli altri, successo, ancora gioia. Tutto ciò che chi brama il potere odia e cerca di combattere e tutto ciò che chi del potere si disinteressa, deve continuare a proteggere e tenere vicino al proprio cuore."
+    "testo": "Gioia, fiducia in sé stessi e amore per gli altri, successo, ancora gioia. Tutto ciò che chi brama il potere odia e cerca di combattere e tutto ciò che chi del potere si disinteressa, deve continuare a proteggere e tenere vicino al proprio cuore.",
+    "spiegazione": [
+      "Secondo la definizione del filosofo Hakim Bey, il rave party non rappresenta un mero evento di intrattenimento o un'anomalia di ordine pubblico, ma una zona temporaneamente autonoma (Temporary Autonomous Zone — TAZ).",
+      "Si tratta di un'esperienza collettiva ricreativa e controculturale basata sulla libera appropriazione di spazi abbandonati o naturali, centrata sulla musica elettronica a ritmo continuo, sulla danza prolungata e su un'etica di condivisione e radicale inclusività. Proprio per queste ragioni, il primo decreto approvato dal Governo Meloni è stato il «decreto anti-rave»."
+    ]
   },
   {
     "n": 20,
@@ -207,7 +288,12 @@
     "campo": "resistenza",
     "dritta": "Rinascita, chiamata, assoluzione, risveglio.",
     "rovescia": "Dubbio, rifiuto del cambiamento, colpa.",
-    "testo": "Quando gli angeli suonano le trombe, i morti riprendono coscienza e tornano a camminare sulla terra, secondo le loro regole e seguendo i loro istinti. Il potere ci ha abituato ad averne paura, una massa violenta e cannibale, perché ciò che più di tutto teme chi sta chiuso nel palazzo, è che quelli fuori si risveglino e prendano coscienza della loro condizione."
+    "testo": "Quando gli angeli suonano le trombe, i morti riprendono coscienza e tornano a camminare sulla terra, secondo le loro regole e seguendo i loro istinti. Il potere ci ha abituato ad averne paura, una massa violenta e cannibale, perché ciò che più di tutto teme chi sta chiuso nel palazzo, è che quelli fuori si risveglino e prendano coscienza della loro condizione.",
+    "spiegazione": [
+      "La rivolta, spiega Albert Camus, nasce da un atto primario, viscerale e immediato di rifiuto dell'ingiustizia. È il gesto dello schiavo che, dopo aver subito ordini per tutta la vita, a un certo punto dice «No», tracciando un confine oltre il quale l'oppressore non può andare.",
+      "La rivoluzione, al contrario, è la canalizzazione ideologica della rivolta che finisce per tradirne lo spirito originario.",
+      "Meglio una rivolta continua che una rivoluzione ogni tanto."
+    ]
   },
   {
     "n": 21,
@@ -217,6 +303,10 @@
     "campo": "potere",
     "dritta": "Compimento, successo totale, integrazione.",
     "rovescia": "Incompletezza, ritardo, senso di chiusura.",
-    "testo": "Qui è dove tutto si completa, dove tutto ritrova armonia e energia positiva. Se solo si potesse starci, però, dato che il potente tende ad escludere chi non condivide il suo status o quantomeno non lo adula e lo difende. Ma se si aguzza la vista, si trova sempre una breccia da cui passare per godersi quello che, dopotutto, dovrebbe essere di tutti."
+    "testo": "Qui è dove tutto si completa, dove tutto ritrova armonia e energia positiva. Se solo si potesse starci, però, dato che il potente tende ad escludere chi non condivide il suo status o quantomeno non lo adula e lo difende. Ma se si aguzza la vista, si trova sempre una breccia da cui passare per godersi quello che, dopotutto, dovrebbe essere di tutti.",
+    "spiegazione": [
+      "La «Zona Rossa» entra con forza nell'immaginario collettivo nel luglio 2001, in occasione del G8 di Genova: delimita lo spazio in cui solo i Grandi Potenti e i loro protettori possono entrare, mentre tutti gli altri no.",
+      "Ha poi subito, come spesso accade, una normalizzazione, decreto sicurezza dopo decreto sicurezza, trasformandosi in uno strumento ordinario di amministrazione dello spazio urbano. Quasi ogni grande città italiana, oggi, ha delle Zone Rosse."
+    ]
   }
 ]

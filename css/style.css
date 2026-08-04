@@ -1171,8 +1171,11 @@ video.video { object-fit: contain; }
    scheda carta (dialog)
    ============================================================ */
 
+/* A scorrere è il corpo della scheda, non la finestra: così il pulsante di
+   chiusura, che sta appeso all'angolo della finestra, resta dov'è anche
+   quando il testo è più lungo dello schermo. */
 .scheda {
-  border: 0; padding: 0; background: none;
+  border: 0; padding: 0; background: none; overflow: visible;
   max-width: min(58rem, 92vw); width: 100%;
   color: var(--bianco);
 }
@@ -1183,6 +1186,8 @@ video.video { object-fit: contain; }
   display: grid; grid-template-columns: 1fr 1.2fr;
   gap: clamp(1.5rem, 4vw, 2.5rem);
   padding: clamp(1.5rem, 4vw, 2.5rem);
+  max-height: 86vh; overflow-y: auto;
+  overscroll-behavior: contain;
 }
 .scheda__corpo img { border: 1px solid var(--l30); filter: grayscale(1); }
 .scheda__testi { display: grid; align-content: start; gap: .8rem; }
@@ -1207,6 +1212,21 @@ video.video { object-fit: contain; }
 .scheda__link {
   font-family: var(--mono); font-size: .7rem; color: var(--bianco-3);
   word-break: break-all;
+}
+/* La spiegazione è l'unico pezzo di scheda che non è voce dell'oracolo: è
+   una nota di redazione. Riquadro rientrato, testo più piccolo, titoletto in
+   monospazio — la stessa lingua che il sito usa per i documenti. */
+.scheda__spiegazione {
+  margin-top: .4rem; padding: 1.1rem 1.2rem;
+  border: 1px solid var(--l15); border-left: 2px solid var(--verde);
+  background: var(--l04);
+  display: grid; gap: .7rem;
+  font-size: .88rem; color: var(--bianco-2);
+}
+.scheda__spiegazione h4 {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--verde);
+  margin: 0; font-weight: 400;
 }
 .scheda__chiudi {
   position: absolute; top: -.5rem; right: -.5rem; z-index: 2;

@@ -455,8 +455,16 @@ function riempiScheda(c) {
          <button type="button" class="btn-ghost" data-copia="${esc(linkAssoluto(c.slug))}">
            Copia il link a questa carta</button>
          <span class="scheda__link" hidden></span>
-       </p>
-     </div>`;
+       </p>` +
+    // Sotto tutto il resto: prima la carta parla per immagini e archetipi,
+    // poi si dice di cosa sta parlando davvero.
+    (c.spiegazione && c.spiegazione.length
+      ? `<div class="scheda__spiegazione">
+           <h4>Nel mondo reale</h4>
+           ${c.spiegazione.map((t) => `<p>${esc(t)}</p>`).join('')}
+         </div>`
+      : '') +
+    `</div>`;
 }
 
 function apriScheda(n, daIndirizzo = false) {
