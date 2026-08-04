@@ -202,13 +202,17 @@ function animaGrafico(fig) {
    dello schermo: è il punto dove l'occhio sta leggendo davvero, non il bordo
    superiore della finestra. */
 
-function evidenziaMenu() {
+/* `quandoCambia` viene chiamata a ogni passaggio da una sezione all'altra, con
+   la sezione in cui si è entrati (o null, se si è tornati sopra la prima).
+   La usa la pagina principale per tenere l'indirizzo allineato alla lettura. */
+function evidenziaMenu(quandoCambia) {
   const voci = [...document.querySelectorAll('.nav__voci a[href*="#"]')]
     .map((a) => ({ a, sez: document.getElementById(a.getAttribute('href').split('#')[1]) }))
     .filter((v) => v.sez)
     .sort((x, y) => x.sez.getBoundingClientRect().top - y.sez.getBoundingClientRect().top);
   if (!voci.length) return;
 
+  let precedente;
   const aggiorna = () => {
     const linea = scrollY + innerHeight * 0.35;
     let attiva = null;
@@ -216,6 +220,10 @@ function evidenziaMenu() {
       if (v.sez.getBoundingClientRect().top + scrollY <= linea) attiva = v;
     });
     voci.forEach((v) => v.a.classList.toggle('attivo', v === attiva));
+    if (quandoCambia && attiva !== precedente) {
+      precedente = attiva;
+      quandoCambia(attiva && attiva.sez);
+    }
   };
 
   addEventListener('scroll', aggiorna, { passive: true });

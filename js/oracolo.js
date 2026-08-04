@@ -138,7 +138,7 @@ function preamboloEsteso(p, pagina) {
 }
 
 function sezioneDecreto(d) {
-  const s = document.getElementById('decreto');
+  const s = document.getElementById('vera-sicurezza');
 
   const testata = el('div', 'gazzetta__testata');
   testata.innerHTML =
@@ -318,7 +318,7 @@ function sezioneVoci(d) {
    ============================================================ */
 
 function sezioneMazzo(carte) {
-  const s = document.getElementById('mazzo');
+  const s = document.getElementById('oracolo');
   const intro = el('div', 'capitolo__intro');
   intro.innerHTML =
     `<p class="capitolo__numero">${esc(s.dataset.capitolo)}</p>` +
@@ -344,6 +344,72 @@ function sezioneMazzo(carte) {
     griglia.append(b);
   });
   s.append(griglia);
+}
+
+/* ============================================================
+   INDIRIZZO DELLE SEZIONI
+   Le sezioni si costruiscono da sole dopo che la pagina è arrivata: quando il
+   browser prova a saltare all'ancora, lì dentro non c'è ancora niente e si
+   resta in cima. Il salto va quindi rifatto a mano, a costruzione finita.
+   ============================================================ */
+
+/* I nomi di prima restano validi: i link già mandati in giro con #decreto o
+   #mazzo continuano a funzionare, e diventano quelli nuovi da soli. */
+const SEZIONI_RIBATTEZZATE = { decreto: 'vera-sicurezza', mazzo: 'oracolo' };
+
+function sezioneNellIndirizzo() {
+  const nome = location.hash.slice(1);
+  if (!nome || nome.includes('/')) return null;   // #carta/… non è una sezione
+  return document.getElementById(SEZIONI_RIBATTEZZATE[nome] || nome);
+}
+
+/* Quando un salto è appena partito, per un momento comanda lui: durante il
+   viaggio si attraversano le sezioni di mezzo, e senza questa tregua
+   l'indirizzo le inseguirebbe tutte prima di fermarsi su quella giusta. */
+let saltoInCorso = 0;
+
+function salta(s, secco = false) {
+  saltoInCorso = Date.now();
+  s.scrollIntoView(secco ? { behavior: 'instant' } : undefined);
+}
+
+function vaiAllaSezione() {
+  const s = sezioneNellIndirizzo();
+  if (!s) return;
+  if (SEZIONI_RIBATTEZZATE[location.hash.slice(1)]) {
+    history.replaceState(null, '', `#${s.id}`);
+  }
+  salta(s, true);
+}
+
+/* Il menù muove la pagina da sé invece di lasciar fare al browser: così
+   l'indirizzo lo decidiamo noi e il salto funziona anche quando si clicca la
+   voce della sezione in cui si sta già leggendo. */
+function collegaMenu() {
+  document.querySelectorAll('.nav a[href^="#"]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      const s = document.getElementById(a.getAttribute('href').slice(1));
+      if (!s) return;
+      e.preventDefault();
+      if (location.hash !== `#${s.id}`) history.pushState(null, '', `#${s.id}`);
+      salta(s);
+    });
+  });
+}
+
+/* L'indirizzo segue la lettura: in qualunque momento si copia la barra del
+   browser, si ottiene il link al punto in cui si sta. Si usa replaceState e
+   non un'ancora vera, così la cronologia non si riempie di passaggi e il
+   tasto «indietro» continua a fare quello che ci si aspetta. */
+let sezioneCorrente = null;   // dove si sta leggendo adesso
+
+function seguiLaSezione(sez) {
+  sezioneCorrente = sez;
+  const dlg = document.getElementById('scheda');
+  if (dlg.open || slugNellIndirizzo()) return;   // comanda la carta aperta
+  if (Date.now() - saltoInCorso < 1200) return;  // comanda il salto appena partito
+  const nuovo = sez ? `#${sez.id}` : location.pathname + location.search;
+  if (location.hash !== (sez ? `#${sez.id}` : '')) history.replaceState(null, '', nuovo);
 }
 
 /* ============================================================
@@ -414,8 +480,14 @@ function allineaAllIndirizzo() {
   // ci siamo mossi con la cronologia, non aprendo una scheda: qualunque
   // indirizzo ci sia adesso non l'abbiamo appena spinto noi
   indirizzoNostro = false;
-  if (c) apriScheda(c.n, true);
-  else if (dlg.open) dlg.close();
+  if (c) { apriScheda(c.n, true); return; }
+  if (dlg.open) dlg.close();
+
+  // Torna anche alla sezione, se l'indirizzo ne indica un'altra. Se indica
+  // quella che si sta già leggendo non si salta: è il caso di chi chiude una
+  // carta, e sbatterlo all'inizio della sezione gli farebbe perdere il segno.
+  const s = sezioneNellIndirizzo();
+  if (s && s !== sezioneCorrente) salta(s);
 }
 
 function collegaScheda() {
@@ -539,7 +611,9 @@ function collegaLettura() {
     collegaLettura();
     // dopo che le sezioni sono state riempite: prima le altezze non sono
     // ancora quelle definitive
-    evidenziaMenu();
+    collegaMenu();
+    vaiAllaSezione();
+    evidenziaMenu(seguiLaSezione);
 
     // chi arriva da un link a una carta trova la scheda già aperta, e
     // chiudendola si ritrova davanti il mazzo invece che in cima alla pagina
