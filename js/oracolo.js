@@ -348,13 +348,34 @@ function sezioneMazzo(carte) {
 
 /* ============================================================
    SCHEDA CARTA
+   Ogni carta ha un indirizzo suo — #carta/steve-bannon — così si può mandare
+   a qualcuno senza dovergli dire «scorri fino al mazzo e cercala». Cambia
+   mentre si sfoglia, senza ricaricare niente, e il tasto «indietro» del
+   browser chiude la scheda invece di far uscire dal sito.
    ============================================================ */
 
-function apriScheda(n) {
-  const c = stato.perNumero.get(Number(n));
-  if (!c) return;
-  const corpo = document.getElementById('scheda-corpo');
-  corpo.innerHTML =
+const indirizzoCarta = (slug) => `#carta/${slug}`;
+
+/* lo slug scritto nell'indirizzo, se c'è: #carta/steve-bannon → steve-bannon */
+function slugNellIndirizzo() {
+  const m = /^#carta\/([^/?#]+)$/.exec(location.hash);
+  return m ? decodeURIComponent(m[1]) : null;
+}
+
+const linkAssoluto = (slug) => new URL(indirizzoCarta(slug), location.href).href;
+
+/* Vero quando l'indirizzo della carta ce l'abbiamo messo noi aprendo la
+   scheda: solo in quel caso, chiudendola, ha senso tornare indietro nella
+   cronologia. Chi arriva da un link condiviso non ha un «prima» dove tornare. */
+let indirizzoNostro = false;
+
+/* La carta con cui si è atterrati arrivando da un link condiviso. Serve a
+   portare il mazzo sotto la scheda: si scorre alla chiusura e non all'arrivo,
+   perché finché la scheda è aperta la pagina dietro resta bloccata. */
+let cartaDaLink = null;
+
+function riempiScheda(c) {
+  document.getElementById('scheda-corpo').innerHTML =
     `<img src="${IMG(c.slug, c.n)}" alt="Carta ${esc(c.nome)}">` +
     `<div class="scheda__testi">
        <p class="scheda__arcano">${esc(c.arcano)}</p>
@@ -364,8 +385,37 @@ function apriScheda(n) {
          <p><b>Dritta</b>${esc(c.dritta)}</p>
          <p><b>Rovescia</b>${esc(c.rovescia)}</p>
        </div>
+       <p class="scheda__condividi">
+         <button type="button" class="btn-ghost" data-copia="${esc(linkAssoluto(c.slug))}">
+           Copia il link a questa carta</button>
+         <span class="scheda__link" hidden></span>
+       </p>
      </div>`;
-  document.getElementById('scheda').showModal();
+}
+
+function apriScheda(n, daIndirizzo = false) {
+  const c = stato.perNumero.get(Number(n));
+  if (!c) return;
+  riempiScheda(c);
+  if (!daIndirizzo && location.hash !== indirizzoCarta(c.slug)) {
+    history.pushState({ carta: c.slug }, '', indirizzoCarta(c.slug));
+    indirizzoNostro = true;
+  }
+  const dlg = document.getElementById('scheda');
+  if (!dlg.open) dlg.showModal();
+}
+
+/* Allinea la scheda a quello che dice l'indirizzo. La chiama il tasto
+   «indietro»/«avanti» del browser: è l'indirizzo a comandare, non il clic. */
+function allineaAllIndirizzo() {
+  const dlg = document.getElementById('scheda');
+  const slug = slugNellIndirizzo();
+  const c = slug && stato.carte.find((x) => x.slug === slug);
+  // ci siamo mossi con la cronologia, non aprendo una scheda: qualunque
+  // indirizzo ci sia adesso non l'abbiamo appena spinto noi
+  indirizzoNostro = false;
+  if (c) apriScheda(c.n, true);
+  else if (dlg.open) dlg.close();
 }
 
 function collegaScheda() {
@@ -375,6 +425,42 @@ function collegaScheda() {
   document.addEventListener('click', (e) => {
     const t = e.target.closest('[data-carta]');
     if (t) apriScheda(t.dataset.carta);
+  });
+
+  // vale per il tasto ×, per il clic fuori e per Esc: tutti passano di qui
+  dlg.addEventListener('close', () => {
+    if (cartaDaLink !== null) {
+      const posto = document.querySelector(`.carta[data-carta="${cartaDaLink}"]`);
+      cartaDaLink = null;
+      // un attimo dopo, non subito: chiudendo la finestra il browser rimette
+      // la pagina dov'era prima di aprirla, e cancellerebbe il nostro salto
+      if (posto) setTimeout(() => posto.scrollIntoView({ block: 'center', behavior: 'instant' }), 0);
+    }
+    if (indirizzoNostro) {
+      indirizzoNostro = false;
+      history.back();
+    } else if (slugNellIndirizzo()) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+  });
+
+  addEventListener('popstate', allineaAllIndirizzo);
+
+  // «copia il link»: se il browser non lo permette (succede fuori da https),
+  // il link viene scritto in chiaro, che è comunque copiabile a mano
+  dlg.addEventListener('click', async (e) => {
+    const b = e.target.closest('[data-copia]');
+    if (!b) return;
+    const scritta = b.textContent.trim();
+    try {
+      await navigator.clipboard.writeText(b.dataset.copia);
+      b.textContent = 'Link copiato';
+      setTimeout(() => { b.textContent = scritta; }, 2000);
+    } catch {
+      const spia = dlg.querySelector('.scheda__link');
+      spia.textContent = b.dataset.copia;
+      spia.hidden = false;
+    }
   });
 }
 
@@ -454,6 +540,15 @@ function collegaLettura() {
     // dopo che le sezioni sono state riempite: prima le altezze non sono
     // ancora quelle definitive
     evidenziaMenu();
+
+    // chi arriva da un link a una carta trova la scheda già aperta, e
+    // chiudendola si ritrova davanti il mazzo invece che in cima alla pagina
+    const slug = slugNellIndirizzo();
+    const carta = slug && carte.find((c) => c.slug === slug);
+    if (carta) {
+      cartaDaLink = carta.n;
+      apriScheda(carta.n, true);
+    }
   } catch (err) {
     console.error(err);
     document.getElementById('dati').innerHTML =
