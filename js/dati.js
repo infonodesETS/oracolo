@@ -75,7 +75,9 @@ function preparaStampa() {
         `<h2 class="sottosezione__titolo">${esc(sez.titolo)}</h2>` +
         `<p class="sottosezione__testo">${esc(sez.testo)}</p>`));
 
-      sez.blocchi.forEach((b) => {
+      // il richiamo al questionario vive solo sulla pagina principale: qui
+      // dentro ci stanno i risultati, e da qui si stampa il documento
+      sez.blocchi.filter((b) => !b.soloInPagina).forEach((b) => {
         const art = el('article', 'scheda-dato');
         art.id = b.id;
         const daScrivere = /^TESTO DA SCRIVERE/.test(b.testo);

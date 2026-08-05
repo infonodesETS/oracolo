@@ -488,6 +488,11 @@ a { color: inherit; }
   font-family: var(--mono); font-size: .72rem; letter-spacing: .06em;
   color: var(--bianco-3);
 }
+/* due inviti invece di un rimando: affiancati dove c'è spazio, incolonnati
+   sul telefono, senza che il secondo diventi una riga lunghissima */
+.sottosezione__vaia--azioni {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1rem;
+}
 
 /* --- grafici --- */
 .grafico { width: 100%; padding-top: 1.2rem; border-top: 1px solid var(--l14); }

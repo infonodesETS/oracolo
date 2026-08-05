@@ -333,7 +333,33 @@
       "numero": "2",
       "titolo": "Pericoli percepiti",
       "testo": "Che cosa temono oggi, quanto conoscono le norme che li riguardano, quali si aspettano che pesino di più — e quale scenario futuro li spaventa.",
+      "azioni": [
+        {
+          "testo": "Guarda tutti i dettagli",
+          "dove": "dati.html#pericoli"
+        },
+        {
+          "testo": "Contribuisci anche tu rispondendo al questionario",
+          "dove": "https://cryptpad.fr/form/#/2/form/view/-HTFGOS99Ypx60dLwGamZDBSC230lIXELzEpuxomH3M/",
+          "esterno": true
+        }
+      ],
       "blocchi": [
+        {
+          "id": "rispondenti",
+          "carta": 21,
+          "titolo": "Il questionario è ancora aperto",
+          "testo": "Sono le risposte di chi fa informazione e attivismo in Italia, raccolte una per una. Il questionario non è chiuso: se lavori in questo campo, la tua risposta cambia questi numeri.",
+          "grafico": {
+            "tipo": "quota",
+            "valore": 90,
+            "suffisso": "",
+            "etichetta": "persone hanno già risposto",
+            "unita": "obiettivo 100 risposte"
+          },
+          "evidenza": true,
+          "soloInPagina": true
+        },
         {
           "id": "rischi",
           "carta": 2,
@@ -446,8 +472,7 @@
                 ]
               }
             ]
-          },
-          "evidenza": true
+          }
         },
         {
           "id": "familiarita",

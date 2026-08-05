@@ -80,13 +80,22 @@ function sezioneSondaggio(d) {
 
     scrolly.append(bloccoGrande(sez.blocchi.find((b) => b.evidenza) || sez.blocchi[0]));
 
-    const altri = sez.blocchi.length - 1;
-    scrolly.append(el('p', 'sottosezione__vaia',
-      `<a class="btn btn--ghost" href="dati.html#${esc(sez.id)}">` +
-      `Vedi tutte le risposte</a>` +
-      (altri > 0
-        ? `<span>altre ${altri} domande su questa parte, con i numeri in tabella</span>`
-        : '')));
+    // Una parte può avere i suoi inviti al posto del solito rimando: è il caso
+    // dei pericoli, che invece di limitarsi a mandare ai numeri chiedono di
+    // aggiungerne uno. Il secondo tasto è quello pieno: è l'azione vera.
+    const altri = sez.blocchi.filter((b) => !b.soloInPagina).length - 1;
+    scrolly.append(el('p',
+      'sottosezione__vaia' + (sez.azioni ? ' sottosezione__vaia--azioni' : ''),
+      sez.azioni
+        ? sez.azioni.map((a, i) =>
+            `<a class="btn${i ? '' : ' btn--ghost'}" href="${esc(a.dove)}"` +
+            (a.esterno ? ' target="_blank" rel="noopener noreferrer"' : '') +
+            `>${esc(a.testo)}</a>`).join('')
+        : `<a class="btn btn--ghost" href="dati.html#${esc(sez.id)}">` +
+          `Vedi tutte le risposte</a>` +
+          (altri > 0
+            ? `<span>altre ${altri} domande su questa parte, con i numeri in tabella</span>`
+            : '')));
   });
   s.append(scrolly);
 

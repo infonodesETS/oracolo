@@ -221,7 +221,9 @@ function animaGrafico(fig) {
   if (num && !num.dataset.fatto) {
     num.dataset.fatto = '1';
     const meta = Number(num.dataset.conta);
-    const suf = esc(num.dataset.suffisso || '%');
+    // `??` e non `||`: un suffisso vuoto è una scelta — il conteggio dei
+    // rispondenti è un numero di persone, non una percentuale
+    const suf = esc(num.dataset.suffisso ?? '%');
     let v = 0;
     const t = setInterval(() => {
       v = Math.min(meta, v + Math.ceil(meta / 28));
