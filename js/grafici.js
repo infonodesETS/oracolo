@@ -33,10 +33,29 @@ function tabellaDati(serie, unita) {
   return t;
 }
 
+/* La stessa tabella, per i confronti: due colonne invece di una, e accanto
+   alla quota il numero di persone. Serve sulla pagina dei dati, che è quella
+   da cui si stampa il documento completo dei risultati: una percentuale senza
+   il numero dietro non si può citare. */
+function tabellaConfronto(g) {
+  const suf = g.suffisso || '';
+  const t = el('table', 'tabella-dati');
+  t.innerHTML =
+    '<thead><tr><th>Risposta</th>' +
+    g.serieNomi.map((nome) => `<th>${esc(nome)}</th>`).join('') +
+    '</tr></thead><tbody>' +
+    g.serie.map((s) => `<tr><td>${esc(s.etichetta)}</td>` +
+      s.valori.map((v, i) =>
+        `<td>${v}${esc(suf)}${s.conteggi ? ` (${s.conteggi[i]})` : ''}</td>`
+      ).join('') + '</tr>').join('') +
+    '</tbody>';
+  return t;
+}
+
 function piedeGrafico(g, contenitore, tabellaSempre) {
   const piede = el('div', 'grafico__piede');
   piede.append(el('span', null, esc(g.unita || '')));
-  if (g.serie && g.tipo !== 'temi' && !tabellaSempre) {
+  if (g.serie && !dueSerie(g) && !tabellaSempre) {
     const btn = el('button', null, 'vedi i dati in tabella');
     let tab = null;
     btn.addEventListener('click', () => {
@@ -50,10 +69,17 @@ function piedeGrafico(g, contenitore, tabellaSempre) {
   return piede;
 }
 
-/* ---------- le due domande aperte, a confronto ---------- */
+/* ---------- due serie affiancate ----------
+   Le usano le due domande aperte («temi») e i confronti fra giornalisti e
+   attivisti («confronto»): stesse barre appaiate, stessa legenda. Cambia
+   solo quello che ci sta attaccato — le citazioni sotto ogni riga compaiono
+   dove ci sono, e il suffisso serve alle quote, che sono percentuali. */
 
-function costruisciTemi(g) {
+const dueSerie = (g) => g.tipo === 'temi' || g.tipo === 'confronto';
+
+function costruisciDueSerie(g) {
   const max = Math.max(...g.serie.flatMap((s) => s.valori));
+  const suf = g.suffisso || '';
   const box = el('div', 'temi');
 
   box.append(el('div', 'temi__legenda',
@@ -64,34 +90,41 @@ function costruisciTemi(g) {
   const lista = el('div', 'temi__lista');
   g.serie.forEach((s) => {
     const riga = el('div', 'tema');
-    const btn = el('button', 'tema__testa');
-    btn.type = 'button';
-    btn.setAttribute('aria-expanded', 'false');
-    btn.innerHTML =
+    const apribile = !!s.citazioni;
+    // senza niente da leggere sotto, la riga non finge di essere un tasto
+    const testa = el(apribile ? 'button' : 'div',
+      'tema__testa' + (apribile ? '' : ' tema__testa--fisso'));
+    if (apribile) {
+      testa.type = 'button';
+      testa.setAttribute('aria-expanded', 'false');
+    }
+    testa.innerHTML =
       `<span class="tema__nome">${esc(s.etichetta)}</span>` +
       s.valori.map((v, i) =>
         `<span class="tema__riga">
            <span class="tema__pista"><span class="tema__fill tema__fill--${i}" data-w="${(v / max) * 100}"></span></span>
-           <span class="tema__val">${v}</span>
+           <span class="tema__val">${v}${esc(suf)}</span>
          </span>`).join('') +
-      `<span class="tema__apri">leggi le risposte</span>`;
+      (apribile ? `<span class="tema__apri">leggi le risposte</span>` : '');
+    riga.append(testa);
 
-    const pannello = el('div', 'tema__citazioni');
-    pannello.hidden = true;
-    pannello.innerHTML = g.serieNomi.map((nome, i) => {
-      const q = s.citazioni[i === 0 ? 'W' : 'X'];
-      if (!q || !q.length) return '';
-      return `<div class="citazioni"><h5>${esc(nome)}</h5>` +
-        q.map((c) => `<blockquote>${esc(c)}</blockquote>`).join('') + '</div>';
-    }).join('');
+    if (apribile) {
+      const pannello = el('div', 'tema__citazioni');
+      pannello.hidden = true;
+      pannello.innerHTML = g.serieNomi.map((nome, i) => {
+        const q = s.citazioni[i === 0 ? 'W' : 'X'];
+        if (!q || !q.length) return '';
+        return `<div class="citazioni"><h5>${esc(nome)}</h5>` +
+          q.map((c) => `<blockquote>${esc(c)}</blockquote>`).join('') + '</div>';
+      }).join('');
 
-    btn.addEventListener('click', () => {
-      const aperto = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!aperto));
-      pannello.hidden = aperto;
-    });
-
-    riga.append(btn, pannello);
+      testa.addEventListener('click', () => {
+        const aperto = testa.getAttribute('aria-expanded') === 'true';
+        testa.setAttribute('aria-expanded', String(!aperto));
+        pannello.hidden = aperto;
+      });
+      riga.append(pannello);
+    }
     lista.append(riga);
   });
   box.append(lista);
@@ -131,8 +164,8 @@ function costruisciGrafico(blocco, opz = {}) {
       `<p class="quota__num" data-conta="${g.valore}" data-suffisso="${esc(suf)}">` +
       `0<span class="quota__suf">${esc(suf)}</span></p>` +
       `<p class="quota__et">${esc(g.etichetta)}</p>`));
-  } else if (g.tipo === 'temi') {
-    wrap.append(costruisciTemi(g));
+  } else if (dueSerie(g)) {
+    wrap.append(costruisciDueSerie(g));
   } else {
     const tutte = g.serie;
     const mostrate = opz.mini ? tutte.slice(0, VOCI_MINI) : tutte;
@@ -172,8 +205,9 @@ function costruisciGrafico(blocco, opz = {}) {
   }
 
   if (!opz.mini) wrap.append(piedeGrafico(g, wrap, opz.tabellaSempre));
-  if (opz.tabellaSempre && g.serie && g.tipo !== 'temi') {
-    wrap.append(tabellaDati(g.serie, g.unita));
+  if (opz.tabellaSempre && g.serie) {
+    if (!dueSerie(g)) wrap.append(tabellaDati(g.serie, g.unita));
+    else if (g.tipo === 'confronto') wrap.append(tabellaConfronto(g));
   }
   return wrap;
 }

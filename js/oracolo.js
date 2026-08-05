@@ -94,7 +94,7 @@ function sezioneSondaggio(d) {
 }
 
 function bloccoGrande(b) {
-  const alto = b.grafico.tipo === 'temi' ||
+  const alto = b.grafico.tipo === 'temi' || b.grafico.tipo === 'confronto' ||
     (b.grafico.serie && b.grafico.serie.length > 9);
   const blocco = el('div', 'blocco' + (alto ? ' blocco--largo' : ''));
   const daScrivere = /^TESTO DA SCRIVERE/.test(b.testo);

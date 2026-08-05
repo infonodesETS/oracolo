@@ -585,8 +585,12 @@ a { color: inherit; }
 .tema__fill--1 { background: var(--bianco-2); }
 .tema__val {
   font-family: var(--mono); font-size: .76rem; color: var(--bianco-2);
-  font-variant-numeric: tabular-nums; min-width: 2ch; text-align: right;
+  font-variant-numeric: tabular-nums; min-width: 3ch; text-align: right;
 }
+/* righe che non si aprono: il confronto fra giornalisti e attivisti non ha
+   citazioni sotto, quindi niente mano che invita a cliccare */
+.tema__testa--fisso { cursor: default; }
+.tema__testa--fisso:hover { background: none; }
 .tema__apri {
   font-family: var(--mono); font-size: .66rem; letter-spacing: .12em;
   text-transform: uppercase; color: var(--verde); margin-top: .25rem;

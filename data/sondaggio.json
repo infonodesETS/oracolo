@@ -374,6 +374,78 @@
                 "tono": "neutro"
               }
             ]
+          }
+        },
+        {
+          "id": "confronto-rischi",
+          "carta": 12,
+          "titolo": "Chi teme la cella e chi teme il tribunale",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "confronto",
+            "suffisso": "%",
+            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di distanza fra i due",
+            "serieNomi": [
+              "Giornalisti",
+              "Attivisti"
+            ],
+            "serie": [
+              {
+                "etichetta": "Arresto / detenzione / misure restrittive",
+                "valori": [
+                  10,
+                  52
+                ],
+                "conteggi": [
+                  4,
+                  25
+                ]
+              },
+              {
+                "etichetta": "Slapp (querele temerarie)",
+                "valori": [
+                  64,
+                  25
+                ],
+                "conteggi": [
+                  25,
+                  12
+                ]
+              },
+              {
+                "etichetta": "Precarietà economica / perdita del posto di lavoro",
+                "valori": [
+                  77,
+                  50
+                ],
+                "conteggi": [
+                  30,
+                  24
+                ]
+              },
+              {
+                "etichetta": "Sorveglianza e altre minacce digitali",
+                "valori": [
+                  54,
+                  65
+                ],
+                "conteggi": [
+                  21,
+                  31
+                ]
+              },
+              {
+                "etichetta": "Incolumità fisica",
+                "valori": [
+                  13,
+                  12
+                ],
+                "conteggi": [
+                  5,
+                  6
+                ]
+              }
+            ]
           },
           "evidenza": true
         },
@@ -433,7 +505,7 @@
               },
               {
                 "etichetta": "Rafforzamento delle tutele per le forze dell’ordine",
-                "valore": 45
+                "valore": 46
               },
               {
                 "etichetta": "Misure relative all’occupazione di luoghi e immobili",
@@ -483,10 +555,6 @@
               {
                 "etichetta": "Revoca della cittadinanza",
                 "valore": 2
-              },
-              {
-                "etichetta": "Tutele rafforzate delle forze dell’ordine",
-                "valore": 1
               }
             ]
           }
@@ -545,13 +613,151 @@
                 "valore": 9
               },
               {
-                "etichetta": "Llimitazione all’accesso in carcere o negli altri luoghi privativi della libertà",
+                "etichetta": "Limitazione all’accesso in carcere o negli altri luoghi privativi della libertà",
                 "valore": 3
               },
               {
                 "etichetta": "Altro",
                 "valore": 3,
                 "tono": "neutro"
+              }
+            ]
+          }
+        },
+        {
+          "id": "confronto-scenari",
+          "carta": 3,
+          "titolo": "Due modi diversi di temere il futuro",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "confronto",
+            "suffisso": "%",
+            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di distanza fra i due",
+            "serieNomi": [
+              "Giornalisti",
+              "Attivisti"
+            ],
+            "serie": [
+              {
+                "etichetta": "Ulteriore concentrazione editoriale nelle mani di pochi gruppi economici o gruppi di potere",
+                "valori": [
+                  67,
+                  19
+                ],
+                "conteggi": [
+                  26,
+                  9
+                ]
+              },
+              {
+                "etichetta": "Ulteriori restrizioni alle libertà di manifestazione ed espressione del dissenso",
+                "valori": [
+                  31,
+                  62
+                ],
+                "conteggi": [
+                  12,
+                  30
+                ]
+              },
+              {
+                "etichetta": "Limitazione o blocco dei finanziamenti da fondazioni o enti stranieri per le organizzazioni attivistiche e giornalistiche",
+                "valori": [
+                  51,
+                  31
+                ],
+                "conteggi": [
+                  20,
+                  15
+                ]
+              },
+              {
+                "etichetta": "Ulteriore riduzione dell’accesso a dati rilevanti in tema di tutela dei diritti e delle libertà",
+                "valori": [
+                  23,
+                  6
+                ],
+                "conteggi": [
+                  9,
+                  3
+                ]
+              },
+              {
+                "etichetta": "Limitazione della libertà di sciopero",
+                "valori": [
+                  0,
+                  17
+                ],
+                "conteggi": [
+                  0,
+                  8
+                ]
+              },
+              {
+                "etichetta": "Inasprimento delle pene per attivisti che compiono azioni di dissenso (blocchi stradali, imbrattamento di muri o monumenti, picchetti)",
+                "valori": [
+                  8,
+                  23
+                ],
+                "conteggi": [
+                  3,
+                  11
+                ]
+              },
+              {
+                "etichetta": "Ulteriori misure di presidio e militarizzazione dei luoghi pubblici (strade, piazze, stazioni)",
+                "valori": [
+                  3,
+                  17
+                ],
+                "conteggi": [
+                  1,
+                  8
+                ]
+              },
+              {
+                "etichetta": "Inasprimento delle politiche di sgombero di centri sociali e altri spazi di autogestione",
+                "valori": [
+                  5,
+                  17
+                ],
+                "conteggi": [
+                  2,
+                  8
+                ]
+              },
+              {
+                "etichetta": "Inasprimento della censura sulle piattaforme social su cui veicoli i tuoi contenuti",
+                "valori": [
+                  18,
+                  23
+                ],
+                "conteggi": [
+                  7,
+                  11
+                ]
+              },
+              {
+                "etichetta": "Rafforzamento dei dispositivi di sorveglianza nei luoghi pubblici",
+                "valori": [
+                  26,
+                  23
+                ],
+                "conteggi": [
+                  10,
+                  11
+                ]
+              },
+              {
+                "etichetta": "Maggior libertà di utilizzo da parte delle forze dell’ordine di spyware o altri dispositivi di sorveglianza e controlli mirati",
+                "valori": [
+                  51,
+                  50
+                ],
+                "conteggi": [
+                  20,
+                  24
+                ]
               }
             ]
           }
@@ -610,6 +816,100 @@
                 "etichetta": "Nessuna risposta",
                 "valore": 1,
                 "tono": "neutro"
+              }
+            ]
+          }
+        },
+        {
+          "id": "confronto-bisogni",
+          "carta": 6,
+          "titolo": "Chi ha bisogno di che cosa",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "confronto",
+            "suffisso": "%",
+            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di distanza fra i due",
+            "serieNomi": [
+              "Giornalisti",
+              "Attivisti"
+            ],
+            "serie": [
+              {
+                "etichetta": "Servizi di comunicazione",
+                "valori": [
+                  8,
+                  27
+                ],
+                "conteggi": [
+                  3,
+                  13
+                ]
+              },
+              {
+                "etichetta": "Difesa legale",
+                "valori": [
+                  51,
+                  33
+                ],
+                "conteggi": [
+                  20,
+                  16
+                ]
+              },
+              {
+                "etichetta": "Servizi sindacali",
+                "valori": [
+                  28,
+                  10
+                ],
+                "conteggi": [
+                  11,
+                  5
+                ]
+              },
+              {
+                "etichetta": "Accesso a risorse finanziarie",
+                "valori": [
+                  72,
+                  58
+                ],
+                "conteggi": [
+                  28,
+                  28
+                ]
+              },
+              {
+                "etichetta": "Formazione tecnica",
+                "valori": [
+                  33,
+                  42
+                ],
+                "conteggi": [
+                  13,
+                  20
+                ]
+              },
+              {
+                "etichetta": "Attività di ricerca",
+                "valori": [
+                  21,
+                  27
+                ],
+                "conteggi": [
+                  8,
+                  13
+                ]
+              },
+              {
+                "etichetta": "Difesa digitale",
+                "valori": [
+                  21,
+                  23
+                ],
+                "conteggi": [
+                  8,
+                  11
+                ]
               }
             ]
           }
