@@ -53,9 +53,14 @@ function tabellaConfronto(g) {
 }
 
 function piedeGrafico(g, contenitore, tabellaSempre) {
+  const bottone = g.serie && !dueSerie(g) && !tabellaSempre;
+  // Senza unità da dichiarare e senza tasto, il piede sarebbe solo una riga
+  // orizzontale sotto il grafico: meglio non metterlo.
+  if (!g.unita && !bottone) return null;
+
   const piede = el('div', 'grafico__piede');
   piede.append(el('span', null, esc(g.unita || '')));
-  if (g.serie && !dueSerie(g) && !tabellaSempre) {
+  if (bottone) {
     const btn = el('button', null, 'vedi i dati in tabella');
     let tab = null;
     btn.addEventListener('click', () => {
@@ -204,7 +209,10 @@ function costruisciGrafico(blocco, opz = {}) {
     }
   }
 
-  if (!opz.mini) wrap.append(piedeGrafico(g, wrap, opz.tabellaSempre));
+  if (!opz.mini) {
+    const piede = piedeGrafico(g, wrap, opz.tabellaSempre);
+    if (piede) wrap.append(piede);
+  }
   if (opz.tabellaSempre && g.serie) {
     if (!dueSerie(g)) wrap.append(tabellaDati(g.serie, g.unita));
     else if (g.tipo === 'confronto') wrap.append(tabellaConfronto(g));

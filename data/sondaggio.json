@@ -30,13 +30,12 @@
           "id": "rispondenti",
           "carta": 21,
           "titolo": "Il questionario è ancora aperto",
-          "testo": "Sono le risposte di chi fa informazione e attivismo in Italia, raccolte una per una. Il questionario non è chiuso: se lavori in questo campo, la tua risposta cambia questi numeri.",
+          "testo": "Sono le risposte di chi fa informazione e attivismo in Italia, raccolte in maniera anonima per indirizzare il nostro lavoro. Il questionario è ancora aperto: se hai 5 minuti di tempo da dedicarci e non lo hai ancora fatto, compilalo anche tu.",
           "grafico": {
             "tipo": "quota",
             "valore": 90,
             "suffisso": "",
-            "etichetta": "persone hanno già risposto",
-            "unita": "obiettivo 100 risposte"
+            "etichetta": "persone hanno già risposto"
           },
           "evidenza": true,
           "soloInPagina": true
