@@ -477,6 +477,16 @@ a { color: inherit; }
 }
 .blocco--largo .blocco__testo { max-width: 44rem; }
 
+/* il numero che apre il capitolo. Sta attaccato al sommario, non dentro lo
+   scrollytelling: non deve prendersi mezza schermata come i blocchi che
+   arrivano dopo, altrimenti l'apertura si allunga invece di accorciarsi. */
+.apertura {
+  max-width: var(--largo);
+  margin: clamp(2rem, 5vh, 3.5rem) auto 0;
+  padding-inline: clamp(1.5rem, 4vw, 3rem);
+}
+.blocco--apertura { min-height: 0; padding: 0; }
+
 /* pulsante in coda a ogni parte */
 .sottosezione__vaia {
   display: grid; gap: .9rem; justify-items: start;
@@ -666,6 +676,7 @@ a { color: inherit; }
     padding-bottom: 4.5rem;
   }
   .blocco__testo { opacity: 1; transform: none; }
+  .blocco--apertura { padding-bottom: 0; }
   .sottosezione { padding-top: 3rem; }
 }
 

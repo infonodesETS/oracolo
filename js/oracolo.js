@@ -62,10 +62,19 @@ function sezioneSondaggio(d) {
     `<p class="occhiello">${esc(d.meta.occhiello)}</p>` +
     badge(d.placeholder, 'dati parziali — questionario ancora aperto') +
     `<h2 class="titolo-grosso">${esc(d.meta.titolo)}</h2>` +
-    `<p class="lead">${esc(d.meta.sommario)}</p>` +
-    `<p style="font-family:var(--mono);font-size:.8rem;letter-spacing:.1em;color:var(--bianco-3)">` +
-    `${d.meta.rispondenti} rispondenti · ${esc(d.meta.periodo)}</p>`;
+    `<p class="lead">${esc(d.meta.sommario)}</p>`;
   s.append(intro);
+
+  // Il numero grande apre il capitolo, attaccato al sommario: è il dato che dà
+  // la misura di tutti gli altri. La riga «N rispondenti · questionario ancora
+  // aperto» che stava qui sotto diceva le stesse due cose in grigio piccolo,
+  // due schermate prima del numero che le dice in grande.
+  const apre = d.sezioni.flatMap((sez) => sez.blocchi).find((b) => b.apertura);
+  if (apre) {
+    const box = el('div', 'apertura');
+    box.append(bloccoGrande(apre, 'blocco--apertura'));
+    s.append(box);
+  }
 
   const scrolly = el('div', 'scrolly');
 
@@ -99,13 +108,14 @@ function sezioneSondaggio(d) {
   });
   s.append(scrolly);
 
-  osservaGrafici([...scrolly.querySelectorAll('.blocco')]);
+  osservaGrafici([...s.querySelectorAll('.blocco')]);
 }
 
-function bloccoGrande(b) {
+function bloccoGrande(b, extra) {
   const alto = b.grafico.tipo === 'temi' || b.grafico.tipo === 'confronto' ||
     (b.grafico.serie && b.grafico.serie.length > 9);
-  const blocco = el('div', 'blocco' + (alto ? ' blocco--largo' : ''));
+  const blocco = el('div', 'blocco' + (alto ? ' blocco--largo' : '') +
+    (extra ? ' ' + extra : ''));
   const daScrivere = /^TESTO DA SCRIVERE/.test(b.testo);
   blocco.append(
     el('div', 'blocco__testo',

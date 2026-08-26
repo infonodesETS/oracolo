@@ -35,10 +35,10 @@
             "tipo": "quota",
             "valore": 90,
             "suffisso": "",
-            "etichetta": "persone hanno già risposto"
+            "etichetta": "persone hanno risposto"
           },
-          "evidenza": true,
-          "soloInPagina": true
+          "soloInPagina": true,
+          "apertura": true
         },
         {
           "id": "attivita",
@@ -63,7 +63,8 @@
                 "tono": "neutro"
               }
             ]
-          }
+          },
+          "evidenza": true
         },
         {
           "id": "eta",
