@@ -388,6 +388,27 @@ function sezioneVoci(d) {
     return c;
   };
 
+  /* Gli articoli gia' pubblicati altrove: non hanno un lettore video ma
+     un'immagine e un link che porta al pezzo. Stanno per primi perche' sono
+     l'unica cosa di questo capitolo che si puo' gia' leggere. */
+  const schedaArticolo = (a) => {
+    const c = el('a', 'pillola pillola--articolo pillola--pronta');
+    c.href = a.link;
+    c.target = '_blank';
+    c.rel = 'noopener noreferrer';
+    c.innerHTML =
+      `<img class="pillola__cover" src="${esc(a.cover)}" alt="" loading="lazy">` +
+      `<div class="pillola__testo">` +
+      `<span class="pillola__durata">${esc(a.occhiello || 'articolo')}</span>` +
+      `<h4>${esc(a.titolo)}</h4>` +
+      `<p class="pillola__chi">${esc(a.descrizione)}</p>` +
+      `<span class="pillola__vai">Leggi l'articolo</span>` +
+      `</div>`;
+    return c;
+  };
+
+  (d.articoli || []).forEach((a) => griglia.append(schedaArticolo(a)));
+
   griglia.append(scheda(d.documentario, 'documentario',
     ' pillola--grande', d.documentario.descrizione));
   d.pillole.forEach((p) => {

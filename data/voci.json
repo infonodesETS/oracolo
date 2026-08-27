@@ -1,10 +1,10 @@
 {
-  "_nota": "SEGNAPOSTO. Con 'video': null la scheda resta tratteggiata con la scritta 'in lavorazione'. Per attivarla si mette un oggetto: {\"tipo\":\"file\",\"src\":\"assets/video/....mp4\",\"poster\":\"assets/video/....jpg\"} per i video ospitati da noi, oppure {\"tipo\":\"youtube\",\"id\":\"...\"} / {\"tipo\":\"vimeo\",\"id\":\"...\"} per quelli esterni, che si caricano solo dopo un clic.",
+  "_nota": "SEGNAPOSTO PARZIALE. I due articoli in cima sono reali; i video sono ancora da girare. Con 'video': null la scheda resta tratteggiata con la scritta 'in lavorazione'. Per attivarla si mette un oggetto: {\"tipo\":\"file\",\"src\":\"assets/video/....mp4\",\"poster\":\"assets/video/....jpg\"} per i video ospitati da noi, oppure {\"tipo\":\"youtube\",\"id\":\"...\"} / {\"tipo\":\"vimeo\",\"id\":\"...\"} per quelli esterni, che si caricano solo dopo un clic. Le schede con 'link' sono invece articoli pubblicati altrove: aprono il pezzo in una scheda nuova e mostrano l'immagine indicata in 'cover'.",
   "placeholder": true,
   "meta": {
     "occhiello": "Voci di resistenza",
     "titolo": "Chi ha già pagato il prezzo",
-    "sommario": "Undici storie, raccolte in giro per l'Italia. Un documentario e una serie di pillole: quello che succede a chi fa una domanda scomoda, a chi apre uno striscione, a chi si rifiuta di consegnare un telefono."
+    "sommario": "Storie reali, raccolte in giro per l'Italia, di censura e sorveglianza. Un documentario, delle inchieste e delle analisi per capire meglio quello che succede a chi fa domande scomode e a chi non accetta di stare sempre dalla parte del potere."
   },
   "documentario": {
     "titolo": "L'Oracolo del Dissenso — il documentario",
@@ -13,12 +13,63 @@
     "descrizione": "Il racconto lungo: un anno dentro le redazioni indipendenti, i collettivi, le aule di tribunale."
   },
   "pillole": [
-    { "titolo": "PROVA — frammento di intervista", "persona": "Video di prova", "ruolo": "non è un contenuto definitivo", "durata": "45\"", "carta": 4,
-      "video": { "tipo": "file", "src": "assets/video/prova-intervista.mp4", "poster": "assets/video/prova-intervista.jpg" } },
-    { "titolo": "Mi hanno chiesto il telefono", "persona": "Nome Cognome", "ruolo": "Attivista climatica", "durata": "2'55\"", "video": null, "carta": 2 },
-    { "titolo": "Il foglio di via", "persona": "Nome Cognome", "ruolo": "Sindacalista", "durata": "4'10\"", "video": null, "carta": 21 },
-    { "titolo": "Quella foto non l'ho pubblicata", "persona": "Nome Cognome", "ruolo": "Fotoreporter", "durata": "3'05\"", "video": null, "carta": 18 },
-    { "titolo": "Eravamo in cinquanta", "persona": "Nome Cognome", "ruolo": "Collettivo studentesco", "durata": "3'30\"", "video": null, "carta": 19 },
-    { "titolo": "Dopo la carica", "persona": "Nome Cognome", "ruolo": "Videomaker", "durata": "5'00\"", "video": null, "carta": 11 }
+    {
+      "titolo": "Mi hanno chiesto il telefono",
+      "persona": "Nome Cognome",
+      "ruolo": "Attivista climatica",
+      "durata": "2'55\"",
+      "video": null,
+      "carta": 2
+    },
+    {
+      "titolo": "Il foglio di via",
+      "persona": "Nome Cognome",
+      "ruolo": "Sindacalista",
+      "durata": "4'10\"",
+      "video": null,
+      "carta": 21
+    },
+    {
+      "titolo": "Quella foto non l'ho pubblicata",
+      "persona": "Nome Cognome",
+      "ruolo": "Fotoreporter",
+      "durata": "3'05\"",
+      "video": null,
+      "carta": 18
+    },
+    {
+      "titolo": "Eravamo in cinquanta",
+      "persona": "Nome Cognome",
+      "ruolo": "Collettivo studentesco",
+      "durata": "3'30\"",
+      "video": null,
+      "carta": 19
+    },
+    {
+      "titolo": "Dopo la carica",
+      "persona": "Nome Cognome",
+      "ruolo": "Videomaker",
+      "durata": "5'00\"",
+      "video": null,
+      "carta": 11
+    }
+  ],
+  "articoli": [
+    {
+      "titolo": "Quel vizio di fare causa ai giornalisti: quali sono i politici che querelano di più i cronisti",
+      "occhiello": "La classifica",
+      "descrizione": "di Stefano Vergine — pubblicato su Domani — 3 agosto 2026",
+      "link": "https://www.editorialedomani.it/inchieste/cause-giornalisti-querele-politici-quali-sono-cronisti-diffamazione-slapp-hi9lzr49",
+      "cover": "assets/voci/domani-slapp-1.webp",
+      "carta": 4
+    },
+    {
+      "titolo": "I politici della querela. «Chi perde dovrebbe risarcire i cronisti»",
+      "occhiello": "Dopo l'inchiesta di Domani, parlano gli esperti",
+      "descrizione": "di Stefano Vergine — pubblicato su Domani — 4 agosto 2026",
+      "link": "https://www.editorialedomani.it/fatti/i-politici-della-querela-chi-perde-dovrebbe-risarcire-i-cronisti-slapp-fyhggqyz",
+      "cover": "assets/voci/domani-slapp-2.webp",
+      "carta": 8
+    }
   ]
 }

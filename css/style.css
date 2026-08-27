@@ -1070,6 +1070,22 @@ a.appello:focus-visible .appello__azione { color: var(--carta); }
 /* quando il video c'è, la scheda smette di essere un segnaposto */
 .pillola--pronta { align-content: start; min-height: 0; }
 
+/* Le schede che sono articoli pubblicati altrove: tutta la scheda è il link,
+   e l'immagine sta al posto del lettore video. */
+.pillola--articolo { color: inherit; text-decoration: none; }
+.pillola--articolo:hover { border-color: var(--verde); }
+.pillola--articolo:focus-visible { outline: 2px solid var(--verde); outline-offset: 2px; }
+.pillola__cover {
+  display: block; width: 100%; aspect-ratio: 16 / 9;
+  object-fit: cover; background: var(--nero-3);
+}
+.pillola--articolo:hover .pillola__cover { opacity: .88; }
+.pillola__vai {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--verde);
+}
+.pillola--articolo:hover .pillola__vai { text-decoration: underline; }
+
 /* ---- il lettore ---- */
 .video {
   display: block; width: 100%; aspect-ratio: 16 / 9;
