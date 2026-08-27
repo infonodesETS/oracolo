@@ -1,12 +1,12 @@
 {
-  "_nota": "Struttura presa dal documento di lavoro di Davide (Doc Google 1CSUmFSaan5...). Titoli di capi e articoli SONO quelli veri. I testi degli articoli sono ancora da scrivere: finché 'testo' è null, in pagina compare il riquadro tratteggiato 'testo in stesura'. Il campo 'risponde' serve a indicare quale norma securitaria vera l'articolo ribalta: quando è null non compare nulla. Le 'chiose' sono proposte, da riscrivere liberamente.",
+  "_nota": "Struttura e testi presi dal documento di lavoro di Davide (Doc Google 1CSUmFSaan5...). Aggiornato il 26/08/2026: il decreto è passato da 11 a 8 articoli. I testi sono BOZZE non ancora revisionate dal team: finché 'placeholder' è true, in pagina compare il bollino 'dati provvisori'. Il campo 'risponde' serve a indicare quale norma securitaria vera l'articolo ribalta: quando è null non compare nulla. Le 'chiose' sono proposte, da riscrivere liberamente.",
   "placeholder": true,
   "meta": {
     "occhiello": "La sicurezza che vogliamo",
     "gazzetta": "Gazzetta Ufficiale dell'Oracolo · Serie Generale · Anno che verrà",
     "titolo": "Disposizioni urgenti in materia di sicurezza dell'informazione e della partecipazione democratica",
     "sottotitolo": "Un decreto che non esiste, scritto nella lingua di quelli che esistono",
-    "sommario": "Da troppi anni «sicurezza» è la parola magica con cui si approvano leggi e decreti per restringere lo spazio del dissenso. Abbiamo quindi deciso di prendere quella stessa parola e ridarle senso. Trovate di seguito undici articoli di legge per proteggere chi informa e chi protesta, invece di punirlo. Non è satira. È un elenco di cose che si potrebbero fare domani mattina, se solo si volesse creare davvero maggiore sicurezza.",
+    "sommario": "Da troppi anni «sicurezza» è la parola magica con cui si approvano leggi e decreti per restringere lo spazio del dissenso. Abbiamo quindi deciso di prendere quella stessa parola e ridarle senso. Trovate di seguito otto articoli di legge per proteggere chi informa e chi protesta, invece di punirlo. Non è satira. È un elenco di cose che si potrebbero fare domani mattina, se solo si volesse creare davvero maggiore sicurezza.",
     "avvertenza": "Questo decreto non esiste e non è mai stato depositato in Parlamento. È un documento di immaginazione politica prodotto da info.nodes. Nulla vieta però di portarcelo in Parlamento, per riscrivere il futuro di questo Paese."
   },
   "_nota_appelli": "Finché 'dove' è null il pulsante compare ma non porta da nessuna parte, e sotto si legge «collegamento ancora da definire». Per attivarli servono un indirizzo email (primo) e l'URL del modulo (secondo).",
@@ -40,8 +40,17 @@
       "articoli": [
         {
           "n": 1,
-          "rubrica": "Istituzione di un «Presidio permanente per il monitoraggio degli atti intimidatori contro giornalisti e attivisti»",
-          "testo": null,
+          "rubrica": "Istituzione di un «Presidio permanente per il monitoraggio degli atti intimidatori contro i giornalisti»",
+          "testo": [
+            "Il [Centro di coordinamento dell'attività di monitoraggio, analisi e scambio permanente di informazioni sul fenomeno degli atti intimidatori nei confronti dei giornalisti](https://www.interno.gov.it/it/ministero/osservatori-commissioni-e-centri-coordinamento/centro-coordinamento-sul-fenomeno-atti-intimidatori-nei-confronti-dei-giornalisti), istituito con decreto del Ministro dell'interno del 21 novembre 2017, ha rilevato 114 atti intimidatori nell'anno 2024, a fronte dei 516 casi censiti nel medesimo anno dagli [osservatori indipendenti](https://www.ossigeno.info/rapporto-ossigeno-nel-2024-in-italia-516-giornalisti-minacciati-come-dove-e-da-chi/), in ragione del fatto che il rilevamento è limitato ai fatti oggetto di denuncia alle forze di polizia.",
+            "Al fine di rendere più efficace l'attività di tutela del settore dell'informazione, è istituito presso il Ministero dell'interno, che ne assicura il coordinamento, il Presidio permanente per il monitoraggio degli atti intimidatori contro i giornalisti e per la loro tutela legale, di seguito «Presidio». Il Presidio subentra nelle funzioni del Centro di coordinamento di cui al comma 1, che è contestualmente soppresso.",
+            "Il Presidio è diretto da un comitato esecutivo composto da cinque componenti:\na) un componente designato dal Presidente della Repubblica, che lo presiede;\nb) un componente designato dal Ministro dell'Interno;\nc) un componente designato dal Senato della Repubblica;\nd) un componente designato dalla Federazione nazionale della stampa italiana;\ne) un componente designato dal Consiglio nazionale dell'Ordine dei giornalisti.\nI componenti durano in carica cinque anni e non sono immediatamente rinnovabili. L'incarico è incompatibile con cariche di governo, con mandati elettivi e con incarichi direttivi presso imprese editrici.",
+            "Il Presidio censisce gli atti intimidatori commessi in danno di giornalisti e di operatori dell'informazione, indipendentemente dalla presentazione di denuncia, ne verifica il seguito giudiziario e formula al Ministro dell'interno proposte di misure di tutela per le persone esposte. Chiunque può segnalare un atto intimidatorio al Presidio.",
+            "Il Presidio assicura la tutela legale dei giornalisti destinatari di querele per diffamazione, di azioni risarcitorie o di altri procedimenti manifestamente infondati o sproporzionati, diretti a limitarne l'attività di informazione, quali definiti dalla direttiva (UE) 2024/1069. A tal fine il Presidio:\na) istituisce uno sportello, accessibile in presenza e per via telematica, per la ricezione delle richieste di sostegno;\nb) costituisce un nucleo di valutazione che si pronuncia sull'ammissibilità della richiesta entro trenta giorni dalla ricezione, con provvedimento motivato e impugnabile dinanzi al comitato esecutivo;\nc) tiene un elenco di avvocati disponibili al patrocinio, iscritti su domanda e in possesso di comprovata esperienza in materia di diffamazione e di libertà di informazione;\nd) provvede al compenso dei difensori, che non può essere richiesto in alcuna misura, neppure parziale, al giornalista assistito.",
+            "Entro il 31 dicembre di ogni anno il Presidio riferisce al Parlamento, presentando una relazione sui fatti censiti, sul relativo seguito giudiziario, sulle richieste di tutela legale ricevute e accolte e sull'efficacia delle disposizioni vigenti in materia di diffamazione e di procedimenti temerari, secondo modalità corrispondenti a quelle previste dall'articolo 1, comma 2, lettera g), della legge 6 novembre 2012, n. 190. I dati sono pubblicati in formato aperto e liberamente riutilizzabile, nel rispetto della riservatezza delle persone offese.",
+            "Per le finalità di cui al comma 5 è istituito nello stato di previsione del Ministero dell'interno il Fondo per la tutela legale dei giornalisti, con dotazione annua non inferiore all'1 per cento delle risorse del [Fondo unico per il pluralismo e l'innovazione digitale dell'informazione e dell'editoria](https://www.informazioneeditoria.gov.it/it/il-sostegno-alleditoria-nei-principali-paesi-deuropa/italia/) di cui all'articolo 1 della legge 26 ottobre 2016, n. 198. Alla dotazione si provvede mediante corrispondente riduzione delle risorse del medesimo Fondo unico e conseguente trasferimento allo stato di previsione del Ministero dell'interno.",
+            "Con decreto del Ministro dell'interno, da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto, sentiti la Federazione nazionale della stampa italiana e il Consiglio nazionale dell'Ordine dei giornalisti, sono stabiliti:\na) le modalità di funzionamento del Presidio e del nucleo di valutazione di cui al comma 5, lettera b);\nb) le modalità di segnalazione degli atti intimidatori e di presentazione delle richieste di sostegno;\nc) i requisiti per l'iscrizione nell'elenco degli avvocati di cui al comma 5, lettera c), e i criteri di liquidazione dei compensi;\nd) le modalità di pubblicazione in formato aperto dei dati di cui al comma 6.\nIl decreto non determina la dotazione del Fondo di cui al comma 7, stabilita dalla legge."
+          ],
           "risponde": null,
           "carta": 8,
           "chiosa": "Il Giornalista — La Giustizia. Chi tiene il conto delle intimidazioni non è un favore fatto ai giornalisti: è il modo in cui il potere accetta di rispondere delle proprie azioni."
@@ -49,7 +58,15 @@
         {
           "n": 2,
           "rubrica": "Modifiche al codice di condotta delle forze di polizia durante cortei e proteste organizzate",
-          "testo": null,
+          "testo": [
+            "L'articolo 21 del Patto internazionale relativo ai diritti civili e politici, reso esecutivo con [legge 25 ottobre 1977, n. 881](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1977-10-25;881), come interpretato dal Commento generale n. 37 del 2020 del Comitato per i diritti umani delle Nazioni Unite, impone allo Stato non soltanto di astenersi da ingerenze non giustificate nelle riunioni pacifiche, ma di facilitarle e proteggerle. Con sentenza del 7 aprile 2015, Cestaro contro Italia, la Corte europea dei diritti dell'uomo ha accertato la violazione dell'articolo 3 della Convenzione in relazione ai fatti avvenuti in occasione del vertice G8 di Genova del 2001.",
+            "Nei servizi di ordine pubblico in occasione di riunioni, cortei e manifestazioni, le forze di polizia perseguono in via primaria la finalità di garantire l'esercizio del diritto di riunione e l'incolumità dei partecipanti. Ogni provvedimento che comprima tale diritto è adottato quale misura di ultima istanza, per il tempo strettamente necessario e nella misura minima idonea allo scopo.",
+            "Sulla falsariga di quanto [fatto in Svezia](https://polisen.se/en/the-swedish-police/demonstrations---questions-and-answers/) a seguito delle violenze perpetrate dalle forze dell'ordine nel 2001, è costituito presso ogni questura un nucleo per il dialogo, composto da personale specificamente formato, cui è affidato il compito di stabilire e mantenere il contatto con i promotori della manifestazione prima, durante e dopo il suo svolgimento e di assicurare il collegamento permanente tra i promotori e il funzionario responsabile del servizio di ordine pubblico.",
+            "Prima di ogni azione di contenimento, carica o dispersione, il funzionario responsabile:\na) rende noto ai partecipanti, con mezzi udibili e comprensibili, il provvedimento adottato e le ragioni che lo giustificano;\nb) assegna un termine congruo per l'allontanamento volontario;\nc) assicura in ogni momento la praticabilità di almeno una via di uscita sicura, che non può essere preclusa.",
+            "La dispersione della manifestazione è disposta soltanto quando la violenza si sia estesa in modo tale da non consentire l'individuazione e l'isolamento dei responsabili. È in ogni caso vietato:\na) l'impiego di agenti chimici irritanti in direzione della generalità dei partecipanti, in spazi chiusi o in condizioni che ne impediscano l'allontanamento;\nb) il contenimento prolungato di gruppi di partecipanti in spazi delimitati senza possibilità di uscita;\nc) l'uso di mezzi coercitivi contro persone che non oppongono resistenza, contro chi si sta allontanando e contro gli operatori dell'informazione che documentano i fatti.",
+            "Il funzionario responsabile del servizio redige, entro quarantotto ore dal termine dell'operazione, una relazione contenente le decisioni assunte, gli ordini impartiti e le ragioni dell'eventuale ricorso alla forza. La relazione è trasmessa al prefetto e, ove l'operazione abbia coinvolto operatori dell'informazione, al Presidio di cui all'articolo 1. La violazione delle disposizioni del presente articolo costituisce illecito disciplinare e rileva ai fini della valutazione dell'idoneità all'impiego in servizi di ordine pubblico.",
+            "Entro novanta giorni dalla data di entrata in vigore del presente decreto, il regolamento di servizio dell'Amministrazione della pubblica sicurezza, di cui al [decreto del Presidente della Repubblica 28 ottobre 1985, n. 782](https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1985-10-28;782), è adeguato alle disposizioni del presente articolo. La formazione periodica del personale impiegato in servizi di ordine pubblico comprende l'addestramento alle tecniche di riduzione della tensione e alla gestione negoziata delle manifestazioni."
+          ],
           "risponde": null,
           "carta": 11,
           "chiosa": "Piazza Alimonda — La Forza. Non è la forza di chi carica. È quella di chi sa fermarsi."
@@ -57,7 +74,14 @@
         {
           "n": 3,
           "rubrica": "Disposizioni in materia di trasparenza e identificabilità del personale delle Forze di Polizia in servizio di ordine pubblico (codici identificativi)",
-          "testo": null,
+          "testo": [
+            "Con sentenza del 22 luglio 2014, [Ataykaya contro Turchia](https://hudoc.echr.coe.int/eng?i=001-145973), la Corte europea dei diritti dell'uomo ha affermato che è contrario alla Convenzione che risulti impossibile identificare gli appartenenti alle forze dell'ordine ai quali siano attribuiti atti contrari alla Convenzione medesima, e che il personale impiegato con il volto coperto deve recare un segno distintivo che, preservandone l'anonimato, ne consenta l'identificazione. La [Raccomandazione CM/Rec(2001)10 del Consiglio d'Europa](https://rm.coe.int/16805e297e) e la risoluzione del Parlamento europeo del novembre 2012 sui diritti fondamentali nell'Unione europea raccomandano l'adozione di un numero identificativo. Nell'ordinamento italiano non esiste una disposizione corrispondente.",
+            "Il personale delle Forze di polizia impiegato in servizi di ordine pubblico reca un codice identificativo alfanumerico, visibile e leggibile a distanza, apposto sull'uniforme e su ogni ulteriore equipaggiamento indossato, ivi compresi il casco protettivo, il giubbotto e lo scudo. Il codice è riprodotto sul fronte e sul retro. Nessun operatore può essere impiegato in servizi di ordine pubblico privo del codice identificativo.",
+            "Il codice non contiene elementi riferibili all'identità anagrafica, al grado o al reparto di appartenenza dell'operatore. La corrispondenza tra il codice e l'identità dell'operatore è annotata in un registro tenuto dall'amministrazione di appartenenza e conservata per dieci anni. Il codice è attribuito in modo permanente al medesimo operatore. Il contenuto del registro è comunicato:\na) all'autorità giudiziaria che ne faccia richiesta;\nb) all'autorità di pubblica sicurezza competente sui procedimenti disciplinari;\nc) alla persona che, avendo presentato denuncia o esposto, indichi il codice, limitatamente all'accertamento della corrispondenza e per il tramite dell'autorità procedente.",
+            "L'omesso porto, l'occultamento, la rimozione o l'alterazione del codice identificativo costituiscono illecito disciplinare. Della mancata apposizione del codice sul personale impiegato risponde altresì il funzionario responsabile del servizio di ordine pubblico. Nei procedimenti nei quali sia contestato l'uso illegittimo della forza, l'impossibilità di identificare l'operatore dovuta all'inosservanza del presente articolo è valutata dall'autorità procedente ai fini della ricostruzione dei fatti.",
+            "Il codice identificativo è apposto su supporto di dimensioni non inferiori a 60 millimetri di lunghezza e 17 millimetri di altezza, con caratteri di colore contrastante rispetto al fondo. Nei servizi di ordine pubblico il codice è riprodotto altresì sul retro dell'uniforme e dell'equipaggiamento protettivo indossato, con caratteri di altezza non inferiore a 50 millimetri, in modo da consentirne la lettura a distanza.",
+            "Con decreto del Ministro dell'interno, da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto, sono stabilite le ulteriori caratteristiche del codice, le modalità di apposizione sui diversi equipaggiamenti e le modalità di tenuta del registro di cui al comma 3. All'attuazione del presente articolo si provvede nell'ambito delle risorse umane, strumentali e finanziarie disponibili a legislazione vigente, senza nuovi o maggiori oneri a carico della finanza pubblica."
+          ],
           "risponde": null,
           "carta": 5,
           "chiosa": "Il Riconoscimento Facciale — Il Papa. La carta si rovescia: per una volta l'identificazione punta nell'altra direzione."
@@ -65,7 +89,15 @@
         {
           "n": 4,
           "rubrica": "Disposizioni per il contrasto all'uso strumentale delle querele temerarie (SLAPP) a fini inibitori",
-          "testo": null,
+          "testo": [
+            "[La direttiva (UE) 2024/1069](https://eur-lex.europa.eu/eli/dir/2024/1069/oj?locale=it) del Parlamento europeo e del Consiglio, dell'11 aprile 2024, sulla protezione delle persone che partecipano al dibattito pubblico da domande giudiziarie manifestamente infondate o abusive, doveva essere recepita entro il 7 maggio 2026. Mancando tuttora il recepimento, la Commissione europea ha avviato procedura di infrazione nei confronti della Repubblica italiana.",
+            "Le disposizioni del presente articolo si applicano ai procedimenti civili e penali, nazionali e transfrontalieri, promossi contro persone fisiche o giuridiche in ragione della loro partecipazione al dibattito pubblico, ivi compresi l'attività giornalistica, la ricerca, l'attività di denuncia e l'esercizio del diritto di critica.",
+            "Il convenuto o l'imputato può chiedere in ogni stato e grado che la domanda sia dichiarata manifestamente infondata o abusiva. Sull'istanza il giudice provvede in via accelerata e, salvo che ricorrano ragioni eccezionali, entro trenta giorni. Presentata l'istanza, l'onere di dimostrare la fondatezza della domanda grava su chi l'ha proposta e i termini del giudizio di merito sono sospesi.",
+            "Quando accerta il carattere abusivo della domanda, il giudice:\na) pone integralmente a carico di chi l'ha proposta le spese del procedimento, comprese quelle sostenute per la difesa;\nb) condanna chi l'ha proposta al risarcimento del danno patrimoniale e non patrimoniale subito dal convenuto;\nc) applica una sanzione pecuniaria, aumentata fino al doppio nei confronti di chi abbia già proposto altre domande dichiarate abusive nei cinque anni precedenti.\nIl giudice può altresì ordinare a chi ha proposto la domanda di prestare cauzione a garanzia delle spese e del risarcimento, in misura tale da non pregiudicare in modo sproporzionato il suo diritto di accesso alla giustizia.",
+            "La domanda risarcitoria proposta contro chi partecipa al dibattito pubblico non può eccedere l'importo corrispondente al pregiudizio specificamente allegato e documentato. La richiesta di somme manifestamente sproporzionate rispetto al pregiudizio allegato costituisce elemento di valutazione del carattere abusivo della domanda.",
+            "La diffamazione commessa a mezzo stampa, con il mezzo radiotelevisivo o con altro mezzo di diffusione telematica è punita con la sola pena pecuniaria. Sono abrogate le disposizioni che prevedono la pena detentiva per i fatti di cui al presente comma.",
+            "Chi è domiciliato nel territorio dello Stato e subisce un procedimento abusivo promosso dinanzi all'autorità giudiziaria di uno Stato non appartenente all'Unione europea può agire dinanzi al giudice italiano per il risarcimento delle spese e dei danni subiti. Il riconoscimento e l'esecuzione di provvedimenti emessi in tali procedimenti sono negati quando risultino manifestamente contrari all'ordine pubblico. Resta fermo quanto previsto dall'articolo 1 in materia di tutela legale dei giornalisti."
+          ],
           "risponde": null,
           "carta": 4,
           "chiosa": "La Slapp — L'Imperatore. Si difende con lo scudo delle regole che è lui stesso a scrivere. Questo articolo gli toglie lo scudo di mano."
@@ -79,7 +111,15 @@
         {
           "n": 5,
           "rubrica": "Misure per la prevenzione delle forme di sorveglianza illecita e tutela della riservatezza delle comunicazioni degli attivisti",
-          "testo": null,
+          "testo": [
+            "L'articolo 4 del [regolamento (UE) 2024/1083 del Parlamento europeo e del Consiglio](https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=OJ:L_202401083), dell'11 aprile 2024, applicabile dall'8 agosto 2025, vieta l'impiego di programmi di sorveglianza nei confronti dei giornalisti e delle loro fonti, salvo che ricorrano casi tassativamente previsti e previa autorizzazione giudiziaria motivata. Con relazione approvata il 4 giugno 2025 e trasmessa ai Presidenti del Senato della Repubblica e della Camera dei deputati, il Comitato parlamentare per la sicurezza della Repubblica ha riferito dell'impiego del programma di sorveglianza «Graphite» nei confronti di cittadini italiani impegnati in attività di soccorso in mare e di tutela dei diritti umani. Sul medesimo caso proseguono le indagini delle procure della Repubblica di Roma e di Napoli.",
+            "È vietato l'impiego di programmi informatici idonei a captare comunicazioni, dati o attività da dispositivi elettronici nei confronti di giornalisti, operatori dell'informazione, difensori dei diritti umani e persone impegnate in attività di partecipazione democratica, nonché delle loro fonti. Il divieto può essere derogato soltanto nei procedimenti per delitti di terrorismo o di criminalità organizzata, ovvero in presenza di una minaccia grave e attuale alla sicurezza nazionale, con provvedimento motivato dell'autorità giudiziaria che indichi le ragioni per cui la misura è necessaria, proporzionata e non sostituibile con mezzi meno invasivi, e ne stabilisce la durata, comunque non superiore a trenta giorni, prorogabile con nuovo provvedimento motivato.",
+            "La produzione, l'importazione, la vendita, la cessione a qualsiasi titolo e l'impiego dei programmi di cui al comma 2 da parte di soggetti diversi dalle autorità autorizzate ai sensi del medesimo comma sono puniti con la reclusione non inferiore a due anni. Le autorità che ne fanno uso tengono un registro dei contratti di fornitura, accessibile all'autorità giudiziaria e all'organo di controllo parlamentare competente.",
+            "I dati acquisiti in violazione del comma 2 non possono essere utilizzati in alcun procedimento e sono distrutti entro trenta giorni dall'accertamento della violazione, con verbale trasmesso all'autorità giudiziaria e alla persona interessata.",
+            "La persona sottoposta alle misure di cui al comma 2 ne è informata al più tardi dodici mesi dopo la cessazione della misura. La notifica indica l'autorità che ha disposto la misura, il periodo di applicazione e il provvedimento che l'ha autorizzata. Il differimento della notifica è disposto con provvedimento motivato dell'autorità giudiziaria, per periodi non superiori a sei mesi, quando la comunicazione possa pregiudicare indagini in corso o l'incolumità di persone. L'omessa notifica comporta l'inutilizzabilità dei dati acquisiti.",
+            "In attuazione della raccomandazione del Parlamento europeo del 15 giugno 2023, che ha rilevato la necessità di strumenti tecnici indipendenti di accertamento delle sorveglianze illecite, chiunque abbia fondato motivo di ritenere di essere stato sottoposto alle misure di cui al comma 2 può chiedere l'analisi tecnica dei propri dispositivi al laboratorio di cui all'articolo 8. L'analisi è gratuita per il richiedente. Gli esiti sono comunicati all'interessato e, ove emergano violazioni, all'autorità giudiziaria e al Presidio di cui all'articolo 1 quando riguardino giornalisti.",
+            "Entro il 31 marzo di ogni anno il Governo trasmette alle Camere una relazione contenente il numero delle autorizzazioni richieste, concesse e negate ai sensi del comma 2, la durata media delle misure, il numero delle notifiche effettuate e differite e il numero delle violazioni accertate. La relazione non contiene elementi idonei a identificare le persone sottoposte alle misure né a pregiudicare le indagini in corso."
+          ],
           "risponde": null,
           "carta": 2,
           "chiosa": "Lo Spyware — La Papessa. Sa leggere dentro le persone, e finora ha aiutato quasi sempre i potenti a capire i deboli. Quasi mai il contrario."
@@ -87,56 +127,54 @@
         {
           "n": 6,
           "rubrica": "Divieto di installazione e impiego di sistemi di riconoscimento biometrico e di identificazione facciale in tempo reale in aree pubbliche o aperte al pubblico",
-          "testo": null,
+          "testo": [
+            "L'articolo 5 del [regolamento (UE) 2024/1689 del Parlamento europeo e del Consiglio](https://eur-lex.europa.eu/eli/reg/2024/1689/oj?locale=it), del 13 giugno 2024, applicabile dal 2 febbraio 2025, vieta l'uso di sistemi di identificazione biometrica remota in tempo reale in spazi accessibili al pubblico a fini di attività di contrasto, salvo casi tassativamente previsti e previa autorizzazione di un'autorità giudiziaria o amministrativa indipendente. Nell'ordinamento italiano l'installazione e l'utilizzo di tali sistemi sono sospesi, in via temporanea e reiteratamente prorogata, dall'anno 2021.",
+            "L'installazione e l'utilizzo, da parte di autorità pubbliche o di soggetti privati, di impianti di videosorveglianza dotati di sistemi di riconoscimento facciale o di altra identificazione biometrica in tempo reale, in luoghi pubblici o aperti al pubblico, sono vietati. Il divieto ha carattere permanente e sostituisce la sospensione temporanea di cui al comma 1.",
+            "Il divieto di cui al comma 2 può essere derogato esclusivamente per:\na) la ricerca di persone scomparse, di vittime di sottrazione o di tratta di esseri umani;\nb) la prevenzione di una minaccia terroristica concreta, grave e imminente;\nc) la localizzazione di persona nei cui confronti sia in corso un procedimento per delitti puniti con la pena della reclusione non inferiore nel massimo a quattro anni.\nLa deroga è autorizzata con provvedimento motivato dell'autorità giudiziaria, che indica l'ambito territoriale e il periodo di applicazione, comunque non superiore a quarantotto ore, e le persone ricercate. È vietato l'impiego generalizzato del sistema per finalità diverse da quelle autorizzate.",
+            "Non è consentita alcuna deroga, in nessun caso, per:\na) l'impiego dei sistemi di cui al comma 2 in occasione di riunioni, cortei, manifestazioni o altre forme di esercizio dei diritti di riunione e di manifestazione del pensiero;\nb) la categorizzazione biometrica delle persone fondata su convinzioni politiche, religiose o filosofiche, sull'appartenenza sindacale, sull'orientamento sessuale o sull'origine razziale o etnica;\nc) la costituzione o l'ampliamento di banche dati di volti mediante raccolta non mirata di immagini da internet o da impianti di videosorveglianza.",
+            "I dati biometrici acquisiti in violazione dei commi 2 e 4 non possono essere utilizzati in alcun procedimento e sono distrutti entro trenta giorni dall'accertamento della violazione. Le banche dati costituite in violazione del comma 4, lettera c), sono cancellate.",
+            "Le autorità che impiegano i sistemi di cui al comma 3 tengono un registro pubblico, aggiornato annualmente, contenente la tipologia dei sistemi in uso, il fornitore, l'ambito di impiego e il numero delle autorizzazioni ottenute. L'impiego è preceduto da una valutazione d'impatto sulla protezione dei dati e dal parere vincolante del Garante per la protezione dei dati personali. Entro il 31 marzo di ogni anno il Governo trasmette alle Camere una relazione sulle deroghe autorizzate e sui risultati conseguiti.",
+            "Le disposizioni che prevedono la sospensione temporanea di cui al comma 1 sono abrogate. Con decreto del Ministro dell'interno, di concerto con il Garante per la protezione dei dati personali, da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto, sono stabilite le modalità di richiesta delle autorizzazioni di cui al comma 3 e di tenuta del registro di cui al comma 6."
+          ],
           "risponde": null,
           "carta": 21,
           "chiosa": "La Zona Rossa — Il Mondo. Lo spazio pubblico dovrebbe essere di tutti. Serve sempre una breccia da cui passare."
-        },
-        {
-          "n": 7,
-          "rubrica": "Protocolli di cybersicurezza per le redazioni giornalistiche e le organizzazioni non governative",
-          "testo": null,
-          "risponde": null,
-          "carta": 9,
-          "chiosa": "L'Algoritmo — L'Eremita. La solitudine può essere cercata o subita. Una redazione lasciata sola davanti a un attacco la subisce."
-        },
-        {
-          "n": 8,
-          "rubrica": "Contrasto alle campagne di odio online (hate speech) e ai tentativi di delegittimazione digitale",
-          "testo": null,
-          "risponde": null,
-          "carta": 18,
-          "chiosa": "La Propaganda — La Luna. Una voce suadente che ti porta verso i suoi sogni, facendoti credere che siano i tuoi."
         }
       ]
     },
     {
       "numero": "Capo III",
-      "titolo": "Sostenibilità economica e riconoscimento del ruolo nell'ordinamento democratico",
+      "titolo": "Sostenibilità economica e riconoscimento del ruolo del giornalismo e dell'attivismo nell'ordinamento democratico",
       "articoli": [
         {
-          "n": 9,
-          "rubrica": "Istituzione di un fondo di solidarietà per il patrocinio legale degli attivisti vittime di minacce o violenze",
-          "testo": null,
-          "risponde": null,
-          "carta": 6,
-          "chiosa": "L'Attivismo — Gli Amanti. Unione di forze e di idee. Che però, da sola, in tribunale non paga l'avvocato."
-        },
-        {
-          "n": 10,
-          "rubrica": "Istituzione di un fondo di solidarietà per il patrocinio legale dei giornalisti vittime di minacce o violenze",
-          "testo": null,
-          "risponde": null,
-          "carta": 14,
-          "chiosa": "La Solidarietà — La Temperanza. Quando si cammina insieme tenendo lo stesso passo, la salita diventa discesa."
-        },
-        {
-          "n": 11,
-          "rubrica": "Revisione dei criteri di accesso e ripartizione del Fondo straordinario per gli interventi di sostegno all'editoria e all'emittenza locale",
-          "testo": null,
+          "n": 7,
+          "rubrica": "Revisione dei criteri di accesso e di riparto del Fondo unico per il pluralismo e l'innovazione digitale dell'informazione e dell'editoria e istituzione della Sezione per il giornalismo indipendente d'inchiesta e di approfondimento",
+          "testo": [
+            "Le risorse del [Fondo unico per il pluralismo e l'innovazione digitale dell'informazione e dell'editoria](https://www.informazioneeditoria.gov.it/it/il-sostegno-alleditoria-nei-principali-paesi-deuropa/italia/), di cui all'articolo 1 della legge 26 ottobre 2016, n. 198, determinate per l'anno 2025 sono state pari a 202.079.452 euro, destinate secondo i criteri contenuti nel [decreto legislativo 15 maggio 2017, n. 70](https://www.gazzettaufficiale.it/eli/id/2017/05/29/17G00083/sg).",
+            "I criteri di accesso attuali, che commisurano il contributo al numero di copie vendute, ai costi di produzione, stampa e distribuzione della testata e all'impiego di almeno cinque dipendenti assunti con contratto di lavoro a tempo indeterminato, non tengono conto delle forme in cui l'attività di informazione di interesse pubblico, in particolare se autonoma e indipendente, è sempre più frequentemente prodotta e diffusa.",
+            "Si istituisce quindi, nell'ambito del Fondo di cui al comma 1, una «Sezione per il giornalismo indipendente d'inchiesta e di approfondimento», alla quale è destinata una quota pari al 5 per cento della dotazione complessiva annua del Fondo. Con decreto del Presidente del Consiglio dei ministri, da adottare entro sessanta giorni dalla data di entrata in vigore del presente decreto, sono stabilite le modalità di presentazione delle domande e di verifica dei requisiti.",
+            "Accedono ai contributi della Sezione le testate e i collettivi giornalistici in possesso dei seguenti requisiti:\na) costituzione in forma di società cooperativa, associazione senza scopo di lucro, impresa sociale, fondazione o altro ente del Terzo settore;\nb) pubblicazione, nei dodici mesi precedenti la domanda, di almeno sei contenuti originali di inchiesta, approfondimento o reportage;\nc) una media mensile di almeno 5.000 lettori o utenti unici nei dodici mesi precedenti la domanda.",
+            "Il contributo è pari al 35 per cento delle spese risultanti dal bilancio dell'esercizio precedente. La quota è elevata:\na) al 50 per cento per i soggetti che abbiano pubblicato, nell'anno di riferimento, almeno un'inchiesta, un approfondimento o un reportage realizzato in collaborazione con una o più testate di altri Paesi, appartenenti o non appartenenti all'Unione europea;\nb) al 60 per cento per i soggetti che, in possesso del requisito di cui alla lettera a), impieghino almeno cinque persone assunte con contratto di lavoro a tempo indeterminato.",
+            "Su richiesta motivata, il contributo è aumentato di euro 7.500 annui in favore delle redazioni i cui componenti risiedono in almeno tre province diverse, per l'organizzazione di uno o più incontri in presenza, dedicati alla definizione delle strategie, dei contenuti e delle linee editoriali."
+          ],
           "risponde": null,
           "carta": 16,
           "chiosa": "Il Precariato — La Torre. Il vento nuovo spazza via le vesti vecchie, e poi ci si ritrova nudi. Tranne i potenti."
+        },
+        {
+          "n": 8,
+          "rubrica": "Misure di sostegno agli enti indipendenti per l'analisi forense e per la formazione di giornalisti e attivisti alla sicurezza digitale",
+          "testo": [
+            "L'accertamento tecnico delle infezioni da programmi di sorveglianza e la formazione alla sicurezza digitale delle persone esposte sono oggi assicurati in via prevalente da organizzazioni non governative e da centri di ricerca universitari stranieri, a titolo gratuito e in assenza di sostegno pubblico. Con la raccomandazione del 15 giugno 2023 il Parlamento europeo ha rilevato la necessità di dotarsi di capacità tecniche indipendenti di accertamento.",
+            "A decorrere dall'anno successivo a quello di entrata in vigore del presente decreto è stanziata annualmente una somma non inferiore a 5.000.000 di euro destinata a sostenere uno o più enti indipendenti per l'istituzione e il funzionamento di un laboratorio di analisi forense dei dispositivi elettronici e per l'organizzazione di attività formative gratuite in materia di protezione dai rischi digitali.",
+            "Possono accedere alle risorse di cui al comma 2, mediante procedura pubblica di selezione:\na) le università pubbliche e gli enti pubblici di ricerca;\nb) le organizzazioni non lucrative di utilità sociale, le associazioni di promozione sociale e gli altri enti del Terzo settore che documentino esperienza in materia di diritti digitali, sicurezza informatica o libertà di informazione;\nc) i consorzi e i raggruppamenti costituiti fra due o più dei soggetti di cui alle lettere a) e b).",
+            "Gli enti selezionati assicurano:\na) l'analisi forense gratuita dei dispositivi, su richiesta di chi abbia fondato motivo di ritenersi sottoposto a sorveglianza illecita, secondo l'articolo 5, comma 6;\nb) corsi gratuiti, in presenza e a distanza, rivolti a giornalisti, operatori dell'informazione, difensori dei diritti umani e persone impegnate in attività di partecipazione democratica, in materia di protezione delle comunicazioni, delle fonti e dei dati;\nc) la pubblicazione annuale di un rapporto sulle attività svolte e sulle minacce rilevate, in forma aggregata e nel rispetto della riservatezza delle persone assistite.",
+            "Gli enti selezionati non sono sottoposti a direzione, vigilanza o controllo delle autorità di pubblica sicurezza né dei servizi di informazione per la sicurezza della Repubblica. Non possono accedere alle risorse di cui al comma 2 i soggetti che, nei tre anni precedenti, abbiano fornito programmi o servizi di sorveglianza ad autorità pubbliche o a soggetti privati.",
+            "Con decreto del Ministro dell'università e della ricerca, di concerto con il Ministro della giustizia, da adottare entro novanta giorni dalla data di entrata in vigore del presente decreto, sono stabiliti i criteri della procedura di selezione, la durata delle convenzioni e le modalità di rendicontazione."
+          ],
+          "risponde": null,
+          "carta": 17,
+          "chiosa": "Lo Sciopero — Le Stelle. Le stelle indicano la rotta, ma solo a chi ha imparato a leggerle. Senza preparazione, il vortice inghiotte tutto."
         }
       ]
     }

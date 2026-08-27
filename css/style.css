@@ -557,10 +557,23 @@ a { color: inherit; }
   transition: height .9s cubic-bezier(.2,.8,.2,1);
 }
 .barra-v[data-tono="neutro"] .barra-v__fill { background: var(--neutro); }
+/* due colonne per voce: la stessa domanda vista da giornalisti e da attivisti.
+   Il verde e il grigio sono gli stessi della legenda dei temi, e la quota è
+   sempre scritta sopra la colonna: il colore non è mai l'unica cosa che
+   distingue le due serie. */
+.barre-v--doppie { gap: clamp(.8rem, 4vw, 2.4rem); }
+.gruppo-v {
+  display: flex; align-items: flex-end; justify-content: center;
+  gap: 4px; height: 100%;
+}
+.gruppo-v .barra-v { flex: 1 1 0; max-width: 56px; }
+.barra-v--s1 .barra-v__fill { background: var(--bianco-2); }
+
 .barre-v__et {
   display: grid; grid-auto-flow: column; grid-auto-columns: 1fr;
   gap: 2px; margin-top: .7rem;
 }
+.barre-v--doppie + .barre-v__et { gap: clamp(.8rem, 4vw, 2.4rem); }
 .barre-v__et span {
   font-size: .8rem; line-height: 1.2; text-align: center; color: var(--bianco-2);
   text-wrap: balance;
@@ -977,6 +990,40 @@ a.appello:focus-visible .appello__azione { color: var(--carta); }
   line-height: 1.35; margin: 0 0 1rem;
 }
 .articolo__testo { font-size: .98rem; line-height: 1.65; margin: 0; }
+
+/* Il testo dell'articolo sta chiuso in un cassetto: in pagina si scorrono le
+   rubriche, e chi vuole leggere i commi apre. Undici articoli aperti tutti
+   insieme sarebbero un muro di legge. */
+.articolo__box { margin: 0; }
+.articolo__box > summary {
+  cursor: pointer; list-style: none;
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--mono); font-size: .72rem;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--verde-carta);
+  border-top: 1px dashed rgba(23,20,15,.35);
+  padding-top: .6rem;
+}
+.articolo__box > summary::-webkit-details-marker { display: none; }
+.articolo__box > summary::after {
+  content: "+"; font-size: .95rem; line-height: 1;
+}
+.articolo__box[open] > summary::after { content: "–"; }
+.articolo__box > summary:hover,
+.articolo__box > summary:focus-visible { color: var(--scuro); outline: none; }
+
+/* i commi, numerati come in un decreto vero */
+.commi {
+  margin: 1rem 0 0; padding-left: 1.4rem;
+  font-size: .98rem; line-height: 1.65;
+}
+.commi > li { margin-bottom: .9rem; padding-left: .3rem; }
+.commi > li::marker { font-family: var(--mono); font-size: .85rem; }
+.commi p { margin: 0; }
+/* le lettere a), b), c) rientrate sotto il comma che le introduce */
+.commi__lettere { margin-top: .5rem !important; padding-left: 1rem; }
+.commi a { text-decoration: underline; text-underline-offset: .18em; }
+.commi a:hover { color: var(--verde-carta); }
 .articolo__risponde {
   margin: 1rem 0 0; padding-left: .9rem;
   border-left: 3px solid var(--verde-carta);

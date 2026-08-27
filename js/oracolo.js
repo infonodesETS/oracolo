@@ -73,42 +73,59 @@ function sezioneSondaggio(d) {
   if (apre) {
     const box = el('div', 'apertura');
     box.append(bloccoGrande(apre, 'blocco--apertura'));
+    if (apre.azioni) box.append(tastiAzioni(apre.azioni));
     s.append(box);
   }
 
   const scrolly = el('div', 'scrolly');
 
+  // Le parti marcate `inPagina: false` si leggono solo nella pagina di tutti
+  // i dati: qui resta il minimo che si scorre in una schermata.
+  const inPagina = d.sezioni.filter((sez) => sez.inPagina !== false);
+  // Con una parte sola «Parte 2» non vuol dire niente: il numero serve a
+  // orientarsi fra più parti, e torna da solo se un domani ne rimettiamo.
+  const numerate = inPagina.length > 1;
+  // Il tasto in fondo porta a tutti i numeri del sondaggio, non solo a quelli
+  // della parte che si è appena letta.
+  const domande = d.sezioni
+    .flatMap((sez) => sez.blocchi).filter((b) => !b.soloInPagina).length;
+
   // Un solo grafico per parte, quello che racconta la storia. Tutti gli altri
   // stanno nella pagina dei dati, che è anche quella da cui si stampa il PDF
   // dei risultati completi.
-  d.sezioni.forEach((sez) => {
+  inPagina.forEach((sez) => {
     scrolly.append(el('div', 'sottosezione',
-      `<p class="sottosezione__numero">Parte ${esc(sez.numero)}</p>` +
+      (numerate ? `<p class="sottosezione__numero">Parte ${esc(sez.numero)}</p>` : '') +
       `<h3 class="sottosezione__titolo">${esc(sez.titolo)}</h3>` +
       `<p class="sottosezione__testo">${esc(sez.testo)}</p>`));
 
     scrolly.append(bloccoGrande(sez.blocchi.find((b) => b.evidenza) || sez.blocchi[0]));
 
-    // Una parte può avere i suoi inviti al posto del solito rimando: è il caso
-    // dei pericoli, che invece di limitarsi a mandare ai numeri chiedono di
-    // aggiungerne uno. Il secondo tasto è quello pieno: è l'azione vera.
-    const altri = sez.blocchi.filter((b) => !b.soloInPagina).length - 1;
-    scrolly.append(el('p',
-      'sottosezione__vaia' + (sez.azioni ? ' sottosezione__vaia--azioni' : ''),
-      sez.azioni
-        ? sez.azioni.map((a, i) =>
-            `<a class="btn${i ? '' : ' btn--ghost'}" href="${esc(a.dove)}"` +
-            (a.esterno ? ' target="_blank" rel="noopener noreferrer"' : '') +
-            `>${esc(a.testo)}</a>`).join('')
-        : `<a class="btn btn--ghost" href="dati.html#${esc(sez.id)}">` +
-          `Vedi tutte le risposte</a>` +
-          (altri > 0
-            ? `<span>altre ${altri} domande su questa parte, con i numeri in tabella</span>`
-            : '')));
+    // Una parte può avere i suoi inviti al posto del solito rimando ai numeri.
+    // Con più parti in pagina ognuna manda al proprio pezzo; con una sola, il
+    // tasto e' la porta a tutti i dati e si apre dall'inizio.
+    const dove = numerate ? `dati.html#${esc(sez.id)}` : 'dati.html';
+    scrolly.append(sez.azioni
+      ? tastiAzioni(sez.azioni)
+      : el('p', 'sottosezione__vaia',
+          `<a class="btn btn--ghost" href="${dove}">` +
+          `Vedi tutte le risposte al sondaggio</a>` +
+          `<span>tutte le ${domande} domande del questionario, con i numeri ` +
+          `in tabella</span>`));
   });
   s.append(scrolly);
 
   osservaGrafici([...s.querySelectorAll('.blocco')]);
+}
+
+/* I tasti sotto un blocco o sotto una parte. L'ultimo è quello pieno: è
+   l'azione vera, gli altri sono rimandi. */
+function tastiAzioni(azioni) {
+  return el('p', 'sottosezione__vaia sottosezione__vaia--azioni',
+    azioni.map((a, i) =>
+      `<a class="btn${i === azioni.length - 1 ? '' : ' btn--ghost'}" href="${esc(a.dove)}"` +
+      (a.esterno ? ' target="_blank" rel="noopener noreferrer"' : '') +
+      `>${esc(a.testo)}</a>`).join(''));
 }
 
 function bloccoGrande(b, extra) {
@@ -131,6 +148,46 @@ function bloccoGrande(b, extra) {
 /* ============================================================
    SEZIONE — decreto
    ============================================================ */
+
+/* Alla stampa i cassetti si aprono da soli: su carta un articolo chiuso è un
+   articolo perso, e chi stampa vuole il decreto intero. Dopo la stampa
+   tornano come erano. */
+addEventListener('beforeprint', () => {
+  document.querySelectorAll('.articolo__box:not([open])').forEach((d) => {
+    d.dataset.riapri = '1';
+    d.open = true;
+  });
+});
+addEventListener('afterprint', () => {
+  document.querySelectorAll('.articolo__box[data-riapri]').forEach((d) => {
+    delete d.dataset.riapri;
+    d.open = false;
+  });
+});
+
+/* Gli articoli citano le norme vere: nei JSON i collegamenti si scrivono come
+   [testo](indirizzo). Si escapa prima e si sostituisce dopo, così dal file dei
+   contenuti non può arrivare HTML, e passano solo gli indirizzi http/https. */
+function conLink(t) {
+  return esc(t).replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+    (_, testo, url) =>
+      `<a href="${url}" target="_blank" rel="noopener noreferrer">${testo}</a>`);
+}
+
+/* I commi di un articolo, numerati come in un decreto vero. Le lettere a), b)
+   stanno su righe proprie dentro il comma che le introduce: nel JSON sono
+   separate da un a capo. */
+function commiArticolo(testo) {
+  const commi = Array.isArray(testo) ? testo : [testo];
+  return '<ol class="commi">' + commi.map((c) => {
+    const righe = String(c).split('\n');
+    return `<li><p>${conLink(righe[0])}</p>` +
+      (righe.length > 1
+        ? `<p class="commi__lettere">${righe.slice(1).map(conLink).join('<br>')}</p>`
+        : '') + '</li>';
+  }).join('') + '</ol>';
+}
 
 /* Epigrafe e primi paragrafi del preambolo; il testo intero sta in una
    pagina sua, per non seppellire gli articoli sotto la ricostruzione
@@ -170,7 +227,7 @@ function sezioneDecreto(d) {
 
   const somm = el('div', 'gazzetta__sommario');
   somm.innerHTML =
-    badge(d.placeholder, 'articoli ancora da scrivere') +
+    badge(d.placeholder, 'bozza in revisione') +
     `<p class="lead">${esc(d.meta.sommario)}</p>` +
     `<p class="avvertenza">${esc(d.meta.avvertenza)}</p>`;
 
@@ -200,6 +257,10 @@ function sezioneDecreto(d) {
     lista.append(el('p', 'articoli__nota',
       'Le rubriche degli articoli sono definitive. I testi verranno scritti con chi ' +
       'partecipa ai focus group e con le altre redazioni della rete Civitates.'));
+  } else if (d.placeholder) {
+    lista.append(el('p', 'articoli__nota',
+      'Questi testi sono una prima stesura, in revisione con le redazioni della rete ' +
+      'Civitates e con chi partecipa ai focus group. Apri un articolo per leggerlo.'));
   }
   d.capi.forEach((capo) => {
     const c = el('section', 'capo');
@@ -214,7 +275,10 @@ function sezioneDecreto(d) {
            <p class="articolo__num">Art. ${a.n}</p>
            <h4 class="articolo__rubrica">${esc(a.rubrica)}</h4>
            ${a.testo
-             ? `<p class="articolo__testo">${esc(a.testo)}</p>`
+             ? `<details class="articolo__box">
+                  <summary>Leggi il testo dell'articolo</summary>
+                  ${commiArticolo(a.testo)}
+                </details>`
              : `<p class="in-attesa">testo in stesura</p>`}
            ${a.risponde
              ? `<p class="articolo__risponde"><b>Ribalta</b>${esc(a.risponde)}</p>`

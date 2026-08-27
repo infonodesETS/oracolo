@@ -3,8 +3,8 @@
   "placeholder": true,
   "meta": {
     "occhiello": "Sondaggio e ricerca",
-    "titolo": "Il responso di chi c'è dentro",
-    "sommario": "Abbiamo chiesto a chi fa giornalismo e attivismo che cosa significa, oggi, fare informazione e opposizione in Italia. Che cosa temono per il presente e per il futuro, di che cosa avrebbero bisogno, quali strategie hanno in mente di adoperare per non soccombere alla crescente repressione e alla censura.",
+    "titolo": "Un orizzonte nero",
+    "sommario": "Abbiamo chiesto a chi fa giornalismo e attivismo che cosa significa, oggi, fare informazione libera e opposizione in Italia. Che cosa temono per il presente e per il futuro, di che cosa avrebbero bisogno, quali strategie hanno in mente per non soccombere alla crescente repressione e alla censura.",
     "rispondenti": 90,
     "periodo": "questionario ancora aperto"
   },
@@ -13,18 +13,8 @@
       "id": "anagrafica",
       "numero": "1",
       "titolo": "Anagrafica",
+      "inPagina": false,
       "testo": "Chi sono le persone che hanno risposto: dove stanno, che cosa fanno, di che cosa si occupano.",
-      "azioni": [
-        {
-          "testo": "Guarda tutti i dettagli",
-          "dove": "dati.html#anagrafica"
-        },
-        {
-          "testo": "Contribuisci anche tu rispondendo al questionario",
-          "dove": "https://cryptpad.fr/form/#/2/form/view/-HTFGOS99Ypx60dLwGamZDBSC230lIXELzEpuxomH3M/",
-          "esterno": true
-        }
-      ],
       "blocchi": [
         {
           "id": "rispondenti",
@@ -38,7 +28,14 @@
             "etichetta": "persone hanno risposto"
           },
           "soloInPagina": true,
-          "apertura": true
+          "apertura": true,
+          "azioni": [
+            {
+              "testo": "Contribuisci anche tu rispondendo al questionario",
+              "dove": "https://cryptpad.fr/form/#/2/form/view/-HTFGOS99Ypx60dLwGamZDBSC230lIXELzEpuxomH3M/",
+              "esterno": true
+            }
+          ]
         },
         {
           "id": "attivita",
@@ -360,6 +357,58 @@
       "testo": "Che cosa temono oggi, quanto conoscono le norme che li riguardano, quali si aspettano che pesino di più — e quale scenario futuro li spaventa.",
       "blocchi": [
         {
+          "id": "tre-pericoli",
+          "carta": 16,
+          "titolo": "I tre principali pericoli percepiti oggi dal mondo dell'informazione e da quello dell'attivismo",
+          "testo": "TESTO DA SCRIVERE",
+          "grafico": {
+            "tipo": "barre-doppie",
+            "suffisso": "%",
+            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di quante volte sono stati indicati in tutto",
+            "serieNomi": [
+              "Giornalisti",
+              "Attivisti"
+            ],
+            "serie": [
+              {
+                "etichetta": "Precarietà economica",
+                "valori": [
+                  77,
+                  50
+                ],
+                "conteggi": [
+                  30,
+                  24
+                ]
+              },
+              {
+                "etichetta": "Sorveglianza digitale",
+                "valori": [
+                  54,
+                  65
+                ],
+                "conteggi": [
+                  21,
+                  31
+                ]
+              },
+              {
+                "etichetta": "SLAPP",
+                "valori": [
+                  64,
+                  25
+                ],
+                "conteggi": [
+                  25,
+                  12
+                ]
+              }
+            ]
+          },
+          "evidenza": true,
+          "soloInPagina": true
+        },
+        {
           "id": "rischi",
           "carta": 2,
           "titolo": "Dove vedono il rischio",
@@ -471,8 +520,7 @@
                 ]
               }
             ]
-          },
-          "evidenza": true
+          }
         },
         {
           "id": "familiarita",
@@ -793,6 +841,7 @@
       "id": "strategie",
       "numero": "3",
       "titolo": "Strategie di resistenza",
+      "inPagina": false,
       "testo": "Di che cosa avrebbero bisogno, che cosa pensano si debba fare — nelle loro parole, senza opzioni precompilate — e che cosa sanno già fare.",
       "blocchi": [
         {

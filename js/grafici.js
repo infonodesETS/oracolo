@@ -80,7 +80,45 @@ function piedeGrafico(g, contenitore, tabellaSempre) {
    solo quello che ci sta attaccato — le citazioni sotto ogni riga compaiono
    dove ci sono, e il suffisso serve alle quote, che sono percentuali. */
 
-const dueSerie = (g) => g.tipo === 'temi' || g.tipo === 'confronto';
+const dueSerie = (g) =>
+  g.tipo === 'temi' || g.tipo === 'confronto' || g.tipo === 'barre-doppie';
+
+/* ---------- due colonne per voce ----------
+   Le stesse due serie di «confronto», ma in verticale e su poche voci: è il
+   grafico che resta sulla pagina principale, dove non si legge una tabella ma
+   si guarda una figura. Si confrontano le quote, non i numeri: i due gruppi
+   non sono grandi uguale. */
+
+function costruisciBarreDoppie(g) {
+  const suf = g.suffisso || '';
+  const max = Math.max(...g.serie.flatMap((s) => s.valori));
+  const box = el('div', 'barre-doppie');
+
+  box.append(el('div', 'temi__legenda',
+    g.serieNomi.map((nome, i) =>
+      `<span class="temi__voce"><i class="temi__segno temi__segno--${i}"></i>${esc(nome)}</span>`
+    ).join('')));
+
+  const colonne = el('div', 'barre-v barre-v--doppie');
+  const etichette = el('div', 'barre-v__et');
+  g.serie.forEach((s) => {
+    const gruppo = el('div', 'gruppo-v');
+    s.valori.forEach((v, i) => {
+      const b = el('div', `barra-v barra-v--s${i}`);
+      // il conteggio dietro la percentuale: una quota senza il numero di
+      // persone non si può citare
+      if (s.conteggi) b.title = `${g.serieNomi[i]}: ${s.conteggi[i]} persone`;
+      b.innerHTML =
+        `<span class="barra-v__val">${v}${esc(suf)}</span>` +
+        `<span class="barra-v__fill" data-h="${(v / max) * 100}"></span>`;
+      gruppo.append(b);
+    });
+    colonne.append(gruppo);
+    etichette.append(el('span', null, esc(s.etichetta)));
+  });
+  box.append(colonne, etichette);
+  return box;
+}
 
 function costruisciDueSerie(g) {
   const max = Math.max(...g.serie.flatMap((s) => s.valori));
@@ -169,6 +207,8 @@ function costruisciGrafico(blocco, opz = {}) {
       `<p class="quota__num" data-conta="${g.valore}" data-suffisso="${esc(suf)}">` +
       `0<span class="quota__suf">${esc(suf)}</span></p>` +
       `<p class="quota__et">${esc(g.etichetta)}</p>`));
+  } else if (g.tipo === 'barre-doppie') {
+    wrap.append(costruisciBarreDoppie(g));
   } else if (dueSerie(g)) {
     wrap.append(costruisciDueSerie(g));
   } else {
