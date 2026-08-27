@@ -627,55 +627,10 @@ function collegaScheda() {
   });
 }
 
-/* ============================================================
-   LA LETTURA
-   ============================================================ */
-
-const POSIZIONI = [
-  ['La situazione', 'in cui ti trovi'],
-  ["L'ostacolo", 'il peggiore'],
-  ['La via d\'uscita', 'la migliore'],
-];
-
-function collegaLettura() {
-  const form = document.getElementById('form-lettura');
-  const tavolo = document.getElementById('tavolo');
-  const contenitore = document.getElementById('tavolo-carte');
-  const eco = document.getElementById('eco-domanda');
-  const input = document.getElementById('domanda-utente');
-
-  // mescolata onesta (Fisher-Yates): un oracolo truccato sarebbe imbarazzante
-  const mescola = (a) => {
-    const m = [...a];
-    for (let i = m.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [m[i], m[j]] = [m[j], m[i]];
-    }
-    return m;
-  };
-
-  const estrai = () => {
-    const mescolato = mescola(stato.carte).slice(0, 3);
-    const d = input.value.trim();
-    eco.textContent = d ? `«${d}»` : 'Nessuna domanda: l\'Oracolo risponde comunque.';
-    contenitore.innerHTML = '';
-    mescolato.forEach((c, i) => {
-      const p = el('article', 'posizione');
-      p.innerHTML =
-        `<span class="posizione__ruolo">${POSIZIONI[i][0]} — ${POSIZIONI[i][1]}</span>` +
-        `<img src="${IMG(c.slug, c.n)}" alt="Carta ${esc(c.nome)}" data-carta="${c.n}" style="cursor:pointer">` +
-        `<h4>${esc(c.nome)}</h4>` +
-        `<p class="posizione__arcano">${esc(c.arcano)}</p>` +
-        `<p>${esc(c.testo)}</p>`;
-      contenitore.append(p);
-    });
-    tavolo.hidden = false;
-    tavolo.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
-  form.addEventListener('submit', (e) => { e.preventDefault(); estrai(); });
-  document.getElementById('btn-rifai').addEventListener('click', estrai);
-}
+/* La lettura interattiva — domanda, estrazione di tre carte e tavolo — è stata
+   tolta il 27/08/2026: l'Oracolo si fa in presenza, con qualcuno che gira le
+   carte davvero. Il codice resta nella storia del repository, se un domani si
+   volesse rimetterlo. */
 
 /* ============================================================
    avvio
@@ -699,7 +654,6 @@ function collegaLettura() {
     sezioneDecreto(decreto);
     sezioneVoci(voci);
     sezioneMazzo(carte);
-    collegaLettura();
     // dopo che le sezioni sono state riempite: prima le altezze non sono
     // ancora quelle definitive
     collegaMenu();
