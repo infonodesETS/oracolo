@@ -238,18 +238,8 @@ function sezioneDecreto(d) {
     s.append(preamboloEsteso(stato.preambolo, d.preambolo.pagina));
   }
 
-  // «visto e considerato» — e il preambolo, se non ha ancora un testo suo
-  const premesse = el('div', 'premesse');
-  [d.preambolo, d.considerato].forEach((p) => {
-    if (!p || p.da) return;
-    premesse.append(el('div', 'premessa',
-      `<h3>${esc(p.titolo)}</h3>` +
-      (p.testo
-        ? `<p>${esc(p.testo)}</p>`
-        : `<p class="in-stesura"><b>ancora da scrivere</b>${esc(p.promemoria)}</p>`) +
-      (p.rimando ? `<p class="premessa__rimando">↑ ${esc(p.rimando)}</p>` : '')));
-  });
-  if (premesse.children.length) s.append(premesse);
+  /* Il «visto e considerato» e' stato tolto il 28/08/2026: dopo il filo nero
+     si entra diritti negli articoli. */
 
   // capi e articoli
   const lista = el('div', 'articoli');

@@ -27,12 +27,6 @@
     "da": "preambolo.json",
     "pagina": "preambolo.html"
   },
-  "considerato": {
-    "titolo": "Visto e considerato",
-    "testo": null,
-    "promemoria": "I risultati del sondaggio, letti come motivazione del decreto: problematiche, criticità, pericoli futuri. È pur sempre un decreto legge: serve la necessità e l'urgenza.",
-    "rimando": "I numeri sono qui sopra, nel capitolo del sondaggio."
-  },
   "capi": [
     {
       "numero": "Capo I",
