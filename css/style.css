@@ -1184,9 +1184,26 @@ a.btn.da-definire {
   pointer-events: none; font-size: .78rem;
 }
 
+/* Sul telefono la pagina serve a un'altra cosa: agli incontri si porge il
+   telefono a chi vuole il mazzo, e quella persona deve poter pagare senza
+   scorrere due schermate. Quindi prima il prezzo e il pagamento, poi il
+   racconto — e la carta si fa piu' piccola, perche' chi e' li' il mazzo ce
+   l'ha gia' davanti. Su schermo grande resta tutto com'era. */
 @media (max-width: 760px) {
-  .acquista__griglia { grid-template-columns: 1fr; }
-  .acquista__figura { position: static; max-width: 300px; }
+  .acquista { padding-top: 3.2rem; }
+  .acquista__testata { margin-bottom: 1.5rem; }
+  .acquista__griglia { grid-template-columns: 1fr; gap: 1.6rem; }
+  /* la carta scende sotto il testo: chi e' davanti a noi il mazzo ce l'ha in
+     mano, e quei 270 pixel di immagine allontanavano il tasto per pagare */
+  .acquista__testo   { order: 1; display: flex; flex-direction: column; }
+  .acquista__figura  {
+    order: 2; position: static; max-width: 190px;
+    margin-inline: auto; margin-top: 1rem;
+  }
+  .acquista__blocco--prezzo   { order: 1; margin-bottom: 1.4rem; }
+  .acquista__blocco--acquisto { order: 2; }
+  .acquista__blocco--scatola  { order: 3; }
+  .acquista__blocco--soldi    { order: 4; }
 }
 
 /* ============================================================
