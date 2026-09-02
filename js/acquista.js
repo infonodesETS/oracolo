@@ -38,8 +38,9 @@ if (tasto && contenitore) {
         window.paypal.HostedButtons({ hostedButtonId: PULSANTE })
           .render('#paypal-container-' + PULSANTE);
         tasto.remove();
-        nota.textContent = 'Il pagamento avviene su PayPal. Se preferisci, ' +
-          'scrivici a comunicazione@infonodes.org e lo gestiamo insieme.';
+        // A modulo aperto la nota non serve piu': spiegava perche' il
+        // pagamento non fosse ancora comparso.
+        nota.remove();
       } catch (e) {
         rinuncia();
       }
