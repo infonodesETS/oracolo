@@ -438,6 +438,11 @@ function sezioneMazzo(carte) {
     griglia.append(b);
   });
   s.append(griglia);
+
+  // Subito dopo le carte: chi le ha appena guardate tutte e' anche chi puo'
+  // volerle in mano.
+  s.append(el('p', 'mazzo__acquista',
+    '<a class="btn" href="acquista.html">Acquista un mazzo</a>'));
 }
 
 /* ============================================================

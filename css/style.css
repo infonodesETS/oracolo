@@ -1150,6 +1150,10 @@ video.video { object-fit: contain; }
   width: 100%; height: auto; display: block;
   border: 1px solid var(--l16);
 }
+/* nome e arcano sotto la carta, come nella griglia del mazzo */
+.acquista__figura figcaption {
+  display: grid; gap: .2rem; margin-top: .7rem; text-align: center;
+}
 .acquista__blocco { margin-bottom: 2.6rem; }
 .acquista__blocco h2 {
   font-family: var(--mono); font-size: .8rem; letter-spacing: .16em;
@@ -1211,6 +1215,12 @@ a.btn.da-definire {
   letter-spacing: .04em; color: var(--bianco);
 }
 .carta__arcano { font-family: var(--mono); font-size: .66rem; color: var(--bianco-3); }
+
+/* il tasto sotto la griglia delle carte */
+.mazzo__acquista {
+  max-width: var(--largo); margin: 2.5rem auto 0;
+  padding-inline: clamp(1.5rem, 4vw, 3rem);
+}
 
 /* ============================================================
    6. LETTURA
