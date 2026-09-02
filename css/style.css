@@ -222,6 +222,8 @@ a { color: inherit; }
   display: block; font-family: var(--mono); font-size: .62rem;
   letter-spacing: .2em; color: var(--verde); margin-top: .3rem;
 }
+/* il marchio quando non e' un link: stessa faccia, ma non invita a cliccare */
+.nav__logo--fermo { cursor: default; }
 .nav__voci {
   display: flex; align-items: center; gap: 1.6rem;
   list-style: none; margin: 0; padding: 0;

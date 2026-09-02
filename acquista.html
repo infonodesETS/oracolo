@@ -13,17 +13,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202609021151">
+<link rel="stylesheet" href="css/style.css?v=202609021159">
 </head>
 <body>
 
 <div class="avanzamento"><span id="barra"></span></div>
 
+<!-- ⏳ TEMPORANEO — dal 28/08/2026, per una quindicina di giorni.
+     Questa pagina vive da sola: viene usata agli incontri in presenza per far
+     pagare chi vuole un mazzo, quindi non deve offrire vie di fuga verso il
+     resto del sito. Da rimettere quando quel periodo finisce:
+       1. il logo qui sotto torna <a class="nav__logo" href="index.html">
+       2. nel menu torna <li><a href="index.html#oracolo" class="nav__cta">← Torna alle carte</a></li>
+       3. in fondo tornano i due tasti «← Torna alle carte» e «Richiedi una
+          lettura dal vivo» (mailto comunicazione@infonodes.org). -->
 <nav class="nav visibile" id="nav" aria-label="Sezioni">
-  <a class="nav__logo" href="index.html">ORACOLO<span>DEL DISSENSO</span></a>
-  <ul class="nav__voci">
-    <li><a href="index.html#oracolo" class="nav__cta">← Torna alle carte</a></li>
-  </ul>
+  <span class="nav__logo nav__logo--fermo">ORACOLO<span>DEL DISSENSO</span></span>
 </nav>
 
 <main id="contenuto" class="acquista">
@@ -102,10 +107,8 @@
 
 <footer class="chiusura">
   <div class="colonna">
-    <p class="chiusura__azioni">
-      <a class="btn" href="index.html#oracolo">← Torna alle carte</a>
-      <a class="btn btn--ghost" href="mailto:comunicazione@infonodes.org?subject=Richiesta%20di%20una%20lettura%20dell%27Oracolo%20del%20Dissenso">Richiedi una lettura dal vivo</a>
-    </p>
+    <!-- ⏳ TEMPORANEO: qui stavano «← Torna alle carte» e «Richiedi una lettura
+         dal vivo». Vedi la nota in cima al file. -->
     <div class="crediti">
       <p><strong>Oracolo del Dissenso</strong> è un progetto di
         <a href="https://www.infonodes.org">info.nodes ETS</a>, realizzato da
@@ -119,6 +122,6 @@
   </div>
 </footer>
 
-<script src="js/acquista.js?v=202609021151"></script>
+<script src="js/acquista.js?v=202609021159"></script>
 </body>
 </html>
