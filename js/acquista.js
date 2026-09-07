@@ -22,7 +22,6 @@ const PULSANTE = 'UXS4L95MUAH6A';
 
 const tasto = document.getElementById('attiva-paypal');
 const contenitore = document.getElementById('paypal-container-' + PULSANTE);
-const nota = document.getElementById('paypal-nota');
 
 if (tasto && contenitore) {
   tasto.addEventListener('click', () => {
@@ -38,9 +37,6 @@ if (tasto && contenitore) {
         window.paypal.HostedButtons({ hostedButtonId: PULSANTE })
           .render('#paypal-container-' + PULSANTE);
         tasto.remove();
-        // A modulo aperto la nota non serve piu': spiegava perche' il
-        // pagamento non fosse ancora comparso.
-        nota.remove();
       } catch (e) {
         rinuncia();
       }
@@ -53,11 +49,19 @@ if (tasto && contenitore) {
   });
 }
 
+/* La rete di sicurezza compare solo se serve: in pagina, normalmente, sotto il
+   tasto non c'e' scritto niente. */
 function rinuncia() {
   tasto.disabled = false;
   tasto.textContent = 'Riprova: PayPal non risponde';
-  nota.innerHTML = 'Se il tasto continua a non funzionare scrivici a ' +
+  if (document.getElementById('paypal-ripiego')) return;
+
+  const p = document.createElement('p');
+  p.className = 'acquista__nota';
+  p.id = 'paypal-ripiego';
+  p.innerHTML = 'Se il tasto continua a non funzionare scrivici a ' +
     '<a href="mailto:comunicazione@infonodes.org?subject=Acquisto%20di%20un%20mazzo' +
     '%20dell%27Oracolo%20del%20Dissenso">comunicazione@infonodes.org</a>: ' +
     'il mazzo te lo mandiamo lo stesso.';
+  tasto.closest('.paypal').append(p);
 }
