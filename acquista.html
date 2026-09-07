@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202609021238">
+<link rel="stylesheet" href="css/style.css?v=202609071236">
 </head>
 <body>
 
@@ -72,22 +72,25 @@
       <section class="acquista__blocco acquista__blocco--acquisto">
         <h2>Come si acquista</h2>
         <ul class="acquista__elenco">
-          <li><strong>Direttamente da qui</strong> con PayPal.</li>
+          <li><strong>Direttamente da qui</strong> con PayPal.
+            <div class="paypal">
+              <p class="acquista__azioni">
+                <button type="button" class="btn" id="attiva-paypal">Paga con PayPal</button>
+              </p>
+              <div id="paypal-container-UXS4L95MUAH6A" hidden></div>
+              <p class="acquista__nota" id="paypal-nota">Il modulo di pagamento viene
+                caricato da PayPal solo quando lo chiedi: finché non premi il tasto,
+                questa pagina non contatta nessun servizio esterno.</p>
+            </div>
+          </li>
           <li><strong>In una delle librerie che ospitano il progetto:</strong> stiamo
             costruendo l'elenco, che troverai qui.
             <a href="mailto:comunicazione@infonodes.org?subject=C%27%C3%A8%20una%20libreria%20vicino%20a%20me%3F">Scrivici</a>
             per sapere se ce n'è già una vicino a te.</li>
+          <li><strong>A Milano, di persona:</strong>
+            <a href="mailto:comunicazione@infonodes.org?subject=Acquisto%20e%20ritiro%20report%20AI%3A%20SEEK%20%26%20DESTROY">contattaci</a>
+            per venire a ritirare una copia nel nostro ufficio.</li>
         </ul>
-
-        <div class="paypal">
-          <p class="acquista__azioni">
-            <button type="button" class="btn" id="attiva-paypal">Paga con PayPal</button>
-          </p>
-          <div id="paypal-container-UXS4L95MUAH6A" hidden></div>
-          <p class="acquista__nota" id="paypal-nota">Il modulo di pagamento viene
-            caricato da PayPal solo quando lo chiedi: finché non premi il tasto, questa
-            pagina non contatta nessun servizio esterno.</p>
-        </div>
       </section>
 
       <section class="acquista__blocco acquista__blocco--soldi">
@@ -122,6 +125,6 @@
   </div>
 </footer>
 
-<script src="js/acquista.js?v=202609021238"></script>
+<script src="js/acquista.js?v=202609071236"></script>
 </body>
 </html>

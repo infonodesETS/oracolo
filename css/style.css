@@ -1171,6 +1171,10 @@ video.video { object-fit: contain; }
   line-height: 1; margin: 0 0 .6rem;
 }
 .acquista__azioni { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.2rem; }
+/* il pagamento sta dentro la voce dell'elenco a cui appartiene: un filo di
+   spazio sopra e sotto, per non incollarlo alle altre due opzioni */
+.acquista__elenco .paypal { margin: .8rem 0 1.4rem; }
+.acquista__elenco .paypal .acquista__azioni { margin-top: 0; }
 
 /* Segnaposto: quello che manca si vede, invece di sembrare finito. Quando
    arrivano prezzo e link di pagamento, si toglie la classe. */
