@@ -222,6 +222,9 @@ a { color: inherit; }
   display: block; font-family: var(--mono); font-size: .62rem;
   letter-spacing: .2em; color: var(--verde); margin-top: .3rem;
 }
+/* dal 08/09/2026 il marchio nella barra e' il logo info.nodes, non piu' la
+   scritta: si dimensiona in altezza, la larghezza segue le proporzioni */
+.nav__logo img { display: block; height: 1.5rem; width: auto; }
 /* il marchio quando non e' un link: stessa faccia, ma non invita a cliccare */
 .nav__logo--fermo { cursor: default; }
 .nav__voci {
@@ -265,6 +268,7 @@ a { color: inherit; }
 @media (max-width: 560px) {
   .nav { gap: .75rem; padding-inline: .9rem; }
   .nav__logo { font-size: .82rem; }
+  .nav__logo img { height: 1.2rem; }
   .nav__voci { font-size: .68rem; letter-spacing: .06em; }
   .nav__cta { padding: .5em .7em; }
   .nav__cta-lungo { display: none; }
@@ -330,10 +334,8 @@ a { color: inherit; }
 .soglia__ventaglio img[data-v="5"] { transform: rotate(26deg) translateY(2rem); }
 
 .soglia__testo { text-align: center; max-width: 52rem; }
-.soglia__logo {
-  display: block; width: clamp(9rem, 22vw, 14rem); margin: 0 auto 2rem;
-}
-.soglia__logo img { width: 100%; height: auto; }
+/* il marchio non sta piu' sopra il titolo: dall'08/09/2026 vive nella barra
+   in alto a sinistra */
 .soglia__testo h1 {
   font-family: var(--display);
   font-size: clamp(3rem, .5rem + 11vw, 9rem);
