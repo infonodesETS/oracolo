@@ -5,7 +5,7 @@
     "occhiello": "Sondaggio e ricerca",
     "titolo": "Un orizzonte nero",
     "sommario": "Abbiamo chiesto a chi fa giornalismo e attivismo che cosa significa, oggi, fare informazione libera e opposizione in Italia. Che cosa temono per il presente e per il futuro, di che cosa avrebbero bisogno, quali strategie hanno in mente per non soccombere alla crescente repressione e alla censura.",
-    "rispondenti": 90,
+    "rispondenti": 92,
     "periodo": "questionario ancora aperto"
   },
   "sezioni": [
@@ -23,7 +23,7 @@
           "testo": "Sono le risposte di chi fa informazione e attivismo in Italia, raccolte in maniera anonima per indirizzare il nostro lavoro. Il questionario è ancora aperto: se hai 5 minuti di tempo da dedicarci e non lo hai ancora fatto, compilalo anche tu.",
           "grafico": {
             "tipo": "quota",
-            "valore": 90,
+            "valore": 92,
             "suffisso": "",
             "etichetta": "persone hanno risposto"
           },
@@ -44,7 +44,7 @@
           "testo": "TESTO DA SCRIVERE — vedi testi/2-sondaggio-e-ricerca.md",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 90",
+            "unita": "persone su 92",
             "serie": [
               {
                 "etichetta": "Attivista",
@@ -52,7 +52,7 @@
               },
               {
                 "etichetta": "Giornalista",
-                "valore": 39
+                "valore": 41
               },
               {
                 "etichetta": "Altro",
@@ -70,11 +70,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 90",
+            "unita": "persone su 92",
             "serie": [
               {
                 "etichetta": "31 - 45",
-                "valore": 44
+                "valore": 46
               },
               {
                 "etichetta": "18 - 30",
@@ -98,15 +98,15 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 90",
+            "unita": "persone su 92",
             "serie": [
               {
                 "etichetta": "Femmina",
-                "valore": 42
+                "valore": 43
               },
               {
                 "etichetta": "Maschio",
-                "valore": 41
+                "valore": 42
               },
               {
                 "etichetta": "Preferisco non rispondere",
@@ -127,11 +127,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre",
-            "unita": "persone su 90",
+            "unita": "persone su 92",
             "serie": [
               {
                 "etichetta": "No",
-                "valore": 74
+                "valore": 76
               },
               {
                 "etichetta": "Sì",
@@ -152,7 +152,7 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "le 10 province più rappresentate su 42 in tutto",
+            "unita": "le 10 province più rappresentate su 43 in tutto",
             "serie": [
               {
                 "etichetta": "Roma",
@@ -160,7 +160,7 @@
               },
               {
                 "etichetta": "Milano",
-                "valore": 8
+                "valore": 9
               },
               {
                 "etichetta": "Torino",
@@ -208,15 +208,15 @@
             "serie": [
               {
                 "etichetta": "Reportage",
-                "valore": 23
+                "valore": 25
               },
               {
                 "etichetta": "Inchiesta",
-                "valore": 21
+                "valore": 22
               },
               {
                 "etichetta": "Altro",
-                "valore": 13,
+                "valore": 14,
                 "tono": "neutro"
               },
               {
@@ -249,7 +249,7 @@
               },
               {
                 "etichetta": "Comunicazione",
-                "valore": 16
+                "valore": 17
               },
               {
                 "etichetta": "Ricerca",
@@ -286,11 +286,11 @@
             "serie": [
               {
                 "etichetta": "Ambiente",
-                "valore": 36
+                "valore": 38
               },
               {
                 "etichetta": "Altro",
-                "valore": 31,
+                "valore": 32,
                 "tono": "neutro"
               },
               {
@@ -303,15 +303,15 @@
               },
               {
                 "etichetta": "Diritti di genere",
+                "valore": 17
+              },
+              {
+                "etichetta": "Diritti delle minoranze",
                 "valore": 16
               },
               {
                 "etichetta": "Diritti dei migranti",
                 "valore": 16
-              },
-              {
-                "etichetta": "Diritti delle minoranze",
-                "valore": 15
               },
               {
                 "etichetta": "Diritti digitali",
@@ -364,7 +364,7 @@
           "grafico": {
             "tipo": "barre-doppie",
             "suffisso": "%",
-            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di quante volte sono stati indicati in tutto",
+            "unita": "quota del proprio gruppo · hanno risposto 41 giornalisti e 48 attivisti · in ordine di quante volte sono stati indicati in tutto",
             "serieNomi": [
               "Giornalisti",
               "Attivisti"
@@ -373,33 +373,33 @@
               {
                 "etichetta": "Precarietà economica",
                 "valori": [
-                  77,
+                  78,
                   50
                 ],
                 "conteggi": [
-                  30,
+                  32,
                   24
                 ]
               },
               {
                 "etichetta": "Sorveglianza digitale",
                 "valori": [
-                  54,
+                  56,
                   65
                 ],
                 "conteggi": [
-                  21,
+                  23,
                   31
                 ]
               },
               {
                 "etichetta": "SLAPP",
                 "valori": [
-                  64,
+                  63,
                   25
                 ],
                 "conteggi": [
-                  25,
+                  26,
                   12
                 ]
               }
@@ -415,19 +415,19 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 90 · si poteva indicarne più di uno",
+            "unita": "risposte su 92 · si poteva indicarne più di uno",
             "serie": [
               {
                 "etichetta": "Precarietà economica / perdita del posto di lavoro",
-                "valore": 57
+                "valore": 59
               },
               {
                 "etichetta": "Sorveglianza e altre minacce digitali",
-                "valore": 54
+                "valore": 56
               },
               {
                 "etichetta": "Slapp (querele temerarie)",
-                "valore": 39
+                "valore": 40
               },
               {
                 "etichetta": "Arresto / detenzione / misure restrittive",
@@ -458,7 +458,7 @@
           "grafico": {
             "tipo": "confronto",
             "suffisso": "%",
-            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di distanza fra i due",
+            "unita": "quota del proprio gruppo · hanno risposto 41 giornalisti e 48 attivisti · in ordine di distanza fra i due",
             "serieNomi": [
               "Giornalisti",
               "Attivisti"
@@ -478,40 +478,40 @@
               {
                 "etichetta": "Slapp (querele temerarie)",
                 "valori": [
-                  64,
+                  63,
                   25
                 ],
                 "conteggi": [
-                  25,
+                  26,
                   12
                 ]
               },
               {
                 "etichetta": "Precarietà economica / perdita del posto di lavoro",
                 "valori": [
-                  77,
+                  78,
                   50
                 ],
                 "conteggi": [
-                  30,
+                  32,
                   24
                 ]
               },
               {
                 "etichetta": "Sorveglianza e altre minacce digitali",
                 "valori": [
-                  54,
+                  56,
                   65
                 ],
                 "conteggi": [
-                  21,
+                  23,
                   31
                 ]
               },
               {
                 "etichetta": "Incolumità fisica",
                 "valori": [
-                  13,
+                  12,
                   12
                 ],
                 "conteggi": [
@@ -529,11 +529,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "persone su 90",
+            "unita": "persone su 92",
             "serie": [
               {
                 "etichetta": "Poca (li conosco solo superficialmente)",
-                "valore": 54
+                "valore": 56
               },
               {
                 "etichetta": "Molta (ne ho una conoscenza approfondita)",
@@ -557,9 +557,9 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "quota",
-            "unita": "rispondenti su 90",
-            "valore": 72,
-            "suffisso": "/90",
+            "unita": "rispondenti su 92",
+            "valore": 74,
+            "suffisso": "/92",
             "etichetta": "indicano le misure sulla libertà di manifestazione in piazza"
           }
         },
@@ -570,11 +570,11 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 90 · si poteva indicarne più di una",
+            "unita": "risposte su 92 · si poteva indicarne più di una",
             "serie": [
               {
                 "etichetta": "Misure relative alla libertà di manifestazione di piazza (azioni, picchetti, sit-in)",
-                "valore": 72
+                "valore": 74
               },
               {
                 "etichetta": "Rafforzamento delle tutele per le forze dell’ordine",
@@ -586,7 +586,7 @@
               },
               {
                 "etichetta": "Rafforzamento del cd. \"Daspo urbano\"",
-                "valore": 17
+                "valore": 18
               },
               {
                 "etichetta": "Norme sulle proteste, anche non violente, negli istituti penitenziari",
@@ -639,23 +639,23 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 90 · si poteva indicarne più di uno",
+            "unita": "risposte su 92 · si poteva indicarne più di uno",
             "serie": [
+              {
+                "etichetta": "Ulteriori restrizioni alle libertà di manifestazione ed espressione del dissenso",
+                "valore": 44
+              },
               {
                 "etichetta": "Maggior libertà di utilizzo da parte delle forze dell’ordine di spyware o altri dispositivi di sorveglianza e controlli mirati",
                 "valore": 44
               },
               {
-                "etichetta": "Ulteriori restrizioni alle libertà di manifestazione ed espressione del dissenso",
-                "valore": 43
-              },
-              {
                 "etichetta": "Ulteriore concentrazione editoriale nelle mani di pochi gruppi economici o gruppi di potere",
-                "valore": 37
+                "valore": 39
               },
               {
                 "etichetta": "Limitazione o blocco dei finanziamenti da fondazioni o enti stranieri per le organizzazioni attivistiche e giornalistiche",
-                "valore": 35
+                "valore": 36
               },
               {
                 "etichetta": "Rafforzamento dei dispositivi di sorveglianza nei luoghi pubblici",
@@ -667,11 +667,11 @@
               },
               {
                 "etichetta": "Inasprimento delle pene per attivisti che compiono azioni di dissenso (blocchi stradali, imbrattamento di muri o monumenti, picchetti)",
-                "valore": 14
+                "valore": 15
               },
               {
                 "etichetta": "Ulteriore riduzione dell’accesso a dati rilevanti in tema di tutela dei diritti e delle libertà",
-                "valore": 13
+                "valore": 14
               },
               {
                 "etichetta": "Inasprimento delle politiche di sgombero di centri sociali e altri spazi di autogestione",
@@ -705,7 +705,7 @@
           "grafico": {
             "tipo": "confronto",
             "suffisso": "%",
-            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di distanza fra i due",
+            "unita": "quota del proprio gruppo · hanno risposto 41 giornalisti e 48 attivisti · in ordine di distanza fra i due",
             "serieNomi": [
               "Giornalisti",
               "Attivisti"
@@ -714,22 +714,22 @@
               {
                 "etichetta": "Ulteriore concentrazione editoriale nelle mani di pochi gruppi economici o gruppi di potere",
                 "valori": [
-                  67,
+                  68,
                   19
                 ],
                 "conteggi": [
-                  26,
+                  28,
                   9
                 ]
               },
               {
                 "etichetta": "Ulteriori restrizioni alle libertà di manifestazione ed espressione del dissenso",
                 "valori": [
-                  31,
+                  32,
                   62
                 ],
                 "conteggi": [
-                  12,
+                  13,
                   30
                 ]
               },
@@ -740,18 +740,18 @@
                   31
                 ],
                 "conteggi": [
-                  20,
+                  21,
                   15
                 ]
               },
               {
                 "etichetta": "Ulteriore riduzione dell’accesso a dati rilevanti in tema di tutela dei diritti e delle libertà",
                 "valori": [
-                  23,
+                  24,
                   6
                 ],
                 "conteggi": [
-                  9,
+                  10,
                   3
                 ]
               },
@@ -767,25 +767,25 @@
                 ]
               },
               {
-                "etichetta": "Inasprimento delle pene per attivisti che compiono azioni di dissenso (blocchi stradali, imbrattamento di muri o monumenti, picchetti)",
-                "valori": [
-                  8,
-                  23
-                ],
-                "conteggi": [
-                  3,
-                  11
-                ]
-              },
-              {
                 "etichetta": "Ulteriori misure di presidio e militarizzazione dei luoghi pubblici (strade, piazze, stazioni)",
                 "valori": [
-                  3,
+                  2,
                   17
                 ],
                 "conteggi": [
                   1,
                   8
+                ]
+              },
+              {
+                "etichetta": "Inasprimento delle pene per attivisti che compiono azioni di dissenso (blocchi stradali, imbrattamento di muri o monumenti, picchetti)",
+                "valori": [
+                  10,
+                  23
+                ],
+                "conteggi": [
+                  4,
+                  11
                 ]
               },
               {
@@ -802,7 +802,7 @@
               {
                 "etichetta": "Inasprimento della censura sulle piattaforme social su cui veicoli i tuoi contenuti",
                 "valori": [
-                  18,
+                  17,
                   23
                 ],
                 "conteggi": [
@@ -811,25 +811,25 @@
                 ]
               },
               {
-                "etichetta": "Rafforzamento dei dispositivi di sorveglianza nei luoghi pubblici",
-                "valori": [
-                  26,
-                  23
-                ],
-                "conteggi": [
-                  10,
-                  11
-                ]
-              },
-              {
                 "etichetta": "Maggior libertà di utilizzo da parte delle forze dell’ordine di spyware o altri dispositivi di sorveglianza e controlli mirati",
                 "valori": [
-                  51,
+                  49,
                   50
                 ],
                 "conteggi": [
                   20,
                   24
+                ]
+              },
+              {
+                "etichetta": "Rafforzamento dei dispositivi di sorveglianza nei luoghi pubblici",
+                "valori": [
+                  24,
+                  23
+                ],
+                "conteggi": [
+                  10,
+                  11
                 ]
               }
             ]
@@ -851,19 +851,19 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 90 · si poteva indicarne più di uno",
+            "unita": "risposte su 92 · si poteva indicarne più di uno",
             "serie": [
               {
                 "etichetta": "Accesso a risorse finanziarie",
-                "valore": 58
+                "valore": 60
               },
               {
                 "etichetta": "Difesa legale",
-                "valore": 37
+                "valore": 38
               },
               {
                 "etichetta": "Formazione tecnica",
-                "valore": 34
+                "valore": 35
               },
               {
                 "etichetta": "Attività di ricerca",
@@ -875,7 +875,7 @@
               },
               {
                 "etichetta": "Servizi sindacali",
-                "valore": 17
+                "valore": 19
               },
               {
                 "etichetta": "Servizi di comunicazione",
@@ -902,16 +902,27 @@
           "grafico": {
             "tipo": "confronto",
             "suffisso": "%",
-            "unita": "quota del proprio gruppo · hanno risposto 39 giornalisti e 48 attivisti · in ordine di distanza fra i due",
+            "unita": "quota del proprio gruppo · hanno risposto 41 giornalisti e 48 attivisti · in ordine di distanza fra i due",
             "serieNomi": [
               "Giornalisti",
               "Attivisti"
             ],
             "serie": [
               {
+                "etichetta": "Servizi sindacali",
+                "valori": [
+                  32,
+                  10
+                ],
+                "conteggi": [
+                  13,
+                  5
+                ]
+              },
+              {
                 "etichetta": "Servizi di comunicazione",
                 "valori": [
-                  8,
+                  7,
                   27
                 ],
                 "conteggi": [
@@ -926,47 +937,36 @@
                   33
                 ],
                 "conteggi": [
-                  20,
+                  21,
                   16
-                ]
-              },
-              {
-                "etichetta": "Servizi sindacali",
-                "valori": [
-                  28,
-                  10
-                ],
-                "conteggi": [
-                  11,
-                  5
                 ]
               },
               {
                 "etichetta": "Accesso a risorse finanziarie",
                 "valori": [
-                  72,
+                  73,
                   58
                 ],
                 "conteggi": [
-                  28,
+                  30,
                   28
                 ]
               },
               {
                 "etichetta": "Formazione tecnica",
                 "valori": [
-                  33,
+                  34,
                   42
                 ],
                 "conteggi": [
-                  13,
+                  14,
                   20
                 ]
               },
               {
                 "etichetta": "Attività di ricerca",
                 "valori": [
-                  21,
+                  20,
                   27
                 ],
                 "conteggi": [
@@ -977,7 +977,7 @@
               {
                 "etichetta": "Difesa digitale",
                 "valori": [
-                  21,
+                  20,
                   23
                 ],
                 "conteggi": [
@@ -995,7 +995,7 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "temi",
-            "unita": "risposte su 90 che toccano il tema · una risposta può toccarne più di uno",
+            "unita": "risposte su 92 che toccano il tema · una risposta può toccarne più di uno",
             "serieNomi": [
               "La società civile e il giornalismo",
               "La mia organizzazione"
@@ -1004,8 +1004,8 @@
               {
                 "etichetta": "Formazione e competenze",
                 "valori": [
-                  35,
-                  28
+                  36,
+                  29
                 ],
                 "citazioni": {
                   "W": [
@@ -1054,7 +1054,7 @@
               {
                 "etichetta": "Sostenibilità economica",
                 "valori": [
-                  25,
+                  26,
                   28
                 ],
                 "citazioni": {
@@ -1104,7 +1104,7 @@
               {
                 "etichetta": "Indipendenza dai poteri",
                 "valori": [
-                  22,
+                  23,
                   9
                 ],
                 "citazioni": {
@@ -1129,7 +1129,7 @@
               {
                 "etichetta": "Sicurezza digitale",
                 "valori": [
-                  16,
+                  17,
                   11
                 ],
                 "citazioni": {
@@ -1204,7 +1204,7 @@
               {
                 "etichetta": "Sindacato e tutele del lavoro",
                 "valori": [
-                  7,
+                  8,
                   8
                 ],
                 "citazioni": {
@@ -1227,9 +1227,34 @@
                 }
               },
               {
+                "etichetta": "Ricerca e accesso ai dati",
+                "valori": [
+                  9,
+                  7
+                ],
+                "citazioni": {
+                  "W": [
+                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
+                    "Fact checking nei contenuti social media e filtro ai contenuti finti e/o fuorvianti. Aprire canali comunicativi certificati e affidabili. Maggiore tutela verso i minorenni esposti ai social media",
+                    "Alfabetizzazione mediatica diffusa, fact-checking strutturato, sostenibilità economica indipendente, collaborazione tra testate e uso etico dell'IA",
+                    "Più educazione ai media, sostegno economico al giornalismo indipendente, fact-checking collaborativo e regolazione delle piattaforme per contrastare disinformazione e manipolazione digitale",
+                    "Ricerca e accesso ai dati. Formazione sul linguaggio nel rispetto delle diversità. Rete giornalistica indipendente dai poteri economici e politici, specchio della verità e della quotidianità sociale",
+                    "Maggiore preparazione tecnica nella selezione delle fonti"
+                  ],
+                  "X": [
+                    "Trasparenza sui limiti, ricerca su sicurezza e allineamento, governance multi-stakeholder, standard condivisi con competitor, dialogo costante con società civile e regolatori",
+                    "Investire in competenze digitali e IA, rafforzare reti collaborative, sviluppare modelli sostenibili di finanziamento e migliorare capacità di analisi e contrasto alla disinformazione",
+                    "Rete di saperi e di accesso ai dati per un’informazione approfondita e veritiera accessibile a tutti",
+                    "maggiore capacità di ricerca e analisi, maggiore ricorso a contenziosi strategici e vie legali in senso lato",
+                    "In generale investire in educazione e ricerca",
+                    "Casse di resistenza, pratiche di mutualismo, formazione tecnica legale e di inchiesta"
+                  ]
+                }
+              },
+              {
                 "etichetta": "Intelligenza artificiale",
                 "valori": [
-                  7,
+                  8,
                   8
                 ],
                 "citazioni": {
@@ -1250,36 +1275,11 @@
                     "Rafforzare le competenze su sistemi di intelligenza artificiale in modo trasversale e aumentare sempre di più l'eterogeneità delle competenze interne"
                   ]
                 }
-              },
-              {
-                "etichetta": "Ricerca e accesso ai dati",
-                "valori": [
-                  8,
-                  6
-                ],
-                "citazioni": {
-                  "W": [
-                    "un fondo nazionale per giornalismo di inchiesta e/o reportage indipendente; formazione legale e digitale;",
-                    "Fact checking nei contenuti social media e filtro ai contenuti finti e/o fuorvianti. Aprire canali comunicativi certificati e affidabili. Maggiore tutela verso i minorenni esposti ai social media",
-                    "Alfabetizzazione mediatica diffusa, fact-checking strutturato, sostenibilità economica indipendente, collaborazione tra testate e uso etico dell'IA",
-                    "Più educazione ai media, sostegno economico al giornalismo indipendente, fact-checking collaborativo e regolazione delle piattaforme per contrastare disinformazione e manipolazione digitale",
-                    "Ricerca e accesso ai dati. Formazione sul linguaggio nel rispetto delle diversità. Rete giornalistica indipendente dai poteri economici e politici, specchio della verità e della quotidianità sociale",
-                    "Maggiore preparazione tecnica nella selezione delle fonti"
-                  ],
-                  "X": [
-                    "Trasparenza sui limiti, ricerca su sicurezza e allineamento, governance multi-stakeholder, standard condivisi con competitor, dialogo costante con società civile e regolatori",
-                    "Investire in competenze digitali e IA, rafforzare reti collaborative, sviluppare modelli sostenibili di finanziamento e migliorare capacità di analisi e contrasto alla disinformazione",
-                    "Rete di saperi e di accesso ai dati per un’informazione approfondita e veritiera accessibile a tutti",
-                    "maggiore capacità di ricerca e analisi, maggiore ricorso a contenziosi strategici e vie legali in senso lato",
-                    "In generale investire in educazione e ricerca",
-                    "Casse di resistenza, pratiche di mutualismo, formazione tecnica legale e di inchiesta"
-                  ]
-                }
               }
             ],
             "senzaTema": {
               "W": 14,
-              "X": 22
+              "X": 23
             }
           },
           "evidenza": true
@@ -1291,19 +1291,19 @@
           "testo": "TESTO DA SCRIVERE",
           "grafico": {
             "tipo": "barre-orizzontali",
-            "unita": "risposte su 90 · si poteva indicarne più di uno",
+            "unita": "risposte su 92 · si poteva indicarne più di uno",
             "serie": [
               {
                 "etichetta": "Attività di ricerca",
-                "valore": 46
+                "valore": 48
               },
               {
                 "etichetta": "Servizi di comunicazione",
-                "valore": 39
+                "valore": 41
               },
               {
                 "etichetta": "Formazione tecnica",
-                "valore": 23
+                "valore": 25
               },
               {
                 "etichetta": "Altro",
