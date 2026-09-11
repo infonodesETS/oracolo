@@ -1170,7 +1170,12 @@ video.video { object-fit: contain; }
 .acquista__nota { font-size: .92rem; color: var(--bianco-2); }
 .acquista__prezzo {
   font-family: var(--display); font-size: clamp(2rem, 5vw, 3.2rem);
-  line-height: 1; margin: 0 0 .6rem;
+  line-height: 1; margin: 0 0 .4rem;
+}
+/* "Per socie e soci: gratis" sotto il prezzo */
+.acquista__soci {
+  font-family: var(--mono); letter-spacing: .1em; text-transform: uppercase;
+  color: var(--verde); font-size: .82rem; margin: 0 0 .6rem;
 }
 .acquista__azioni { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.2rem; }
 /* il pagamento sta dentro la voce dell'elenco a cui appartiene: un filo di
