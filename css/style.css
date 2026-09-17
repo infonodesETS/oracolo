@@ -227,6 +227,17 @@ a { color: inherit; }
 .nav__logo img { display: block; height: 1.5rem; width: auto; }
 /* il marchio quando non e' un link: stessa faccia, ma non invita a cliccare */
 .nav__logo--fermo { cursor: default; }
+/* Dal 17/09/2026 in tutte le pagine, al posto del logo, c'e' «← info.nodes»:
+   lo stesso pulsante testuale del nuovo sito info.nodes, che riporta alla sua
+   home. La definizione (.area__back) sta piu' sotto, con la pagina di acquisto
+   che l'ha avuta per prima; qui dentro la barra sta in fila con le voci, quindi
+   niente posizione assoluta. */
+.nav .area__back { position: static; white-space: nowrap; }
+/* il preambolo e' su carta: il grigio chiaro della barra scura li' sparirebbe.
+   Stessi valori delle pagine su carta del nuovo sito. */
+.pagina-carta .area__back { color: rgba(23,20,15,.66); }
+.pagina-carta .area__back span,
+.pagina-carta .area__back:hover { color: var(--verde-carta); }
 .nav__voci {
   display: flex; align-items: center; gap: 1.6rem;
   list-style: none; margin: 0; padding: 0;
@@ -269,6 +280,7 @@ a { color: inherit; }
   .nav { gap: .75rem; padding-inline: .9rem; }
   .nav__logo { font-size: .82rem; }
   .nav__logo img { height: 1.2rem; }
+  .nav .area__back { font-size: .72rem; letter-spacing: .06em; }
   .nav__voci { font-size: .68rem; letter-spacing: .06em; }
   .nav__cta { padding: .5em .7em; }
   .nav__cta-lungo { display: none; }
@@ -1139,6 +1151,17 @@ video.video { object-fit: contain; }
    fuori: dal sito info.nodes, da una newsletter, da un post.
    ============================================================ */
 
+/* «← info.nodes» in alto a sinistra: copiato identico dalle pagine di
+   acquisto dello SHOP del nuovo sito info.nodes (globals.css, .area__back).
+   Usato anche nella barra di index, dati e preambolo: vedi la sezione nav. */
+.area__back {
+  position: absolute; top: 1.4rem; left: clamp(1rem, 4vw, 2.5rem);
+  font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.1em;
+  text-decoration: none; color: var(--bianco-2);
+}
+.area__back span { color: var(--verde); }
+.area__back:hover { color: var(--verde); }
+
 .acquista { padding: 7rem 0 4rem; }
 .acquista__testata { margin-bottom: 3rem; }
 /* piu' larga della colonna di lettura: qui ci stanno affiancate la carta e il
@@ -1201,7 +1224,7 @@ a.btn.da-definire {
    racconto — e la carta si fa piu' piccola, perche' chi e' li' il mazzo ce
    l'ha gia' davanti. Su schermo grande resta tutto com'era. */
 @media (max-width: 760px) {
-  .acquista { padding-top: 3.2rem; }
+  .acquista { padding-top: 4.2rem; }   /* lascia respiro a «← info.nodes» */
   .acquista__testata { margin-bottom: 1.5rem; }
   .acquista__griglia { grid-template-columns: 1fr; gap: 1.6rem; }
   /* la carta scende sotto il testo: chi e' davanti a noi il mazzo ce l'ha in
