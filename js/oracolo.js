@@ -648,6 +648,22 @@ function collegaScheda() {
    carte davvero. Il codice resta nella storia del repository, se un domani si
    volesse rimetterlo. */
 
+/* Sezione non ancora pubblicata: al posto del contenuto, l'intestazione (numero
+   + titolo della sezione) e il messaggio "abbi pazienza". La voce resta nel
+   menu e il segnaposto è alto abbastanza da funzionare come ancora. Per
+   pubblicare davvero la sezione si rimette la sua funzione (es. sezioneVoci). */
+function sezionePlaceholder(id, meta) {
+  const s = document.getElementById(id);
+  if (!s) return;
+  const intro = el('div', 'capitolo__intro');
+  intro.innerHTML =
+    `<p class="capitolo__numero">${esc(s.dataset.capitolo || '')}</p>` +
+    `<h2 class="titolo-grosso">${esc((meta && meta.occhiello) || '')}</h2>` +
+    `<p class="lead capitolo__pazienza">Abbi ancora un po’ di pazienza: ` +
+    `questa sezione sarà pubblicata a breve.</p>`;
+  s.append(intro);
+}
+
 /* ============================================================
    avvio
    ============================================================ */
@@ -667,8 +683,11 @@ function collegaScheda() {
     carte.forEach((c) => stato.perNumero.set(c.n, c));
 
     sezioneSondaggio(sondaggio);
-    sezioneDecreto(decreto);
-    sezioneVoci(voci);
+    // Voci e Vera Sicurezza non sono ancora pubblicate: al loro posto il
+    // messaggio "abbi pazienza". Restano nel menu. Per pubblicarle si rimette
+    // sezioneDecreto(decreto) / sezioneVoci(voci).
+    sezionePlaceholder('vera-sicurezza', decreto.meta);
+    sezionePlaceholder('voci', voci.meta);
     sezioneMazzo(carte);
     // dopo che le sezioni sono state riempite: prima le altezze non sono
     // ancora quelle definitive

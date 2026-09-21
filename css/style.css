@@ -400,6 +400,14 @@ a { color: inherit; }
 .capitolo--scuro { border-top: 1px solid var(--l10); }
 
 .capitolo__intro { max-width: var(--colonna); margin-inline: auto; padding-inline: 1.5rem; }
+/* messaggio "abbi pazienza" per una sezione non ancora pubblicata: si adatta al
+   fondo (chiaro o scuro) con currentColor */
+.capitolo__pazienza {
+  border: 1px dashed currentColor;
+  padding: 1.1rem 1.3rem;
+  max-width: 42ch;
+  opacity: 0.9;
+}
 .capitolo__numero {
   font-family: var(--display);
   font-size: clamp(4rem, 12vw, 9rem);
