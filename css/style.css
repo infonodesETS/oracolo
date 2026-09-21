@@ -297,6 +297,24 @@ a { color: inherit; }
 /* Due fasce: il titolo al centro, il claim e l'invito a scorrere in basso.
    Il claim stava sotto al titolo, cioè proprio sopra alle carte del
    ventaglio: grigio su bianco, illeggibile. */
+/* «← info.nodes» sempre visibile in alto a sinistra sulla testata (la barra
+   .nav compare solo scrollando). Scorre via con la testata. */
+.soglia__home {
+  position: absolute;
+  top: 1rem;
+  left: clamp(1rem, 4vw, 2.5rem);
+  z-index: 10;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--bianco);
+  transition: color 0.2s;
+}
+.soglia__home span { color: var(--verde); }
+.soglia__home:hover { color: var(--verde); }
+
 .soglia {
   position: relative;
   min-height: 100svh;

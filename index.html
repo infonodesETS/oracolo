@@ -12,14 +12,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Spectral:ital,wght@0,400;0,600;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=202609211200">
+<link rel="stylesheet" href="css/style.css?v=202609211900">
 </head>
 <body>
 
 <div class="avanzamento"><span id="barra"></span></div>
 
 <nav class="nav" id="nav" aria-label="Sezioni">
-  <a class="area__back" href="https://infonodes-new-website.vercel.app/">← info<span>.nodes</span></a>
+  <a class="area__back" href="https://www.infonodes.org/">← info<span>.nodes</span></a>
   <ul class="nav__voci">
     <li><a href="#dati">Dati</a></li>
     <li><a href="#voci">Voci</a></li>
@@ -31,6 +31,9 @@
 
 <!-- ═══ 0. SOGLIA ═══ -->
 <header class="soglia" id="soglia">
+  <!-- Ritorno a info.nodes sempre visibile sulla testata: la barra .nav compare
+       solo dopo aver scrollato, quindi in cima serve un pulsante a sé. -->
+  <a class="soglia__home" href="https://www.infonodes.org/">← info<span>.nodes</span></a>
   <div class="soglia__ventaglio" aria-hidden="true">
     <img src="assets/carte/04-slapp.webp" alt="" data-v="1">
     <img src="assets/carte/18-propaganda.webp" alt="" data-v="2">
@@ -117,7 +120,7 @@
   <div class="scheda__corpo" id="scheda-corpo"></div>
 </dialog>
 
-<script src="js/grafici.js?v=202609211200"></script>
-<script src="js/oracolo.js?v=202609211200"></script>
+<script src="js/grafici.js?v=202609211900"></script>
+<script src="js/oracolo.js?v=202609211900"></script>
 </body>
 </html>
