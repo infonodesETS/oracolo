@@ -1201,7 +1201,10 @@ video.video { object-fit: contain; }
 .acquista__figura { margin: 0; position: sticky; top: 6rem; }
 .acquista__figura img {
   width: 100%; height: auto; display: block;
-  border: 1px solid var(--l16);
+  /* niente bordo: la foto ha lo sfondo nero come il sito e si fonde. Una
+     sfumatura morbida ai bordi cancella l'eventuale cucitura del rettangolo. */
+  -webkit-mask-image: radial-gradient(120% 120% at 50% 50%, #000 78%, transparent 100%);
+          mask-image: radial-gradient(120% 120% at 50% 50%, #000 78%, transparent 100%);
 }
 /* nome e arcano sotto la carta, come nella griglia del mazzo */
 .acquista__figura figcaption {
