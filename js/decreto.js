@@ -60,7 +60,8 @@ function linkModulo(modulo, etichetta) {
   if (!modulo.campoArticolo || !etichetta) return modulo.url;
   const unione = modulo.url.includes('?') ? '&' : '?';
   return modulo.url + unione + 'usp=pp_url&' +
-    encodeURIComponent(modulo.campoArticolo) + '=' + encodeURIComponent(etichetta);
+    encodeURIComponent(modulo.campoArticolo) + '=' +
+    encodeURIComponent(etichetta + (modulo.codaEtichetta || ''));
 }
 
 function tastoCommenta(modulo, etichetta, testo) {

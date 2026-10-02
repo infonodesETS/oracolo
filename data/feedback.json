@@ -1,9 +1,12 @@
 {
-  "_nota": "Consultazione del DDL «Vera sicurezza» con le organizzazioni partner (pagina decreto.html). Finche' 'modulo.url' e' null, i pulsanti «Commenta» compaiono spenti e in pagina si legge che il modulo non e' ancora pronto: nessun collegamento rotto. Per accenderli servono l'indirizzo del modulo Google e il nome tecnico della domanda «Articolo», che si trova nel link precompilato del modulo (la parte che comincia con entry.).",
+  "_nota": "Consultazione del DDL «Vera sicurezza» con le organizzazioni partner (pagina decreto.html). Finche' 'modulo.url' e' null, i pulsanti «Commenta» compaiono spenti e in pagina si legge che il modulo non e' ancora pronto: nessun collegamento rotto.",
+
+  "_nota_modulo": "Il modulo di Davide (forms.gle/Pf8JgpPXfNXdytPE7) ha una sola domanda, «Commento»: non c'e' un campo per l'articolo. Allora il pulsante precompila la casella del commento con il titolo dell'articolo, e chi scrive trova sopra il riferimento. 'codaEtichetta' e' quello che viene aggiunto dopo il titolo: i due a capo lasciano il cursore su una riga pulita. Se un domani al modulo si aggiunge una domanda «Articolo», basta mettere qui il suo entry.NNN e svuotare codaEtichetta.",
 
   "modulo": {
-    "url": null,
-    "campoArticolo": null
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLSfoxcuGyARlCcTj0stpg-Osc_mu8iKvlkA6yeLRPZy0IEU99w/viewform",
+    "campoArticolo": "entry.745086948",
+    "codaEtichetta": "\n\n"
   },
 
   "email": "comunicazione@infonodes.org",
