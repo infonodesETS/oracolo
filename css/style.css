@@ -1490,6 +1490,120 @@ a.btn.da-definire {
 }
 @media (max-width: 700px) { .scheda__corpo { grid-template-columns: 1fr; } }
 
+/* ============================================================
+   PAGINA DEL SOLO DECRETO (decreto.html)
+   Il testo in consultazione fra le organizzazioni partner: una colonna sola,
+   articoli tutti aperti, un pulsante per commentare sotto ognuno.
+   Riusa .capo, .articolo, .commi della sezione «Vera sicurezza».
+   ============================================================ */
+
+.ddl { padding: 7rem 0 4rem; }
+.ddl__testata { border-bottom: 3px double var(--scuro); padding-bottom: 2rem; }
+.ddl__titolo {
+  font-family: var(--serif); font-weight: 600;
+  font-size: clamp(1.7rem, 1rem + 2.6vw, 2.9rem);
+  line-height: 1.15; margin: .6rem 0 .8rem; text-wrap: balance;
+}
+.ddl__testata .lead { margin-top: 1.6rem; }
+.ddl__testata .badge-provvisorio { margin: 1.2rem 0 0; }
+
+/* il riquadro che spiega perché questa pagina esiste e che cosa ci si aspetta
+   da chi legge: in cima, e di nuovo in fondo con il modulo */
+.consultazione {
+  margin-top: 2.6rem; padding: 1.6rem 1.8rem;
+  border: 1px solid rgba(23,20,15,.3);
+  background: var(--carta-2);
+}
+.consultazione--coda { margin-top: 4rem; }
+.consultazione__titolo {
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--verde-carta);
+  margin: 0 0 1rem; font-weight: 400;
+}
+.consultazione p { margin: 0 0 .9rem; font-size: .98rem; line-height: 1.6; }
+.consultazione p:last-child { margin-bottom: 0; }
+.consultazione__eti {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--scuro-3); margin-top: 1.2rem !important;
+}
+.consultazione ul { margin: 0; padding-left: 1.2rem; font-size: .95rem; }
+.consultazione ul li { margin-bottom: .35rem; }
+.consultazione__chiosa {
+  margin-top: 1.3rem !important; padding-top: 1.1rem;
+  border-top: 1px dashed rgba(23,20,15,.3);
+  font-style: italic; color: var(--scuro-2);
+}
+/* la scadenza: l'unica riga del riquadro che deve restare in testa a chi legge */
+.consultazione__scadenza {
+  margin-top: 1.4rem !important;
+  display: inline-block;
+  font-family: var(--mono); font-weight: 700;
+  font-size: 1rem !important; letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--carta);
+  background: var(--verde-carta);
+  padding: .55em .9em;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+.consultazione__email { margin-top: 1.1rem !important; font-size: .92rem; }
+.consultazione__email a { color: var(--verde-carta); }
+.consultazione__stampa { margin-top: 1.4rem !important; }
+
+/* l'indice: otto articoli sono tanti, e chi commenta salta a quello suo */
+.indice { margin-top: 2.6rem; }
+.indice__eti {
+  font-family: var(--mono); font-size: .7rem; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--scuro-3); margin: 0 0 1rem;
+}
+.indice__capo {
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--verde-carta);
+  margin: 1.2rem 0 .4rem;
+}
+.indice__voci { margin: 0; padding-left: 1.4rem; font-size: .95rem; }
+.indice__voci li { margin-bottom: .3rem; }
+.indice__voci a { color: var(--scuro); text-decoration: none; }
+.indice__voci a:hover { color: var(--verde-carta); text-decoration: underline; }
+
+/* qui l'articolo è tutto aperto e in colonna unica: è un testo da leggere e
+   commentare, non una vetrina */
+.ddl__articoli { margin-top: 1rem; }
+.articolo--intero { display: block; padding: 2.6rem 0 2rem; }
+.articolo--intero .articolo__num a { color: inherit; text-decoration: none; }
+.articolo--intero .articolo__num a:hover { color: var(--verde-carta); }
+.articolo--intero .articolo__rubrica { font-size: 1.22rem; }
+.articolo--intero .commi { margin-top: 1.2rem; }
+
+/* sul fondo chiaro .btn è pieno di verde scuro: il «ghost» va rifatto qui,
+   altrimenti ogni tasto di questa pagina sembra l'azione principale */
+.pagina-carta .btn--ghost {
+  background: transparent; color: var(--verde-carta);
+  border-color: var(--verde-carta);
+}
+.pagina-carta .btn--ghost:hover { background: var(--verde-carta); color: var(--carta); }
+
+.commenta { margin: 1.6rem 0 0; }
+.commenta--spento { display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; }
+.commenta--spento .btn { opacity: .45; cursor: not-allowed; }
+.commenta__manca {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--scuro-3);
+}
+
+@media (max-width: 760px) {
+  .ddl { padding-top: 4.6rem; }
+  .consultazione { padding: 1.2rem 1.1rem; }
+}
+
+/* in stampa restano il testo e gli articoli: i pulsanti non si premono su
+   carta, e chi riceve il PDF commenta per email */
+@media print {
+  .ddl { padding-top: 0; }
+  .commenta, .consultazione__stampa, .indice { display: none !important; }
+  .articolo--intero { break-inside: avoid; }
+  .consultazione { border: 1px solid #999; background: transparent; }
+}
+
 /* riduzione movimento */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }

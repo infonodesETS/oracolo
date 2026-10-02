@@ -1,0 +1,33 @@
+{
+  "_nota": "Consultazione del DDL «Vera sicurezza» con le organizzazioni partner (pagina decreto.html). Finche' 'modulo.url' e' null, i pulsanti «Commenta» compaiono spenti e in pagina si legge che il modulo non e' ancora pronto: nessun collegamento rotto. Per accenderli servono l'indirizzo del modulo Google e il nome tecnico della domanda «Articolo», che si trova nel link precompilato del modulo (la parte che comincia con entry.).",
+
+  "modulo": {
+    "url": null,
+    "campoArticolo": null
+  },
+
+  "email": "comunicazione@infonodes.org",
+
+  "invito": {
+    "titolo": "Questo testo è in consultazione",
+    "paragrafi": [
+      "Quella che segue è una bozza del Decreto che vorremmo vedere in Parlamento: articoli che difendono la sicurezza di giornalisti e giornaliste, attivisti e attiviste e, in generale, di tutta la collettività. Prima di finalizzarla abbiamo deciso di condividerla con voi, le organizzazioni e le testate con cui condividiamo una visione, se non identica, almeno simile di società: più libera, più equa, più giusta, più inclusiva e soprattutto, meno repressiva. Vi chiediamo, se ne avete voglia e tempo, di leggerla con occhio critico, prima che diventi un testo pubblico.",
+      "Sotto ogni articolo c'è un pulsante per commentare proprio quell'articolo: si apre un modulo, si scrive, si manda. Non serve nessun account e non serve rispondere a tutto: vanno benissimo anche due righe su un articolo solo."
+    ],
+    "cosa_ci_serve": [
+      "se l'articolo coglie il problema o lo manca",
+      "che cosa manca, e che cosa toglieresti",
+      "casi concreti, dati o sentenze che conosci e noi no",
+      "errori giuridici: ci occupiamo di giornalismo e attivismo, non di leggi e codici"
+    ],
+    "dopo": [
+      "Ultima cosa fondamentale: non ci interessa sapere se ritieni un articolo utopico, impossibile, troppo bello anche solo da pensare. Noi puntiamo al massimo, senza compromessi. Quelli li faranno altri, dopo, almeno speriamo."
+    ],
+    "scadenza": "Commenti aperti fino al 30 ottobre 2026"
+  },
+
+  "chiusura": {
+    "titolo": "Un commento su tutto il decreto",
+    "testo": "Se preferisci ragionare sull'impianto generale invece che articolo per articolo, o mandarci un documento, scrivici: leggiamo tutto."
+  }
+}
