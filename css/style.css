@@ -1236,6 +1236,14 @@ video.video { object-fit: contain; }
 }
 .galleria__scorri::-webkit-scrollbar { height: 6px; }
 .galleria__scorri::-webkit-scrollbar-thumb { background: var(--l16); border-radius: 3px; }
+.galleria__credito {
+  margin: .8rem 0 0;
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--bianco-3);
+}
 .acquista__blocco { margin-bottom: 2.6rem; }
 .acquista__blocco h2 {
   font-family: var(--mono); font-size: .8rem; letter-spacing: .16em;
