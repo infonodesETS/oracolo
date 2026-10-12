@@ -18,12 +18,7 @@
       "Oltre al contenuto, se ne condividete spirito e contenuto, ci farebbe piacere anche ricevere suggerimenti su come poterlo comunicare e utilizzare, magari in vista delle prossime elezioni. Non siamo proprio i migliori del mondo su questo punto :)",
       "Alla fine del documento, troverete un pulsante per inviare commenti, idee, proposte."
     ],
-    "cosa_ci_serve": [
-      "se l'articolo coglie il problema o lo manca",
-      "che cosa manca, e che cosa toglieresti",
-      "casi concreti, dati o sentenze che conosci e noi no",
-      "errori giuridici: ci occupiamo di giornalismo e attivismo, non di leggi e codici"
-    ],
+    "_nota_elenco": "L'elenco «Che cosa ci e' utile sapere» e' stato tolto il 12/10/2026: parlava di commenti articolo per articolo, che non si raccolgono piu'. Se servisse di nuovo, basta rimettere qui la chiave 'cosa_ci_serve' con le sue voci.",
     "dopo": [
       "Ultima cosa fondamentale: non ci interessa sapere se ritieni un articolo utopico, impossibile, troppo bello anche solo da pensare. Noi puntiamo al massimo, senza compromessi. Quelli li faranno altri, dopo, almeno speriamo."
     ],
