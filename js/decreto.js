@@ -68,11 +68,12 @@ function tastoCommenta(modulo, etichetta, testo) {
   const url = linkModulo(modulo, etichetta);
   if (!url) {
     return el('p', 'commenta commenta--spento',
-      `<span class="btn btn--ghost" aria-disabled="true">${esc(testo)}</span>` +
+      `<span class="btn" aria-disabled="true">${esc(testo)}</span>` +
       `<span class="commenta__manca">modulo non ancora attivo</span>`);
   }
   const p = el('p', 'commenta');
-  const a = el('a', 'btn btn--ghost', esc(testo));
+  // è l'unica azione della pagina: tasto pieno, non in punta di piedi
+  const a = el('a', 'btn', esc(testo));
   a.href = url;
   a.target = '_blank';
   a.rel = 'noopener noreferrer';
@@ -135,7 +136,7 @@ function indice(d) {
   return box;
 }
 
-function articoli(d, f) {
+function articoli(d) {
   const lista = el('div', 'articoli ddl__articoli colonna');
   d.capi.forEach((capo) => {
     const c = el('section', 'capo');
@@ -155,8 +156,8 @@ function articoli(d, f) {
         (a.risponde
           ? `<p class="articolo__risponde"><b>Ribalta</b>${esc(a.risponde)}</p>`
           : '');
-      art.append(tastoCommenta(f.modulo, `Art. ${a.n} — ${a.rubrica}`,
-        `Commenta l'articolo ${a.n}`));
+      // Dal 12/10/2026 niente pulsante sotto ogni articolo: si commenta una
+      // volta sola, in fondo al documento.
       c.append(art);
     });
     lista.append(c);
@@ -171,8 +172,7 @@ function chiusura(f) {
   box.innerHTML =
     `<h2 class="consultazione__titolo">${esc(c.titolo || 'Mandaci un commento')}</h2>` +
     (c.testo ? `<p>${esc(c.testo)}</p>` : '');
-  box.append(tastoCommenta(f.modulo, 'Tutto il decreto',
-    'Commenta tutto il decreto'));
+  box.append(tastoCommenta(f.modulo, null, c.tasto || 'Invia un commento'));
   if (f.email) {
     box.append(el('p', 'consultazione__email',
       `Oppure scrivi a <a href="mailto:${esc(f.email)}?subject=${
@@ -207,7 +207,7 @@ function chiusura(f) {
     const inv = invito(f);
     if (inv) c.append(inv);
     c.append(indice(d));
-    c.append(articoli(d, f));
+    c.append(articoli(d));
     c.append(chiusura(f));
   } catch (err) {
     console.error(err);

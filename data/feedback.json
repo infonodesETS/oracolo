@@ -1,12 +1,12 @@
 {
-  "_nota": "Consultazione del DDL «Vera sicurezza» con le organizzazioni partner (pagina decreto.html). Finche' 'modulo.url' e' null, i pulsanti «Commenta» compaiono spenti e in pagina si legge che il modulo non e' ancora pronto: nessun collegamento rotto.",
+  "_nota": "Consultazione del DDL «Vera sicurezza» con le organizzazioni partner (pagina decreto.html). Finche' 'modulo.url' e' null, il pulsante «Invia un commento» compare spento e in pagina si legge che il modulo non e' ancora pronto: nessun collegamento rotto.",
 
-  "_nota_modulo": "Il modulo di Davide (forms.gle/Pf8JgpPXfNXdytPE7) ha una sola domanda, «Commento»: non c'e' un campo per l'articolo. Allora il pulsante precompila la casella del commento con il titolo dell'articolo, e chi scrive trova sopra il riferimento. 'codaEtichetta' e' quello che viene aggiunto dopo il titolo: i due a capo lasciano il cursore su una riga pulita. Se un domani al modulo si aggiunge una domanda «Articolo», basta mettere qui il suo entry.NNN e svuotare codaEtichetta.",
+  "_nota_modulo": "Modulo di Davide: forms.gle/Pf8JgpPXfNXdytPE7, due domande («Chi sei?» e «Commento»). Dal 12/10/2026 i commenti non sono piu' articolo per articolo ma uno solo, in fondo al documento: quindi non si precompila piu' niente e la casella del commento si apre vuota. Se un domani si tornasse ai commenti per articolo, 'campoArticolo' e' il nome tecnico della casella da precompilare (era entry.745086948) e 'codaEtichetta' quello che viene aggiunto dopo il titolo dell'articolo.",
 
   "modulo": {
     "url": "https://docs.google.com/forms/d/e/1FAIpQLSfoxcuGyARlCcTj0stpg-Osc_mu8iKvlkA6yeLRPZy0IEU99w/viewform",
-    "campoArticolo": "entry.745086948",
-    "codaEtichetta": "\n\n"
+    "campoArticolo": null,
+    "codaEtichetta": ""
   },
 
   "email": "comunicazione@infonodes.org",
@@ -14,8 +14,9 @@
   "invito": {
     "titolo": "Questo testo è in consultazione",
     "paragrafi": [
-      "Quella che segue è una bozza del Decreto che vorremmo vedere in Parlamento: articoli che difendono la sicurezza di giornalisti e giornaliste, attivisti e attiviste e, in generale, di tutta la collettività. Prima di finalizzarla abbiamo deciso di condividerla con voi, le organizzazioni e le testate con cui condividiamo una visione, se non identica, almeno simile di società: più libera, più equa, più giusta, più inclusiva e soprattutto, meno repressiva. Vi chiediamo, se ne avete voglia e tempo, di leggerla con occhio critico, prima che diventi un testo pubblico.",
-      "Sotto ogni articolo c'è un pulsante per commentare proprio quell'articolo: si apre un modulo, si scrive, si manda. Non serve nessun account e non serve rispondere a tutto: vanno benissimo anche due righe su un articolo solo."
+      "Quella che segue è una bozza del Decreto che vorremmo vedere in Parlamento: otto articoli per difendere la sicurezza di giornalisti e giornaliste, attivisti e attiviste e, in generale, di tutta la collettività. Prima di finalizzarla ci piacerebbe raccogliere un vostro feedback. Vi chiediamo, se ne avete voglia e tempo, di leggerla con occhio critico, prima che diventi un testo pubblico (immaginiamo a dicembre di quest'anno).",
+      "Oltre al contenuto, se ne condividete spirito e contenuto, ci farebbe piacere anche ricevere suggerimenti su come poterlo comunicare e utilizzare, magari in vista delle prossime elezioni. Non siamo proprio i migliori del mondo su questo punto :)",
+      "Alla fine del documento, troverete un pulsante per inviare commenti, idee, proposte."
     ],
     "cosa_ci_serve": [
       "se l'articolo coglie il problema o lo manca",
@@ -30,7 +31,8 @@
   },
 
   "chiusura": {
-    "titolo": "Un commento su tutto il decreto",
-    "testo": "Se preferisci ragionare sull'impianto generale invece che articolo per articolo, o mandarci un documento, scrivici: leggiamo tutto."
+    "titolo": "Commenti, idee, proposte",
+    "testo": "Un commento su un articolo solo, una riflessione sull'impianto generale, un suggerimento su come comunicarlo: ci interessa tutto. Si apre un modulo con due caselle, si scrive, si manda. Non serve nessun account.",
+    "tasto": "Invia un commento"
   }
 }
