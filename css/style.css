@@ -176,6 +176,15 @@ a { color: inherit; }
   color: var(--verde);
 }
 .btn--ghost:hover, .btn-ghost:hover { background: var(--verde); color: var(--nero); }
+/* tasto esaurito ("Sold out"): visibile ma spento e non cliccabile.
+   Contorno grigio con testo leggibile, invece del verde pieno. */
+.btn:disabled, .btn[disabled] {
+  background: transparent;
+  border-color: rgba(255, 255, 255, .3);
+  color: rgba(255, 255, 255, .55);
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
 /* su fondo chiaro il verde fosforo non si legge: serve la variante scura */
 .capitolo--carta .btn, .pagina-carta .btn {
