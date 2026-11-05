@@ -358,7 +358,7 @@ function sezioneVoci(d) {
   intro.innerHTML =
     `<p class="capitolo__numero">${esc(s.dataset.capitolo)}</p>` +
     `<p class="occhiello">${esc(d.meta.occhiello)}</p>` +
-    badge(d.placeholder, 'video in lavorazione — segnaposto') +
+    badge(d.placeholder, 'le prime voci sono online, le altre in lavorazione') +
     `<h2 class="titolo-grosso">${esc(d.meta.titolo)}</h2>` +
     `<p class="lead">${esc(d.meta.sommario)}</p>`;
   s.append(intro);
@@ -370,9 +370,11 @@ function sezioneVoci(d) {
     if (p.video) c.append(lettoreVideo(p.video, p.titolo));
     c.insertAdjacentHTML('beforeend',
       `<div class="pillola__testo">` +
-      `<span class="pillola__durata">${esc(etichetta)} · ${esc(p.durata)}</span>` +
+      // la durata di un video ancora da girare non si conosce: se manca,
+      // resta la sola etichetta invece di un trattino appeso nel vuoto
+      `<span class="pillola__durata">${esc(etichetta)}${p.durata ? ' · ' + esc(p.durata) : ''}</span>` +
       `<h4>${esc(p.titolo)}</h4>` +
-      `<p class="pillola__chi">${esc(descrizione)}</p>` +
+      (descrizione ? `<p class="pillola__chi">${esc(descrizione)}</p>` : '') +
       (p.video ? '' : `<span class="pillola__stato">in lavorazione</span>`) +
       `</div>`);
     return c;
@@ -402,7 +404,10 @@ function sezioneVoci(d) {
   griglia.append(scheda(d.documentario, 'documentario',
     ' pillola--grande', d.documentario.descrizione));
   d.pillole.forEach((p) => {
-    griglia.append(scheda(p, 'pillola', '', `${p.persona} — ${p.ruolo}`));
+    // chi parla: nome e ruolo, o solo quello dei due che c'è. Nei segnaposto
+    // non c'è nessuno dei due e la riga sparisce del tutto.
+    const chi = [p.persona, p.ruolo].filter(Boolean).join(' — ');
+    griglia.append(scheda(p, 'pillola', '', chi));
   });
   s.append(griglia);
 }
@@ -683,11 +688,12 @@ function sezionePlaceholder(id, meta) {
     carte.forEach((c) => stato.perNumero.set(c.n, c));
 
     sezioneSondaggio(sondaggio);
-    // Voci e Vera Sicurezza non sono ancora pubblicate: al loro posto il
-    // messaggio "abbi pazienza". Restano nel menu. Per pubblicarle si rimette
-    // sezioneDecreto(decreto) / sezioneVoci(voci).
+    // Vera Sicurezza resta chiusa dietro il messaggio "abbi pazienza" finché
+    // il decreto è in consultazione fra le organizzazioni (si legge solo da
+    // decreto.html). Per aprirla si rimette sezioneDecreto(decreto).
     sezionePlaceholder('vera-sicurezza', decreto.meta);
-    sezionePlaceholder('voci', voci.meta);
+    // Voci è tornata visibile il 05/11/2026, con le prime due testimonianze.
+    sezioneVoci(voci);
     sezioneMazzo(carte);
     // dopo che le sezioni sono state riempite: prima le altezze non sono
     // ancora quelle definitive
