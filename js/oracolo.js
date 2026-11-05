@@ -401,7 +401,9 @@ function sezioneVoci(d) {
 
   (d.articoli || []).forEach((a) => griglia.append(schedaArticolo(a)));
 
-  griglia.append(scheda(d.documentario, 'documentario',
+  // l'etichetta del documentario si scrive nel JSON: è l'unica scheda che
+  // non è una pillola, e come chiamarla è una scelta editoriale
+  griglia.append(scheda(d.documentario, d.documentario.etichetta || 'documentario',
     ' pillola--grande', d.documentario.descrizione));
   d.pillole.forEach((p) => {
     // chi parla: nome e ruolo, o solo quello dei due che c'è. Nei segnaposto
