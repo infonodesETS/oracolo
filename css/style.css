@@ -1290,26 +1290,24 @@ a.btn.da-definire {
   pointer-events: none; font-size: .78rem;
 }
 
-/* Sul telefono la pagina serve a un'altra cosa: agli incontri si porge il
-   telefono a chi vuole il mazzo, e quella persona deve poter pagare senza
-   scorrere due schermate. Quindi prima il prezzo e il pagamento, poi il
-   racconto — e la carta si fa piu' piccola, perche' chi e' li' il mazzo ce
-   l'ha gia' davanti. Su schermo grande resta tutto com'era. */
+/* Sul telefono l'ordine dei blocchi è lo stesso dello schermo grande (scatola →
+   dove vanno i soldi → prezzo → come si acquista): il racconto prima, poi la
+   richiesta di soldi. Cambia solo la carta, che scende sotto il testo e si fa
+   più piccola, perché su un telefono quei 270 pixel di immagine allontanavano
+   il contenuto. */
 @media (max-width: 760px) {
   .acquista { padding-top: 4.2rem; }   /* lascia respiro a «← info.nodes» */
   .acquista__testata { margin-bottom: 1.5rem; }
   .acquista__griglia { grid-template-columns: 1fr; gap: 1.6rem; }
-  /* la carta scende sotto il testo: chi e' davanti a noi il mazzo ce l'ha in
-     mano, e quei 270 pixel di immagine allontanavano il tasto per pagare */
   .acquista__testo   { order: 1; display: flex; flex-direction: column; }
   .acquista__figura  {
     order: 2; position: static; max-width: 190px;
     margin-inline: auto; margin-top: 1rem;
   }
-  .acquista__blocco--prezzo   { order: 1; margin-bottom: 1.4rem; }
-  .acquista__blocco--acquisto { order: 2; }
-  .acquista__blocco--scatola  { order: 3; }
-  .acquista__blocco--soldi    { order: 4; }
+  .acquista__blocco--scatola  { order: 1; }
+  .acquista__blocco--soldi    { order: 2; }
+  .acquista__blocco--prezzo   { order: 3; margin-bottom: 1.4rem; }
+  .acquista__blocco--acquisto { order: 4; }
 }
 
 /* Riquadro d'avviso: una nota in evidenza (es. tempi del preordine), filo
