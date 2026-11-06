@@ -18,7 +18,7 @@ const SDK = 'https://www.paypal.com/sdk/js' +
   '?client-id=BAA_QPx1xPE1AmXsrhSQilBqUSx0QDGBAs_Kh7qs6qFRTYAZb4ZuwXfxsJvZGCcV6hNax_ytFGsipvo08s' +
   '&components=hosted-buttons&disable-funding=venmo&currency=EUR';
 
-const PULSANTE = 'UXS4L95MUAH6A';
+const PULSANTE = '4XXDA5RYWFJYY';
 
 const tasto = document.getElementById('attiva-paypal');
 const contenitore = document.getElementById('paypal-container-' + PULSANTE);

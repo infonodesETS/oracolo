@@ -1312,6 +1312,34 @@ a.btn.da-definire {
   .acquista__blocco--soldi    { order: 4; }
 }
 
+/* Riquadro d'avviso: una nota in evidenza (es. tempi del preordine), filo
+   verde a sinistra su fondo appena tinto. Usato su acquista.html e grazie.html. */
+.avviso {
+  margin: 0 0 1.4rem;
+  padding: 1rem 1.2rem;
+  border-left: 2px solid var(--verde);
+  background: var(--verde-op);
+  font-size: .98rem;
+  line-height: 1.6;
+}
+.avviso strong { color: var(--verde-2); }
+
+/* ============================================================
+   PAGINA «GRAZIE» — dove il pulsante PayPal riporta dopo il pagamento
+   ============================================================ */
+.grazie {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 7rem 0 4rem;
+}
+.grazie p { margin: 0 0 1.1rem; line-height: 1.65; }
+.grazie .lead { margin-bottom: 1.6rem; }
+.grazie__azioni { margin-top: 2rem; }
+@media (max-width: 760px) {
+  .grazie { padding-top: 5rem; min-height: 0; }   /* respiro per «← info.nodes» */
+}
+
 /* ============================================================
    5. MAZZO
    ============================================================ */
