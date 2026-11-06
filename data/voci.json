@@ -1,5 +1,5 @@
 {
-  "_nota": "PARZIALE. Reali: i due articoli di Domani e le due testimonianze di Linda (girate a novembre 2026, liberatoria confermata da Davide il 05/11/2026). Restano segnaposto il documentario e quattro pillole ancora da girare. Con 'video': null la scheda resta tratteggiata con la scritta 'in lavorazione'. Per attivarla si mette un oggetto: {\"tipo\":\"file\",\"src\":\"assets/video/....mp4\",\"poster\":\"assets/video/....jpg\"} per i video ospitati da noi, oppure {\"tipo\":\"youtube\",\"id\":\"...\"} / {\"tipo\":\"vimeo\",\"id\":\"...\"} per quelli esterni, che si caricano solo dopo un clic. Le schede con 'link' sono invece articoli pubblicati altrove: aprono il pezzo in una scheda nuova e mostrano l'immagine indicata in 'cover'.",
+  "_nota": "PARZIALE. Reali: i due articoli di Domani. Il documentario e' un segnaposto: con 'video': null la scheda resta tratteggiata con la scritta 'in lavorazione'; per attivarla si mette un oggetto {\"tipo\":\"file\",\"src\":\"assets/video/....mp4\",\"poster\":\"assets/video/....jpg\"} se il video lo ospitiamo noi, oppure {\"tipo\":\"youtube\",\"id\":\"...\"} / {\"tipo\":\"vimeo\",\"id\":\"...\"} per quelli esterni, che si caricano solo dopo un clic. Le schede con 'link' sono articoli pubblicati altrove: aprono il pezzo in una scheda nuova e mostrano l'immagine indicata in 'cover'.",
   "placeholder": true,
   "meta": {
     "occhiello": "Voci di resistenza",
@@ -13,65 +13,7 @@
     "video": null,
     "descrizione": "Le testimonianze dirette di chi ha subito censura e sorveglianza."
   },
-  "pillole": [
-    {
-      "titolo": "SLAPP — strumento di censura ed emarginazione",
-      "persona": "Linda",
-      "ruolo": "",
-      "durata": "1'01\"",
-      "video": {
-        "tipo": "file",
-        "src": "assets/video/slapp-censura-emarginazione.mp4",
-        "poster": "assets/video/slapp-censura-emarginazione.jpg"
-      },
-      "carta": 4
-    },
-    {
-      "titolo": "SLAPP — punizione psicologica prima ancora che penale",
-      "persona": "Linda",
-      "ruolo": "",
-      "durata": "44\"",
-      "video": {
-        "tipo": "file",
-        "src": "assets/video/slapp-punizione-psicologica.mp4",
-        "poster": "assets/video/slapp-punizione-psicologica.jpg"
-      },
-      "carta": 4
-    },
-    {
-      "_nota": "I quattro segnaposto qui sotto: restano tratteggiati finché non si gira. Quando un video è pronto si riempiono titolo, persona, durata e 'video', come nelle due schede qui sopra.",
-      "titolo": "Prossima testimonianza",
-      "persona": "",
-      "ruolo": "",
-      "durata": "",
-      "video": null,
-      "carta": 2
-    },
-    {
-      "titolo": "Prossima testimonianza",
-      "persona": "",
-      "ruolo": "",
-      "durata": "",
-      "video": null,
-      "carta": 21
-    },
-    {
-      "titolo": "Prossima testimonianza",
-      "persona": "",
-      "ruolo": "",
-      "durata": "",
-      "video": null,
-      "carta": 18
-    },
-    {
-      "titolo": "Prossima testimonianza",
-      "persona": "",
-      "ruolo": "",
-      "durata": "",
-      "video": null,
-      "carta": 11
-    }
-  ],
+  "pillole": [],
   "articoli": [
     {
       "titolo": "Quel vizio di fare causa ai giornalisti: quali sono i politici che querelano di più i cronisti",
@@ -89,5 +31,6 @@
       "cover": "assets/voci/domani-slapp-2.webp",
       "carta": 8
     }
-  ]
+  ],
+  "_nota_pillole": "06/11/2026: il team ha deciso di togliere dal sito i video brevi (le 'pillole'), comprese le due testimonianze di Linda che erano online dal 5 novembre. I file sono stati tolti anche da assets/video/. Nella sezione restano le inchieste e il documentario. Se un domani si tornasse indietro, basta rimettere qui le schede: il codice le mostra ancora."
 }

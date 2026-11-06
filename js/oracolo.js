@@ -358,7 +358,7 @@ function sezioneVoci(d) {
   intro.innerHTML =
     `<p class="capitolo__numero">${esc(s.dataset.capitolo)}</p>` +
     `<p class="occhiello">${esc(d.meta.occhiello)}</p>` +
-    badge(d.placeholder, 'le prime voci sono online, le altre in lavorazione') +
+    badge(d.placeholder, 'documentario in lavorazione') +
     `<h2 class="titolo-grosso">${esc(d.meta.titolo)}</h2>` +
     `<p class="lead">${esc(d.meta.sommario)}</p>`;
   s.append(intro);
@@ -405,7 +405,9 @@ function sezioneVoci(d) {
   // non è una pillola, e come chiamarla è una scelta editoriale
   griglia.append(scheda(d.documentario, d.documentario.etichetta || 'documentario',
     ' pillola--grande', d.documentario.descrizione));
-  d.pillole.forEach((p) => {
+  // dal 06/11/2026 l'elenco è vuoto: niente video brevi in pagina. Il codice
+  // resta, così tornare indietro è questione di riempire il JSON.
+  (d.pillole || []).forEach((p) => {
     // chi parla: nome e ruolo, o solo quello dei due che c'è. Nei segnaposto
     // non c'è nessuno dei due e la riga sparisce del tutto.
     const chi = [p.persona, p.ruolo].filter(Boolean).join(' — ');
