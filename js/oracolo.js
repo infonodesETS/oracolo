@@ -8,7 +8,57 @@
 const IMG = (slug, n, min = false) =>
   `assets/carte/${String(n).padStart(2, '0')}-${slug}${min ? '-min' : ''}.webp`;
 
-const stato = { carte: [], perNumero: new Map() };
+const stato = { carte: [], perNumero: new Map(), lingua: 'it' };
+
+/* ---------- le carte in due lingue ----------
+   Dal 10/11/2026 ogni carta in data/carte.json porta accanto ai campi italiani
+   i gemelli in inglese (nome_en, testo_en, spiegazione_en…). Il sito resta in
+   italiano: cambia solo quello che si legge aprendo una carta, perché è lì che
+   sta il testo, e la scelta vale anche per le carte aperte dopo.
+   Se un campo inglese manca, si ricade sull'italiano invece di lasciare un
+   buco: una traduzione incompleta non deve rompere la pagina. */
+const INGLESE = {
+  dritta: 'Upright', rovescia: 'Reversed', reale: 'In the real world',
+  copia: 'Copy the link to this card', copiato: 'Link copied',
+  passa: 'Leggi in italiano', nota: 'The 22 cards can also be read in Italian.',
+};
+const ITALIANO = {
+  dritta: 'Dritta', rovescia: 'Rovescia', reale: 'Nel mondo reale',
+  copia: 'Copia il link a questa carta', copiato: 'Link copiato',
+  passa: 'Read in English', nota: 'Le 22 carte si possono leggere anche in inglese.',
+};
+const etichette = () => (stato.lingua === 'en' ? INGLESE : ITALIANO);
+
+function inLingua(c, campo) {
+  const en = c[campo + '_en'];
+  if (stato.lingua !== 'en') return c[campo];
+  if (Array.isArray(en)) return en.length ? en : c[campo];
+  return en || c[campo];
+}
+
+/* La lingua scelta resta per la visita, e anche per quelle dopo: chi legge in
+   inglese non deve ripremere il tasto a ogni carta. Se il browser blocca la
+   memoria (finestra anonima, impostazioni), si riparte dall'italiano. */
+function leggiLinguaSalvata() {
+  try {
+    if (localStorage.getItem('oracolo-lingua') === 'en') stato.lingua = 'en';
+  } catch (e) { /* senza memoria si resta in italiano */ }
+}
+
+function cambiaLingua() {
+  stato.lingua = stato.lingua === 'en' ? 'it' : 'en';
+  try { localStorage.setItem('oracolo-lingua', stato.lingua); } catch (e) {}
+  document.querySelectorAll('[data-lingua]').forEach((b) => {
+    b.textContent = etichette().passa;
+  });
+  document.querySelectorAll('[data-lingua-nota]').forEach((n) => {
+    n.textContent = etichette().nota;
+  });
+  const aperta = document.getElementById('scheda');
+  if (aperta && aperta.open && stato.cartaAperta != null) {
+    riempiScheda(stato.perNumero.get(stato.cartaAperta));
+  }
+}
 
 async function carica(nome) {
   // `no-cache` non vuol dire «non usare la cache»: vuol dire «chiedi sempre al
@@ -430,7 +480,13 @@ function sezioneMazzo(carte) {
     `<p class="lead">Al posto delle figure tradizionali, i molti volti del Potere che
      ama censurare, sorvegliare e reprimere — e, all'opposto, le forze che a questo
      Potere resistono. Ogni carta è un archetipo del nostro presente, con la sua luce
-     e la sua ombra.</p>`;
+     e la sua ombra.</p>` +
+    // il tasto della lingua sta qui, prima delle carte, e nella scheda di ogni
+    // carta: chi arriva in inglese lo trova senza dover aprire niente
+    `<p class="mazzo__lingua">
+       <button type="button" class="btn-ghost" data-lingua>${esc(etichette().passa)}</button>
+       <span data-lingua-nota>${esc(etichette().nota)}</span>
+     </p>`;
   s.append(intro);
 
   // Niente filtri fra «volti del potere» e «forze che resistono»: le carte
@@ -549,27 +605,30 @@ let indirizzoNostro = false;
 let cartaDaLink = null;
 
 function riempiScheda(c) {
+  const v = etichette();
+  const reale = inLingua(c, 'spiegazione');
   document.getElementById('scheda-corpo').innerHTML =
     `<img src="${IMG(c.slug, c.n)}" alt="Carta ${esc(c.nome)}">` +
-    `<div class="scheda__testi">
-       <p class="scheda__arcano">${esc(c.arcano)}</p>
-       <h3>${esc(c.nome)}</h3>
-       <p>${esc(c.testo)}</p>
+    `<div class="scheda__testi" lang="${stato.lingua}">
+       <p class="scheda__arcano">${esc(inLingua(c, 'arcano'))}</p>
+       <h3>${esc(inLingua(c, 'nome'))}</h3>
+       <p>${esc(inLingua(c, 'testo'))}</p>
        <div class="scheda__significati">
-         <p><b>Dritta</b>${esc(c.dritta)}</p>
-         <p><b>Rovescia</b>${esc(c.rovescia)}</p>
+         <p><b>${esc(v.dritta)}</b>${esc(inLingua(c, 'dritta'))}</p>
+         <p><b>${esc(v.rovescia)}</b>${esc(inLingua(c, 'rovescia'))}</p>
        </div>
        <p class="scheda__condividi">
          <button type="button" class="btn-ghost" data-copia="${esc(linkAssoluto(c.slug))}">
-           Copia il link a questa carta</button>
+           ${esc(v.copia)}</button>
          <span class="scheda__link" hidden></span>
+         <button type="button" class="btn-ghost scheda__lingua" data-lingua>${esc(v.passa)}</button>
        </p>` +
     // Sotto tutto il resto: prima la carta parla per immagini e archetipi,
     // poi si dice di cosa sta parlando davvero.
-    (c.spiegazione && c.spiegazione.length
+    (reale && reale.length
       ? `<div class="scheda__spiegazione">
-           <h4>Nel mondo reale</h4>
-           ${c.spiegazione.map((t) => `<p>${esc(t)}</p>`).join('')}
+           <h4>${esc(v.reale)}</h4>
+           ${reale.map((t) => `<p>${esc(t)}</p>`).join('')}
          </div>`
       : '') +
     `</div>`;
@@ -578,6 +637,7 @@ function riempiScheda(c) {
 function apriScheda(n, daIndirizzo = false) {
   const c = stato.perNumero.get(Number(n));
   if (!c) return;
+  stato.cartaAperta = c.n;
   riempiScheda(c);
   if (!daIndirizzo && location.hash !== indirizzoCarta(c.slug)) {
     history.pushState({ carta: c.slug }, '', indirizzoCarta(c.slug));
@@ -634,6 +694,12 @@ function collegaScheda() {
 
   addEventListener('popstate', allineaAllIndirizzo);
 
+  // il tasto della lingua: sta sia nella scheda sia sotto le carte, e sono lo
+  // stesso interruttore — premerne uno aggiorna anche l'altro
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('[data-lingua]')) cambiaLingua();
+  });
+
   // «copia il link»: se il browser non lo permette (succede fuori da https),
   // il link viene scritto in chiaro, che è comunque copiabile a mano
   dlg.addEventListener('click', async (e) => {
@@ -642,7 +708,7 @@ function collegaScheda() {
     const scritta = b.textContent.trim();
     try {
       await navigator.clipboard.writeText(b.dataset.copia);
-      b.textContent = 'Link copiato';
+      b.textContent = etichette().copiato;
       setTimeout(() => { b.textContent = scritta; }, 2000);
     } catch {
       const spia = dlg.querySelector('.scheda__link');
@@ -681,6 +747,7 @@ function sezionePlaceholder(id, meta) {
   avanzamento();
   ventaglio();
   collegaScheda();
+  leggiLinguaSalvata();
 
   try {
     const [carte, sondaggio, decreto, voci, preambolo] = await Promise.all([

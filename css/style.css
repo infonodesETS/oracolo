@@ -1533,6 +1533,19 @@ a.btn.da-definire {
 }
 @media (max-width: 700px) { .scheda__corpo { grid-template-columns: 1fr; } }
 
+/* il tasto che passa all'inglese: sotto l'introduzione del mazzo e dentro la
+   scheda di ogni carta. Discreto — è un'alternativa, non l'azione principale */
+.mazzo__lingua {
+  display: flex; align-items: center; gap: .9rem; flex-wrap: wrap;
+  margin: 1.8rem 0 0;
+}
+.mazzo__lingua span {
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
+  color: var(--bianco-3);
+}
+.scheda__lingua { margin-left: auto; }
+@media (max-width: 560px) { .scheda__lingua { margin-left: 0; } }
+
 /* ============================================================
    PAGINA DEL SOLO DECRETO (decreto.html)
    Il testo in consultazione fra le organizzazioni partner: una colonna sola,
